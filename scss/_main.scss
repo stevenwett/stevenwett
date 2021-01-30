@@ -1,0 +1,144 @@
+/* Main styles */
+
+// Global
+
+html {
+	height: 100%;
+
+	@include media-breakpoint-down(sm) {
+		height: auto;
+	}
+}
+
+p,
+li {
+	font-family: $sans-serif;
+	font-weight: $font-weight-light;
+
+	a.special {
+		font-weight: bold;
+		text-decoration: none;
+		background: linear-gradient(75deg, $blue, $light-blue);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.page-home {
+	height: 100%;
+
+	.main {
+		height: 100%;
+	}
+
+	.navigation {
+		margin-bottom: 3rem;
+
+		ul {
+			margin-top: 1rem;
+		}
+	}
+
+	@include media-breakpoint-down(xs) {
+		.page-content,
+		.navigation .col {
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+	}
+
+	.page-header {
+		padding: 3rem 0;
+		margin-bottom: 2rem;
+		background-image: url(https://placehold.it/2000x400);
+		background-position: left;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		.container {
+			position: relative;
+		}
+	}
+
+	.page-background {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.footer-overlay-1 {
+			opacity: 0.5;
+		}
+	}
+
+	.page-content {
+		margin-top: 2rem;
+		padding: 2rem;
+		background: rgba($white, 0.8);
+		border-radius: $border-radius;
+		z-index: 1;
+
+		h1 {
+			font-size: 1rem;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: $orange;
+			font-family: $sans-serif;
+			font-weight: $font-weight-bold;
+			margin-bottom: 0.25rem;
+		}
+
+		h2,
+		.h2 {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+			line-height: 1.2;
+			font-weight: $font-weight-bolder;
+			font-family: $serif;
+		}
+
+		.contact {
+			margin-bottom: 1.25rem;
+
+			svg {
+				height: 45px;
+				margin-right: 0.55rem;
+				border-radius: 6px;
+				transition: $transition-base;
+
+				&:hover,
+				&:focus {
+					background: $white;
+				}
+			}
+
+			a {
+				&:hover,
+				&:focus {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.dog-photos {
+		margin-top: 1rem;
+
+		img {
+			margin-top: 30px;
+			max-width: 100%;
+			border-radius: $border-radius;
+		}
+	}
+}
