@@ -1,0 +1,34 @@
+{
+  "name": "stevenwett",
+  "version": "0.1.0",
+  "author": "Steven Wett <stevenwett@gmail.com>",
+  "description": "A template for the styles for stevenwett.com.",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "clean-css-cli": "^4.3.0",
+    "eslint": "^5.16.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "4.12.0",
+    "nodemon": "1.19.0",
+    "npm-run-all": "4.1.5",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3",
+    "stylelint": "10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "uglify-js": "^3.5.14"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "scripts": {
+    "clean": "rimraf ../{public/css/app*,public/js/app*}",
+    "css:make-dir": "mkdirp .../public/css -p",
+    "css:lint": "stylelint ./scss/*.scss",
+    "css:compile": "node-sass --output-style expanded -o ../public/css/ scss/app.scss --source-map true --source-map-root / --include-path ./node_modules/bootstrap/scss",
+    "css:prefix": "postcss ../public/css/app.css -u autoprefixer -o ../public/css/app.css",
+    "css:minify": "cleancss --level 1 --format breaksWith=lf --output ../public/css/app.min.css ../public/css/app.css",
+    "watch": "nodemon --watch \"scss\" --ext scss --exec \"build\"",
+    "build": "npm-run-all --sequential css:make-dir css:lint css:compile css:prefix css:minify"
+  }
+}
