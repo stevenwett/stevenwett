@@ -31,14 +31,6 @@ li {
 		height: 100%;
 	}
 
-	.navigation {
-		margin-bottom: 3rem;
-
-		ul {
-			margin-top: 1rem;
-		}
-	}
-
 	@include media-breakpoint-down(xs) {
 		.page-content,
 		.navigation .col {
@@ -76,10 +68,6 @@ li {
 			height: 100%;
 			object-fit: cover;
 		}
-
-		.footer-overlay-1 {
-			opacity: 0.5;
-		}
 	}
 
 	.page-content {
@@ -109,25 +97,30 @@ li {
 		}
 
 		.contact {
-			margin-bottom: 1.25rem;
+			list-style: none;
+			padding-left: 0;
 
-			svg {
-				height: 45px;
-				margin-right: 0.55rem;
-				border-radius: 6px;
-				transition: $transition-base;
-
-				&:hover,
-				&:focus {
-					background: $white;
-				}
+			li {
+				margin-bottom: 0.5rem;
 			}
 
 			a {
+				color: $blue;
+				font-weight: $font-weight-bold;
+				transition: $transition-base;
+				vertical-align: middle;
+
 				&:hover,
 				&:focus {
+					color: darken($blue, 10%);
 					text-decoration: none;
 				}
+			}
+
+			svg {
+				height: 18px;
+				width: 18px;
+				margin-right: 1rem;
 			}
 		}
 	}
