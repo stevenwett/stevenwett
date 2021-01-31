@@ -15,7 +15,7 @@ function App() {
           <div className="page-content col-sm-12 col-md-10 col-lg-8">
             <h1>Steven Wett</h1>
             <p className="h2">Front-end Web Developer</p>
-            <p>This site was created by me, Steven Wett, and showcases all original photos. I'm a front-end developer who is passionate about human-centric design and accessibility. In addition to coding, I also enjoy taking photos, gardening, fermenting things, and generally being outdoors.</p>
+            <p>This site was created by me, Steven Wett, and showcases all original photos. I'm a front-end developer who is passionate about human-centric design and accessibility. In addition to coding, I also enjoy taking photos, gardening, fermenting things, my dog, and generally being outdoors.</p>
             <div className="contact">
               <ul>
                 <li><a href="mailto:stevenwett@gmail.com">stevenwett@gmail.com</a></li>
