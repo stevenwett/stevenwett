@@ -198,11 +198,11 @@ h1 {
   }
 }
 h2 {
-  font-size: calc(1.3rem + .6vw)
+  font-size: calc(1.325rem + .9vw)
 }
 @media (min-width:1200px) {
   h2 {
-    font-size: 1.75rem
+    font-size: 2rem
   }
 }
 h3 {
@@ -5997,9 +5997,16 @@ p a.special {
   animation-fill-mode: forwards;
   transition: all .2s ease-in-out
 }
+.page-home .web-projects h3 {
+  font-size: 1.5rem;
+  line-height: 1.1
+}
 .page-home .web-projects p {
   font-size: .8rem;
   margin-bottom: .5rem
+}
+.page-home .web-projects p a {
+  color: #fff
 }
 .page-home .web-projects p.results {
   margin-bottom: 1rem

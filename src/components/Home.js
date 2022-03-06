@@ -21,6 +21,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'duets-by-gemini.jpg',
 					imageWebpSrc: 'duets-by-gemini.webp',
+					linkPretty: 'duetsbygemini.com',
 					link: 'https://duetsbygemini.com/',
 				},
 				{
@@ -37,6 +38,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'engage-print.jpg',
 					imageWebpSrc: 'engage-print.webp',
+					linkPretty: 'engageprint.com',
 					link: 'https://engageprint.com/',
 				},
 				{
@@ -57,6 +59,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'gemini.jpg',
 					imageWebpSrc: 'gemini.webp',
+					linkPretty: 'geminimade.com',
 					link: 'https://geminimade.com/',
 				},
 				{
@@ -70,6 +73,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'inmotion-realty.jpg',
 					imageWebpSrc: 'inmotion-realty.webp',
+					linkPretty: 'inmotionrealty.com',
 					link: 'https://inmotionrealty.com/',
 				},
 				{
@@ -85,6 +89,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'neuger.jpg',
 					imageWebpSrc: 'neuger.webp',
+					linkPretty: 'neuger.com',
 					link: 'https://neuger.com/',
 				},
 				{
@@ -101,6 +106,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'northfieldwifi.jpg',
 					imageWebpSrc: 'northfieldwifi.webp',
+					linkPretty: 'northfieldwifi.com',
 					link: 'https://northfieldwifi.com/',
 				},
 				{
@@ -116,6 +122,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'plainview-milk.jpg',
 					imageWebpSrc: 'plainview-milk.webp',
+					linkPretty: 'plainviewmilk.com',
 					link: 'https://plainviewmilk.com/',
 				},
 				{
@@ -132,6 +139,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'portico-healthnet.jpg',
 					imageWebpSrc: 'portico-healthnet.webp',
+					linkPretty: 'porticohealthnet.org',
 					link: 'https://porticohealthnet.org/',
 				},
 				{
@@ -148,6 +156,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'riggs-cat.jpg',
 					imageWebpSrc: 'riggs-cat.webp',
+					linkPretty: 'riggscat.com',
 					link: 'https://riggscat.com/',
 				},
 				{
@@ -163,6 +172,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'valley-view-milk.jpg',
 					imageWebpSrc: 'valley-view-milk.webp',
+					linkPretty: 'valleyviewmilk.com',
 					link: 'https://valleyviewmilk.com/',
 				},
 				{
@@ -179,6 +189,7 @@ class Home extends React.Component {
 					],
 					imageSrc: 'ziegler-cat.jpg',
 					imageWebpSrc: 'ziegler-cat.webp',
+					linkPretty: 'zieglercat.com',
 					link: 'https://www.zieglercat.com/',
 				},
 			],
@@ -259,6 +270,9 @@ class Home extends React.Component {
 					<article className="project" key={index}>
 						<div className="project-content">
 							<h3>{project.name}</h3>
+							{project.linkPretty
+								? <p className="link"><a href={project.link}>{project.linkPretty}</a></p>
+								: null}
 							<p>{project.description}</p>
 							{project.features.length > 0
 								? (

@@ -102,9 +102,18 @@
 		animation-fill-mode: forwards;
 		transition: $transition-base;
 
+		h3 {
+			font-size: 1.5rem;
+			line-height: 1.1;
+		}
+
 		p {
 			font-size: 0.8rem;
 			margin-bottom: 0.5rem;
+
+			a {
+				color: $white;
+			}
 
 			&.results {
 				margin-bottom: 1rem;
