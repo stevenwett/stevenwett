@@ -1,0 +1,328 @@
+.page-home {
+	position: relative;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	color: $white;
+	overflow: hidden;
+	z-index: 1;
+
+	.container {
+		position: relative;
+		height: 100%;
+		padding-top: 130px;
+	}
+
+	.intro {
+		position: relative;
+
+		.name-title {
+			opacity: 0;
+			z-index: 2;
+			animation-name: fade-in;
+			animation-duration: 3s;
+			animation-delay: 0.25s;
+			animation-fill-mode: forwards;
+			transition: $transition-base;
+
+			@media screen and (min-width: 1100px) {
+				transform: translateX(-3rem);
+			}
+
+			@media screen and (min-width: 1200px) {
+				transform: translateX(0);
+			}
+
+			@media screen and (min-width: 1250px) {
+				transform: translateX(-3rem);
+			}
+
+			@media screen and (min-width: 1400px) {
+				transform: translateX(0);
+			}
+
+			@media screen and (min-width: 1450px) {
+				transform: translateX(-3rem);
+			}
+		}
+
+		h1 {
+			color: $white;
+			line-height: 1.2;
+			margin-bottom: 0.25rem;
+			font-size: 1.25rem;
+			text-transform: uppercase;
+			font-family: $font-family-base;
+			font-weight: $font-weight-normal;
+
+			@include media-breakpoint-down(sm) {
+				font-size: 1rem;
+			}
+		}
+
+		.title {
+			font-family: $font-family-headings;
+			font-size: 3rem;
+			margin-bottom: 1.5rem;
+			line-height: 1.1;
+
+			@include media-breakpoint-down(sm) {
+				font-size: 2rem;
+			}
+		}
+
+		p {
+			opacity: 0;
+			animation-name: fade-in;
+			animation-duration: 3s;
+			animation-delay: 0.75s;
+			animation-fill-mode: forwards;
+			transition: $transition-base;
+		}
+
+		p.large-text {
+			margin-bottom: 1.5rem;
+			opacity: 0;
+			animation-name: fade-in;
+			animation-duration: 3s;
+			animation-delay: 0.5s;
+			animation-fill-mode: forwards;
+			transition: $transition-base;
+		}
+	}
+
+	.web-projects {
+		margin-bottom: 6rem;
+		padding-top: 2rem;
+		border-top: 1px solid $transparent-white;
+		opacity: 0;
+		animation-name: fade-in;
+		animation-duration: 3s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		transition: $transition-base;
+
+		p {
+			font-size: 0.8rem;
+			margin-bottom: 0.5rem;
+
+			&.results {
+				margin-bottom: 1rem;
+			}
+		}
+
+		button.clear {
+			margin: 0;
+			padding: 0;
+			outline: 0;
+			border: 0;
+			background: none;
+			color: $white;
+			text-decoration: underline;
+			margin-left: 0.5rem;
+		}
+
+		ul {
+			margin-bottom: 0.75rem;
+		}
+
+		li {
+			font-size: 0.8rem;
+			margin-bottom: 0.25rem;
+		}
+
+
+		.filter {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-wrap: wrap;
+
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			.text {
+				text-align: left;
+				flex-grow: 1;
+				padding-left: 2rem;
+				flex-basis: calc(100% - 250px);
+
+				@include media-breakpoint-down(md) {
+					padding-left: 0;
+					flex-basis: 100%;
+					order: 2;
+				}
+			}
+
+			h2 {
+				margin-bottom: 1rem;
+				flex-basis: 100%;
+				width: 100%;
+
+				@include media-breakpoint-down(md) {
+					order: 1;
+				}
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+
+			.dropdown {
+				flex-basis: 250px;
+				text-align: right;
+
+				@include media-breakpoint-down(md) {
+					text-align: left;
+					flex-basis: unset;
+					margin-top: $grid-gutter-width;
+					order: 3;
+					width: 100%;
+				}
+			}
+
+			.select-wrapper {
+				position: relative;
+
+				&::after {
+					content: "";
+					border: 8px solid transparent;
+					border-top-color: $white;
+					position: absolute;
+					top: 1rem;
+					right: 0.75rem;
+					z-index: -1;
+				}
+			}
+
+			select {
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				background: none;
+				background-color: rgba(255, 255, 255, 0.1);
+				color: $white;
+				outline: 0;
+				padding: 0.5rem $grid-gutter-width / 2;
+				padding-right: 35px;
+				font-family: $font-family-base;
+				appearance: unset;
+				border: 0;
+				border-bottom: 2px solid $white;
+				font-weight: $font-weight-bold;
+				font-size: 1rem;
+				width: 100%;
+			}
+		}
+
+		.projects {
+			margin-top: 2rem;
+		}
+
+		.project {
+			display: flex;
+			text-align: left;
+			border: 1px solid $transparent-white;
+			border-radius: $border-radius-sm;
+			margin-bottom: 2rem;
+			padding: $grid-gutter-width / 2;
+			min-height: 150px;
+			background-color: rgba(0, 0, 0, 0.2);
+
+			@include media-breakpoint-down(sm) {
+				min-height: 100px;
+			}
+
+			.project-content {
+				flex-grow: 1;
+				padding-right: $grid-gutter-width;
+				flex-basis: calc(100% - 150px);
+
+				@include media-breakpoint-down(sm) {
+					flex-basis: calc(100% - 100px);
+				}
+			}
+
+			.project-image {
+				flex-grow: 1;
+				flex-basis: 150px;
+				position: relative;
+
+				@include media-breakpoint-down(sm) {
+					flex-basis: 100px;
+				}
+
+				.image {
+					border: 1px solid $transparent-white;
+					width: 150px;
+					height: 150px;
+					position: absolute;
+					top: 0;
+					right: 0;
+					box-sizing: content-box;
+					border-radius: 5px;
+					overflow: hidden;
+
+					img {
+						width: 150px;
+						height: 150px;
+
+						@include media-breakpoint-down(sm) {
+							width: 100px;
+							height: 100px;
+						}
+					}
+
+					@include media-breakpoint-down(sm) {
+						top: -22px;
+						width: 100px;
+						height: 100px;
+					}
+
+					svg {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						margin-top: -15px;
+						margin-left: -15px;
+						opacity: 0;
+						z-index: 9;
+						width: 30px;
+						height: 30px;
+						transition: $transition-base;
+					}
+
+					&::after {
+						content: "";
+						width: 150px;
+						height: 150px;
+						position: absolute;
+						top: 0;
+						right: 0;
+						background-color: $white;
+						opacity: 0;
+						border-radius: 5px;
+						transition: $transition-base;
+
+						@include media-breakpoint-down(sm) {
+							width: 100px;
+							height: 100px;
+						}
+					}
+
+					&:hover,
+					&:focus {
+						&::after {
+							opacity: 0.5;
+						}
+
+						svg {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+}

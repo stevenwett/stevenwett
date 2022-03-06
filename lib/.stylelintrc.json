@@ -1,0 +1,25 @@
+{
+	"extends": "stylelint-config-standard-scss",
+	"rules": {
+		"scss/double-slash-comment-whitespace-inside": null,
+		"scss/double-slash-comment-empty-line-before": null,
+		"scss/at-import-no-partial-leading-underscore": null,
+		"scss/dollar-variable-colon-space-after": null,
+		"scss/no-global-function-names": null,
+		"scss/dollar-variable-empty-line-before": null,
+		"indentation": "tab",
+		"number-leading-zero": null,
+		"value-keyword-case": null,
+		"property-no-vendor-prefix": null,
+		"function-url-quotes": null,
+		"max-empty-lines": 2,
+		"max-line-length": null,
+		"at-rule-empty-line-before": null,
+		"no-missing-end-of-source-newline": null,
+		"no-eol-whitespace": null,
+		"block-no-empty": null,
+		"no-descending-specificity": null,
+		"color-function-notation": "legacy",
+		"alpha-value-notation": null
+	}
+}

@@ -1,0 +1,260 @@
+/* Main styles */
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in-background {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0.5;
+	}
+}
+
+// Global
+
+html {
+	height: 100%;
+
+	@include media-breakpoint-down(sm) {
+		height: auto;
+	}
+}
+
+body {
+	background-color: $black;
+	position: relative;
+}
+
+h1 {
+	font-weight: 800;
+	line-height: 1.15;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 2.25rem;
+	}
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+p,
+li {
+	font-family: $font-family-base;
+	font-weight: $font-weight-base;
+
+	a.special {
+		font-weight: bold;
+		text-decoration: none;
+		background: linear-gradient(75deg, $blue, $light-blue);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	z-index: 3;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		margin-right: 0.75rem;
+		height: 40px;
+		width: 40px;
+		opacity: 0;
+		animation-name: fade-in;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		transition: $transition-base;
+	}
+}
+
+.main {
+	position: relative;
+	overflow: hidden;
+	max-width: 2000px;
+	margin: 0 auto;
+	border-left: 1px solid $gray-900;
+	border-right: 1px solid $gray-900;
+	z-index: 2;
+}
+
+.background-image {
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	overflow: hidden;
+	background-color: $black;
+
+	img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		max-width: 2000px;
+		margin: 0 auto;
+		object-fit: cover;
+		opacity: 0;
+		animation-name: fade-in-background;
+		animation-duration: 3s;
+		animation-delay: 0.25s;
+		animation-fill-mode: forwards;
+		transition: $transition-base;
+	}
+}
+
+.large-text {
+	font-size: 1.4rem;
+	font-family: $font-family-base;
+	font-weight: 300;
+	font-style: normal;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 1.25rem;
+	}
+}
+
+.main-nav {
+	text-align: right;
+
+	button {
+		background: none;
+		border: 0;
+		outline: 0;
+		color: $white;
+		font-weight: 800;
+		font-family: $gitan-latin;
+		margin-right: 0.5rem;
+		position: relative;
+		padding: 10px 14px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 5%;
+			height: 2px;
+			width: 90%;
+			background-color: $white;
+			opacity: 0;
+			transition: $transition-base;
+		}
+
+		&:hover,
+		&:focus,
+		&.current {
+			&::after {
+				opacity: 1;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+	}
+}
+
+.contact-nav {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: flex-end;
+
+		li {
+			text-transform: uppercase;
+			opacity: 0;
+			animation-name: fade-in;
+			animation-duration: 3s;
+			animation-delay: 2s;
+			animation-fill-mode: forwards;
+			transition: $transition-base;
+
+			&.github {
+				animation-delay: 2.25s;
+			}
+
+			&.linkedin {
+				animation-delay: 2.5s;
+			}
+		}
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+		padding: 6px 10px;
+		margin-left: 0.25rem;
+		transition: $transition-base;
+		font-size: 0.9rem;
+		background-color: rgba(0, 0, 0, 0.2);
+		border-radius: $border-radius-sm;
+
+		&:hover,
+		&:focus {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		.github,
+		.email {
+			display: none;
+		}
+	}
+}
+
+.main-footer {
+	padding: 1rem 0;
+	background-color: $black;
+	border-top: 1px solid $gray-900;
+	position: relative;
+
+	p {
+		font-size: 0.8rem;
+		color: $white;
+		margin: 0;
+		text-align: left;
+
+		@include media-breakpoint-down(sm) {
+			text-align: center;
+		}
+	}
+
+	p.photo-cred {
+		margin-bottom: 1rem;
+		color: rgba(255, 255, 255, 0.6);
+
+		span {
+			display: block;
+			font-size: 0.6rem;
+			text-transform: uppercase;
+		}
+	}
+}
