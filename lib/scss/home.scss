@@ -13,6 +13,20 @@
 		padding-top: 130px;
 	}
 
+	h1 {
+		margin-bottom: 0.25rem;
+	}
+
+	h2 {
+		margin-bottom: 1rem;
+		flex-basis: 100%;
+		width: 100%;
+
+		@include media-breakpoint-down(md) {
+			order: 1;
+		}
+	}
+
 	.intro {
 		position: relative;
 
@@ -46,46 +60,11 @@
 			}
 		}
 
-		h1 {
-			color: $white;
-			line-height: 1.2;
-			margin-bottom: 0.25rem;
-			font-size: 1.25rem;
-			text-transform: uppercase;
-			font-family: $font-family-base;
-			font-weight: $font-weight-normal;
-
-			@include media-breakpoint-down(sm) {
-				font-size: 1rem;
-			}
-		}
-
-		.title {
-			font-family: $font-family-headings;
-			font-size: 3rem;
-			margin-bottom: 1.5rem;
-			line-height: 1.1;
-
-			@include media-breakpoint-down(sm) {
-				font-size: 2rem;
-			}
-		}
-
 		p {
 			opacity: 0;
 			animation-name: fade-in;
 			animation-duration: 3s;
 			animation-delay: 0.75s;
-			animation-fill-mode: forwards;
-			transition: $transition-base;
-		}
-
-		p.large-text {
-			margin-bottom: 1.5rem;
-			opacity: 0;
-			animation-name: fade-in;
-			animation-duration: 3s;
-			animation-delay: 0.5s;
 			animation-fill-mode: forwards;
 			transition: $transition-base;
 		}
@@ -102,15 +81,14 @@
 		animation-fill-mode: forwards;
 		transition: $transition-base;
 
-		h3 {
-			font-size: 1.5rem;
-			line-height: 1.1;
+		p,
+		li {
+			font-size: 0.85rem;
+			margin-bottom: 0.5rem;
+			line-height: 1.4;
 		}
 
 		p {
-			font-size: 0.8rem;
-			margin-bottom: 0.5rem;
-
 			a {
 				color: $white;
 			}
@@ -129,17 +107,17 @@
 			color: $white;
 			text-decoration: underline;
 			margin-left: 0.5rem;
+
+			@media screen and (max-width: 400px) {
+				display: block;
+				margin-left: 0;
+				margin-top: 0.25rem;
+			}
 		}
 
 		ul {
 			margin-bottom: 0.75rem;
 		}
-
-		li {
-			font-size: 0.8rem;
-			margin-bottom: 0.25rem;
-		}
-
 
 		.filter {
 			display: flex;
@@ -165,16 +143,6 @@
 				}
 			}
 
-			h2 {
-				margin-bottom: 1rem;
-				flex-basis: 100%;
-				width: 100%;
-
-				@include media-breakpoint-down(md) {
-					order: 1;
-				}
-			}
-
 			p {
 				margin-bottom: 0;
 			}
@@ -194,6 +162,7 @@
 
 			.select-wrapper {
 				position: relative;
+				max-width: 400px;
 
 				&::after {
 					content: "";
@@ -222,6 +191,7 @@
 				font-weight: $font-weight-bold;
 				font-size: 1rem;
 				width: 100%;
+				max-width: 400px;
 			}
 		}
 
@@ -230,36 +200,74 @@
 		}
 
 		.project {
-			display: flex;
-			text-align: left;
-			border: 1px solid $transparent-white;
-			border-radius: $border-radius-sm;
 			margin-bottom: 2rem;
-			padding: $grid-gutter-width / 2;
 			min-height: 150px;
-			background-color: rgba(0, 0, 0, 0.2);
+			padding-right: 0.75rem;
+			transition: $transition-base;
 
 			@include media-breakpoint-down(sm) {
 				min-height: 100px;
 			}
 
+			@media screen and (max-width: 400px) {
+				padding-right: 0;
+				padding-left: 0.75rem;
+			}
+
+			.inner {
+				position: relative;
+				border: 1px solid $transparent-white;
+				border-radius: $border-radius-sm;
+				display: flex;
+				text-align: left;
+				background-color: rgba(0, 0, 0, 0.2);
+				padding: $grid-gutter-width / 2;
+
+				@media screen and (max-width: 400px) {
+					flex-direction: column;
+				}
+			}
+
 			.project-content {
+				padding-right: 1rem;
 				flex-grow: 1;
-				padding-right: $grid-gutter-width;
 				flex-basis: calc(100% - 150px);
+				width: calc(100% - 150px);
+				order: 1;
+				transition: $transition-base;
 
 				@include media-breakpoint-down(sm) {
+					padding-right: $grid-gutter-width;
 					flex-basis: calc(100% - 100px);
+					width: calc(100% - 100px);
+				}
+
+				@media screen and (max-width: 400px) {
+					padding-right: 0;
+					flex-basis: 100%;
+					width: 100%;
+					order: 2;
 				}
 			}
 
 			.project-image {
 				flex-grow: 1;
 				flex-basis: 150px;
+				width: 150px;
 				position: relative;
+				order: 2;
+				transition: $transition-base;
 
 				@include media-breakpoint-down(sm) {
 					flex-basis: 100px;
+					width: 100px;
+				}
+
+				@media screen and (max-width: 400px) {
+					position: unset;
+					order: 1;
+					flex-basis: 150px;
+					width: 100%;
 				}
 
 				.image {
@@ -268,25 +276,38 @@
 					height: 150px;
 					position: absolute;
 					top: 0;
-					right: 0;
+					right: -1.5rem;
 					box-sizing: content-box;
 					border-radius: 5px;
 					overflow: hidden;
+					transition: $transition-base;
 
 					img {
 						width: 150px;
 						height: 150px;
+						transition: $transition-base;
 
 						@include media-breakpoint-down(sm) {
 							width: 100px;
 							height: 100px;
 						}
+
+						@media screen and (max-width: 400px) {
+							width: 125px;
+							height: 125px;
+						}
 					}
 
 					@include media-breakpoint-down(sm) {
-						top: -22px;
 						width: 100px;
 						height: 100px;
+					}
+
+					@media screen and (max-width: 400px) {
+						width: 125px;
+						height: 125px;
+						left: -1 * $grid-gutter-width / 2;
+						top: $grid-gutter-width / 2;
 					}
 
 					svg {
@@ -317,6 +338,11 @@
 						@include media-breakpoint-down(sm) {
 							width: 100px;
 							height: 100px;
+						}
+
+						@media screen and (max-width: 400px) {
+							width: 125px;
+							height: 125px;
 						}
 					}
 

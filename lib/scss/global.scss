@@ -36,30 +36,76 @@ body {
 }
 
 h1 {
-	font-weight: 800;
-	line-height: 1.15;
+	color: $white;
+	line-height: 1.2;
+	font-size: 1.25rem;
+	font-family: $font-family-base;
+	font-weight: $font-weight-normal;
+	text-transform: uppercase;
 
 	@include media-breakpoint-down(sm) {
-		font-size: 2.25rem;
+		font-size: 1rem;
 	}
 }
 
 h2 {
 	text-transform: uppercase;
+
+	@media screen and (max-width: 400px) {
+		font-size: 1.75rem;
+	}
+}
+
+h3 {
+	line-height: 1.1;
+
+	@media screen and (max-width: 400px) {
+		font-size: 1.5rem;
+	}
+}
+
+.title {
+	font-family: $font-family-headings;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.1;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 2.75rem;
+		line-height: 1;
+	}
+
+	@media screen and (max-width: 400px) {
+		font-size: 2.5rem;
+	}
+}
+
+.large-text {
+	font-size: 1.4rem;
+	font-family: $font-family-base;
+	font-weight: 300;
+	font-style: normal;
+	margin-bottom: 1.5rem;
+	opacity: 0;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	transition: $transition-base;
+
+	@include media-breakpoint-down(sm) {
+		font-size: 1.25rem;
+	}
+
+	@media screen and (max-width: 400px) {
+		font-size: 1.125rem;
+	}
 }
 
 p,
 li {
 	font-family: $font-family-base;
 	font-weight: $font-weight-base;
-
-	a.special {
-		font-weight: bold;
-		text-decoration: none;
-		background: linear-gradient(75deg, $blue, $light-blue);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
 }
 
 .header {
@@ -68,8 +114,8 @@ li {
 	width: 100%;
 	left: 0;
 	z-index: 3;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	padding: 1rem 0;
+	background-color: rgba(0, 0, 0, 0.3);
 
 	.container {
 		display: flex;
@@ -123,17 +169,6 @@ li {
 		animation-delay: 0.25s;
 		animation-fill-mode: forwards;
 		transition: $transition-base;
-	}
-}
-
-.large-text {
-	font-size: 1.4rem;
-	font-family: $font-family-base;
-	font-weight: 300;
-	font-style: normal;
-
-	@include media-breakpoint-down(sm) {
-		font-size: 1.25rem;
 	}
 }
 
@@ -191,16 +226,16 @@ li {
 			opacity: 0;
 			animation-name: fade-in;
 			animation-duration: 3s;
-			animation-delay: 2s;
+			animation-delay: 0.25s;
 			animation-fill-mode: forwards;
 			transition: $transition-base;
 
 			&.github {
-				animation-delay: 2.25s;
+				animation-delay: 0.5s;
 			}
 
 			&.linkedin {
-				animation-delay: 2.5s;
+				animation-delay: 0.75s;
 			}
 		}
 	}

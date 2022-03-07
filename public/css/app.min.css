@@ -206,11 +206,11 @@ h2 {
   }
 }
 h3 {
-  font-size: calc(1.265rem + .18vw)
+  font-size: calc(1.275rem + .3vw)
 }
 @media (min-width:1200px) {
   h3 {
-    font-size: 1.4rem
+    font-size: 1.5rem
   }
 }
 h4 {
@@ -5663,29 +5663,82 @@ body {
   position: relative
 }
 h1 {
-  font-weight: 800;
-  line-height: 1.15
+  color: #fff;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  font-family: expressway,sans-serif;
+  font-weight: 400;
+  text-transform: uppercase
 }
 @media (max-width:575.98px) {
   h1 {
-    font-size: 2.25rem
+    font-size: 1rem
   }
 }
 h2 {
   text-transform: uppercase
 }
+@media screen and (max-width:400px) {
+  h2 {
+    font-size: 1.75rem
+  }
+}
+h3 {
+  line-height: 1.1
+}
+@media screen and (max-width:400px) {
+  h3 {
+    font-size: 1.5rem
+  }
+}
+.title {
+  font-family: gitan-latin,sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1
+}
+@media (max-width:575.98px) {
+  .title {
+    font-size: 2.75rem;
+    line-height: 1
+  }
+}
+@media screen and (max-width:400px) {
+  .title {
+    font-size: 2.5rem
+  }
+}
+.large-text {
+  font-size: 1.4rem;
+  font-family: expressway,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  transition: all .2s ease-in-out
+}
+@media (max-width:575.98px) {
+  .large-text {
+    font-size: 1.25rem
+  }
+}
+@media screen and (max-width:400px) {
+  .large-text {
+    font-size: 1.125rem
+  }
+}
 li,
 p {
   font-family: expressway,sans-serif;
   font-weight: 400
-}
-li a.special,
-p a.special {
-  font-weight: 700;
-  text-decoration: none;
-  background: linear-gradient(75deg,#007bfe,#5badee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent
 }
 .header {
   position: absolute;
@@ -5693,8 +5746,8 @@ p a.special {
   width: 100%;
   left: 0;
   z-index: 3;
-  margin-top: 1rem;
-  margin-bottom: 1rem
+  padding: 1rem 0;
+  background-color: rgba(0,0,0,.3)
 }
 .header .container {
   display: flex;
@@ -5752,17 +5805,6 @@ p a.special {
   animation-fill-mode: forwards;
   transition: all .2s ease-in-out
 }
-.large-text {
-  font-size: 1.4rem;
-  font-family: expressway,sans-serif;
-  font-weight: 300;
-  font-style: normal
-}
-@media (max-width:575.98px) {
-  .large-text {
-    font-size: 1.25rem
-  }
-}
 .main-nav {
   text-align: right
 }
@@ -5811,19 +5853,19 @@ p a.special {
   animation-name: fade-in;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   transition: all .2s ease-in-out
 }
 .contact-nav ul li.github {
-  -webkit-animation-delay: 2.25s;
-  animation-delay: 2.25s
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s
 }
 .contact-nav ul li.linkedin {
-  -webkit-animation-delay: 2.5s;
-  animation-delay: 2.5s
+  -webkit-animation-delay: .75s;
+  animation-delay: .75s
 }
 .contact-nav a {
   color: #fff;
@@ -5886,6 +5928,19 @@ p a.special {
   height: 100%;
   padding-top: 130px
 }
+.page-home h1 {
+  margin-bottom: .25rem
+}
+.page-home h2 {
+  margin-bottom: 1rem;
+  flex-basis: 100%;
+  width: 100%
+}
+@media (max-width:767.98px) {
+  .page-home h2 {
+    order: 1
+  }
+}
 .page-home .intro {
   position: relative
 }
@@ -5932,31 +5987,6 @@ p a.special {
     transform: translateX(-3rem)
   }
 }
-.page-home .intro h1 {
-  color: #fff;
-  line-height: 1.2;
-  margin-bottom: .25rem;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  font-family: expressway,sans-serif;
-  font-weight: 400
-}
-@media (max-width:575.98px) {
-  .page-home .intro h1 {
-    font-size: 1rem
-  }
-}
-.page-home .intro .title {
-  font-family: gitan-latin,sans-serif;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.1
-}
-@media (max-width:575.98px) {
-  .page-home .intro .title {
-    font-size: 2rem
-  }
-}
 .page-home .intro p {
   opacity: 0;
   -webkit-animation-name: fade-in;
@@ -5965,19 +5995,6 @@ p a.special {
   animation-duration: 3s;
   -webkit-animation-delay: .75s;
   animation-delay: .75s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  transition: all .2s ease-in-out
-}
-.page-home .intro p.large-text {
-  margin-bottom: 1.5rem;
-  opacity: 0;
-  -webkit-animation-name: fade-in;
-  animation-name: fade-in;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   transition: all .2s ease-in-out
@@ -5997,13 +6014,11 @@ p a.special {
   animation-fill-mode: forwards;
   transition: all .2s ease-in-out
 }
-.page-home .web-projects h3 {
-  font-size: 1.5rem;
-  line-height: 1.1
-}
+.page-home .web-projects li,
 .page-home .web-projects p {
-  font-size: .8rem;
-  margin-bottom: .5rem
+  font-size: .85rem;
+  margin-bottom: .5rem;
+  line-height: 1.4
 }
 .page-home .web-projects p a {
   color: #fff
@@ -6021,12 +6036,15 @@ p a.special {
   text-decoration: underline;
   margin-left: .5rem
 }
+@media screen and (max-width:400px) {
+  .page-home .web-projects button.clear {
+    display: block;
+    margin-left: 0;
+    margin-top: .25rem
+  }
+}
 .page-home .web-projects ul {
   margin-bottom: .75rem
-}
-.page-home .web-projects li {
-  font-size: .8rem;
-  margin-bottom: .25rem
 }
 .page-home .web-projects .filter {
   display: flex;
@@ -6053,16 +6071,6 @@ p a.special {
     order: 2
   }
 }
-.page-home .web-projects .filter h2 {
-  margin-bottom: 1rem;
-  flex-basis: 100%;
-  width: 100%
-}
-@media (max-width:767.98px) {
-  .page-home .web-projects .filter h2 {
-    order: 1
-  }
-}
 .page-home .web-projects .filter p {
   margin-bottom: 0
 }
@@ -6080,7 +6088,8 @@ p a.special {
   }
 }
 .page-home .web-projects .filter .select-wrapper {
-  position: relative
+  position: relative;
+  max-width: 400px
 }
 .page-home .web-projects .filter .select-wrapper::after {
   content: "";
@@ -6107,44 +6116,86 @@ p a.special {
   border-bottom: 2px solid #fff;
   font-weight: 700;
   font-size: 1rem;
-  width: 100%
+  width: 100%;
+  max-width: 400px
 }
 .page-home .web-projects .projects {
   margin-top: 2rem
 }
 .page-home .web-projects .project {
-  display: flex;
-  text-align: left;
-  border: 1px solid rgba(255,255,255,.3);
-  border-radius: 10px;
   margin-bottom: 2rem;
-  padding: .75rem;
   min-height: 150px;
-  background-color: rgba(0,0,0,.2)
+  padding-right: .75rem;
+  transition: all .2s ease-in-out
 }
 @media (max-width:575.98px) {
   .page-home .web-projects .project {
     min-height: 100px
   }
 }
+@media screen and (max-width:400px) {
+  .page-home .web-projects .project {
+    padding-right: 0;
+    padding-left: .75rem
+  }
+}
+.page-home .web-projects .project .inner {
+  position: relative;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 10px;
+  display: flex;
+  text-align: left;
+  background-color: rgba(0,0,0,.2);
+  padding: .75rem
+}
+@media screen and (max-width:400px) {
+  .page-home .web-projects .project .inner {
+    flex-direction: column
+  }
+}
 .page-home .web-projects .project .project-content {
+  padding-right: 1rem;
   flex-grow: 1;
-  padding-right: 1.5rem;
-  flex-basis: calc(100% - 150px)
+  flex-basis: calc(100% - 150px);
+  width: calc(100% - 150px);
+  order: 1;
+  transition: all .2s ease-in-out
 }
 @media (max-width:575.98px) {
   .page-home .web-projects .project .project-content {
-    flex-basis: calc(100% - 100px)
+    padding-right: 1.5rem;
+    flex-basis: calc(100% - 100px);
+    width: calc(100% - 100px)
+  }
+}
+@media screen and (max-width:400px) {
+  .page-home .web-projects .project .project-content {
+    padding-right: 0;
+    flex-basis: 100%;
+    width: 100%;
+    order: 2
   }
 }
 .page-home .web-projects .project .project-image {
   flex-grow: 1;
   flex-basis: 150px;
-  position: relative
+  width: 150px;
+  position: relative;
+  order: 2;
+  transition: all .2s ease-in-out
 }
 @media (max-width:575.98px) {
   .page-home .web-projects .project .project-image {
-    flex-basis: 100px
+    flex-basis: 100px;
+    width: 100px
+  }
+}
+@media screen and (max-width:400px) {
+  .page-home .web-projects .project .project-image {
+    position: unset;
+    order: 1;
+    flex-basis: 150px;
+    width: 100%
   }
 }
 .page-home .web-projects .project .project-image .image {
@@ -6153,14 +6204,16 @@ p a.special {
   height: 150px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -1.5rem;
   box-sizing: content-box;
   border-radius: 5px;
-  overflow: hidden
+  overflow: hidden;
+  transition: all .2s ease-in-out
 }
 .page-home .web-projects .project .project-image .image img {
   width: 150px;
-  height: 150px
+  height: 150px;
+  transition: all .2s ease-in-out
 }
 @media (max-width:575.98px) {
   .page-home .web-projects .project .project-image .image img {
@@ -6168,11 +6221,24 @@ p a.special {
     height: 100px
   }
 }
+@media screen and (max-width:400px) {
+  .page-home .web-projects .project .project-image .image img {
+    width: 125px;
+    height: 125px
+  }
+}
 @media (max-width:575.98px) {
   .page-home .web-projects .project .project-image .image {
-    top: -22px;
     width: 100px;
     height: 100px
+  }
+}
+@media screen and (max-width:400px) {
+  .page-home .web-projects .project .project-image .image {
+    width: 125px;
+    height: 125px;
+    left: -.75rem;
+    top: .75rem
   }
 }
 .page-home .web-projects .project .project-image .image svg {
@@ -6203,6 +6269,12 @@ p a.special {
   .page-home .web-projects .project .project-image .image::after {
     width: 100px;
     height: 100px
+  }
+}
+@media screen and (max-width:400px) {
+  .page-home .web-projects .project .project-image .image::after {
+    width: 125px;
+    height: 125px
   }
 }
 .page-home .web-projects .project .project-image .image:focus::after,
