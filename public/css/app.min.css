@@ -5662,17 +5662,34 @@ body {
   background-color: #000;
   position: relative
 }
-h1 {
+.pre-title {
   color: #fff;
-  line-height: 1.2;
+  line-height: 1.25;
   font-size: 1.25rem;
   font-family: expressway,sans-serif;
   font-weight: 400;
   text-transform: uppercase
 }
 @media (max-width:575.98px) {
-  h1 {
+  .pre-title {
     font-size: 1rem
+  }
+}
+h1 {
+  font-family: gitan-latin,sans-serif;
+  font-size: 3rem;
+  margin-bottom: .75rem;
+  line-height: 1.1
+}
+@media (max-width:575.98px) {
+  h1 {
+    font-size: 2.75rem;
+    line-height: 1
+  }
+}
+@media screen and (max-width:400px) {
+  h1 {
+    font-size: 2.5rem
   }
 }
 h2 {
@@ -5688,24 +5705,7 @@ h3 {
 }
 @media screen and (max-width:400px) {
   h3 {
-    font-size: 1.5rem
-  }
-}
-.title {
-  font-family: gitan-latin,sans-serif;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.1
-}
-@media (max-width:575.98px) {
-  .title {
-    font-size: 2.75rem;
-    line-height: 1
-  }
-}
-@media screen and (max-width:400px) {
-  .title {
-    font-size: 2.5rem
+    font-size: 1.4rem
   }
 }
 .large-text {
@@ -5889,7 +5889,7 @@ p {
   }
 }
 .main-footer {
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   background-color: #000;
   border-top: 1px solid #212529;
   position: relative
@@ -5945,6 +5945,7 @@ p {
   position: relative
 }
 .page-home .intro .name-title {
+  margin-bottom: 1.5rem;
   opacity: 0;
   z-index: 2;
   -webkit-animation-name: fade-in;
@@ -6039,8 +6040,7 @@ p {
 @media screen and (max-width:400px) {
   .page-home .web-projects button.clear {
     display: block;
-    margin-left: 0;
-    margin-top: .25rem
+    margin: .4rem 0 2rem
   }
 }
 .page-home .web-projects ul {

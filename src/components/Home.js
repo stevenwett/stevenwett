@@ -317,8 +317,8 @@ class Home extends React.Component {
 									<div className="row">
 										<div className="col-12 col-md-10 col-lg-10">
 											<div className="name-title">
+												<div className="pre-title">Web Developer</div>
 												<h1>Steven Wett</h1>
-												<div className="title">Web Developer</div>
 											</div>
 											<p className="large-text">Passionate about great design, stellar user experience, and building accessible websites</p>
 											{/*<Link className="btn btn-outline-white" to="/about">About Me</Link>*/}
