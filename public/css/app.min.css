@@ -5639,7 +5639,7 @@ fieldset:disabled .btn {
     opacity: 0
   }
   to {
-    opacity: .5
+    opacity: .6
   }
 }
 @keyframes fade-in-background {
@@ -5647,7 +5647,7 @@ fieldset:disabled .btn {
     opacity: 0
   }
   to {
-    opacity: .5
+    opacity: .6
   }
 }
 html {
@@ -6145,7 +6145,6 @@ p {
   border-radius: 10px;
   display: flex;
   text-align: left;
-  background-color: rgba(0,0,0,.2);
   padding: .75rem
 }
 @media screen and (max-width:400px) {
