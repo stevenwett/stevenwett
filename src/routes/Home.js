@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
@@ -40,7 +40,7 @@ class Home extends React.Component {
 							<Col xs={12} md={10} lg={8} xl={6}>
 								<Link to="/work" className="panel-sites-content">
 									<div>
-										<h2>Websites</h2>
+										<h2>Professional Work</h2>
 										<p>See a list of websites that I have built while working professionally</p>
 									</div>
 									<div className="arrow-wrapper">

@@ -38,30 +38,30 @@ class About extends React.Component {
 									<h2>Work Experience</h2>
 									<section>
 										<h3>Senior Web Developer</h3>
-										<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a> &nbsp;|&nbsp; June 2017 - Present</p>
+										<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a> &nbsp;&middot;&nbsp; June 2017 - Present</p>
 									</section>
 									<section>
 										<h3>Web Specialist</h3>
-										<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a> &nbsp;|&nbsp; July 2015 - June 2017</p>
+										<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a> &nbsp;&middot;&nbsp; July 2015 - June 2017</p>
 									</section>
 									<section>
 										<h3>Technical Assistant</h3>
-										<p><a href="https://www.linkedin.com/company/3m/">3M</a> &nbsp;|&nbsp; August 2014 - May 2015</p>
+										<p><a href="https://www.linkedin.com/company/3m/">3M</a> &nbsp;&middot;&nbsp; August 2014 - May 2015</p>
 									</section>
 									<section>
 										<h3>Animation Intern</h3>
-										<p><a href="https://www.linkedin.com/company/purisfoods/">Puris</a> &nbsp;|&nbsp; January - August 2013</p>
+										<p><a href="https://www.linkedin.com/company/purisfoods/">Puris</a> &nbsp;&middot;&nbsp; January - August 2013</p>
 									</section>
 								</article>
 								<article>
 									<h2>Education</h2>
 									<section>
 										<h3>Maryland Institute College of Art</h3>
-										<p>UX Design (M.P.S.) &nbsp;|&nbsp; May 2022 - Present</p>
+										<p>UX Design (M.P.S.) &nbsp;&middot;&nbsp; May 2022 - Present</p>
 									</section>
 									<section>
 										<h3>St. Olaf College</h3>
-										<p>Chemistry (B.A.) &nbsp;|&nbsp; September 2011 - May 2015</p>
+										<p>Chemistry (B.A.) &nbsp;&middot;&nbsp; September 2011 - May 2015</p>
 									</section>
 								</article>
 								<div className="contacts">
@@ -84,7 +84,7 @@ class About extends React.Component {
 										</svg>
 									</a>
 								</div>
-								<p className="download-resume"><a href="">Download my resume</a></p>
+								<p className="download-resume"><a download href="/files/wett-resume-2020-06-05.pdf">Download my resume</a></p>
 							</Col>
 						</Row>
 					</Container>

@@ -9,7 +9,7 @@ const Header = (props) => {
 		<header className="header">
 			<Container>
 				<Row>
-					<Col lg={4}>
+					<Col md={5} className="order-2 order-sm-2 order-md-1">
 						<Nav
 							activeKey={props.route}
 							onSelect={(selectedKey => history.push(selectedKey))}
@@ -25,7 +25,7 @@ const Header = (props) => {
 							</Nav.Item>
 						</Nav>
 					</Col>
-					<Col lg={4} className="logo-wrapper">
+					<Col md={2} className="logo-wrapper order-1 order-sm-1 order-md-2">
 						<Link to="/">
 							<svg className="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" height="50" width="50">
 								<title>Steven Wett</title>
@@ -33,7 +33,7 @@ const Header = (props) => {
 							</svg>
 						</Link>
 					</Col>
-					<Col lg={4}>
+					<Col md={5} className="order-3 order-sm-3 order-md-3">
 						<nav className="contact-nav" id="contact">
 							<h1 className="visually-hidden" id="contact-nav-heading">Contact Menu</h1>
 							<ul role="menu" aria-labelledby="contact-nav-heading">

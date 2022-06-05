@@ -5797,6 +5797,21 @@ p {
 .header .logo-wrapper {
   text-align: center
 }
+@media (max-width:767.98px) {
+  .header .logo-wrapper {
+    margin: 1rem 0
+  }
+}
+@media (max-width:767.98px) {
+  .header .nav {
+    justify-content: center
+  }
+}
+@media (max-width:575.98px) {
+  .header .nav {
+    font-size: .9rem
+  }
+}
 .header .logo {
   margin-right: .75rem;
   height: 40px;
@@ -5865,6 +5880,11 @@ p {
   color: #fff;
   text-decoration: underline
 }
+@media (max-width:767.98px) {
+  .contact-nav {
+    display: none
+  }
+}
 .main-footer {
   padding: 1.5rem 0;
   background-color: #000;
@@ -5893,12 +5913,13 @@ p {
 }
 .arrow-wrapper {
   position: relative;
-  width: 60px
+  width: 60px;
+  min-width: 60px
 }
 .arrow {
   cursor: pointer;
   height: 60px;
-  right: 0;
+  right: -10px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -5960,6 +5981,20 @@ p {
   -webkit-transform: translateX(-50%) translateY(-50%) scale(.9);
   transform: translateX(-50%) translateY(-50%) scale(.9)
 }
+figure.vimeo-embed {
+  border-bottom: 1px solid #fff
+}
+figure.vimeo-embed figcaption {
+  font-style: italic;
+  font-size: .85rem;
+  margin: 1rem 0;
+  text-align: center
+}
+@media (min-width:992px) {
+  figure.vimeo-embed.gemini-design .ratio::before {
+    padding-top: 525px
+  }
+}
 .page {
   z-index: 1;
   position: relative;
@@ -5979,11 +6014,21 @@ p {
   font-family: expressway,sans-serif;
   margin-bottom: 1rem
 }
+@media (max-width:575.98px) {
+  .page.page-home .panel-intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1.25rem
+  }
+  .page.page-home .panel-intro .subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.25rem
+  }
+}
 .page.page-projects-single .panel-intro {
   text-align: left
 }
 .page.page-projects-single section {
-  margin: 3rem 0
+  margin: 3.5rem 0
 }
 .page.page-projects-single section:first-child {
   margin-top: 2rem
@@ -5994,6 +6039,23 @@ p {
 .page.page-projects-single h2 {
   font-size: 1.5rem;
   text-transform: none
+}
+.panel .vimeo-embed {
+  margin: 1rem 0
+}
+.panel .back {
+  margin-bottom: 3.5rem
+}
+.panel .back a {
+  color: #fff;
+  text-decoration: none
+}
+.panel .back a:focus,
+.panel .back a:hover {
+  text-decoration: underline
+}
+.panel .back.end-back {
+  margin: 3rem 0 0
 }
 .panel.panel-intro {
   text-align: center;
@@ -6030,12 +6092,10 @@ p {
   margin-bottom: 1.5rem;
   line-height: 1.2
 }
-.panel.panel-intro .back {
-  margin-bottom: 3.5rem
-}
-.panel.panel-intro .back a {
-  color: #fff;
-  text-decoration: none
+@media (max-width:767.98px) {
+  .panel.panel-intro .subtitle {
+    font-size: 2.25rem
+  }
 }
 .panel.panel-intro .name-title {
   margin-bottom: 1.5rem;
@@ -6147,11 +6207,12 @@ p {
   background-color: rgba(255,255,255,.1)
 }
 .panel.panel-sites h2 {
-  font-size: 1.5rem;
-  text-transform: uppercase
+  font-size: 1.25rem;
+  text-transform: unset
 }
 .panel.panel-sites p {
-  margin-bottom: .125rem
+  margin-bottom: .125rem;
+  font-size: .85rem
 }
 .panel.panel-contact {
   margin-top: 60px
@@ -6311,6 +6372,11 @@ p {
   right: 1.5rem;
   z-index: -1
 }
+@media (max-width:767.98px) {
+  .page-sites .web-projects .filter .select-wrapper {
+    margin: 0 auto
+  }
+}
 .page-sites .web-projects .filter select {
   border-radius: 10px;
   background: 0 0;
@@ -6345,7 +6411,7 @@ p {
 @media screen and (max-width:400px) {
   .page-sites .web-projects .project {
     padding-right: 0;
-    padding-left: .75rem
+    padding-left: 0
   }
 }
 .page-sites .web-projects .project .inner {
@@ -6447,8 +6513,8 @@ p {
   .page-sites .web-projects .project .project-image .image {
     width: 125px;
     height: 125px;
-    left: -.75rem;
-    top: .75rem
+    left: 1.5rem;
+    top: 1.5rem
   }
 }
 .page-sites .web-projects .project .project-image .image svg {
