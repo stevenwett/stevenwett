@@ -292,15 +292,22 @@
 	&.panel-sites {
 		margin-top: 100px;
 
+		a {
+			margin-bottom: $grid-gutter-width / 2;
+		}
+
 		.panel-sites-content {
+			position: relative;
 			border-radius: $border-radius-sm;
 			border: 1px solid $white;
 			padding: $grid-gutter-width;
+			padding-right: 45px;
 			text-decoration: none;
 			color: $white;
 			transition: $transition-base;
-			display: flex;
-			justify-content: space-between;
+			display: block;
+			// display: flex;
+			// justify-content: space-between;
 
 			&:hover,
 			&:focus {

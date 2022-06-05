@@ -42,7 +42,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 										<li>Two Gemini employees who are stakeholders</li>
 										<li>Four monument builders who will be using the product</li>
 									</ul>
-									<p>I then analyzed the information that we gained from all of the interviews and used those data to help inform the wireframes.</p>
+									<p>I then analyzed the information that we gained from the interviews and used those data to help inform the wireframes.</p>
 								</Col>
 							</Row>
 						</Container>
@@ -52,7 +52,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<h2>Interactive Wireframes</h2>
-									<p>I developed a series of interactive wireframes to step through the process before starting with code. High-fidelity wireframes such as these using Sketch helped me and the clients talk about high-level ideas and work on strategy early on in the process.</p>
+									<p>I developed a series of interactive wireframes to step through the process before getting into code. High-fidelity wireframes using Sketch helped me and the clients talk about high-level ideas and work on strategy early on in the process.</p>
 								</Col>
 							</Row>
 							<Row>
@@ -72,7 +72,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<h2>Interactive Designs</h2>
-									<p>Still using Sketch, I developed designs for each of the views. The designs added color and detail to the previous wireframes and let me make quick changes before I start coding.</p>
+									<p>I then developed designs for each of the views. The designs added color and detail to the previous wireframes and let me make quick changes before I start coding.</p>
 								</Col>
 							</Row>
 							<Row>
@@ -92,7 +92,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<h2>React/Redux Implementation and Accessibility</h2>
-									<p>Along with another developer, I built this app using a React/Redux architecture. We saved projects to a MySQL database using custom endpoints via the WordPress REST API. The options of this app are updatable in WordPress.</p>
+									<p>Along with another developer, I built this app using a React/Redux architecture. Projects were saved to a MySQL database using custom endpoints via the WordPress REST API. The options of this app are updatable in WordPress.</p>
 									<p>Web accessibility is very important to me and throughout this project I adhered to WCAG 2.0 AA standards. This means that I wrote HTML semantically, added ARIA labels when needed, made sure colors were properly contrasty and more.</p>
 								</Col>
 							</Row>
@@ -104,7 +104,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<h2>User Authentication and Foundation for the Future</h2>
 									<p>I developed a Firebase Auth integration that allowed for users to authenticate using an email and password, which gave them access to create projects and save them to their account. I built this integration using PHP and saved their logged in status using PHP Sessions.</p>
-									<p>This authentication system served another purpose. The client had an upcoming project that also required an authenticated session, so I developed it with the future project in mind. This auth system as of June 2022 is the backbone of their Partner Portal that has over 2,000 active users.</p>
+									<p>This authentication system served another purpose. The client had an upcoming project that also required users to have accounts, so I developed it with the future project in mind. This auth system as of June 2022 is the backbone of their Partner Portal that has over 2,000 active users.</p>
 									<p className="back end-back"><Link to="/projects">&lsaquo; Back to Projects</Link></p>
 								</Col>
 							</Row>

@@ -38,10 +38,34 @@ class Home extends React.Component {
 					<Container>
 						<Row className="justify-content-center">
 							<Col xs={12} md={10} lg={8} xl={6}>
+								<Link to="/projects" className="panel-sites-content">
+									<div>
+										<h2>Projects</h2>
+										<p>See a list of featured projects</p>
+									</div>
+									<div className="arrow-wrapper">
+										<div className="arrow">
+											<div className="arrow-top"></div>
+											<div className="arrow-bottom"></div>
+										</div>
+									</div>
+								</Link>
 								<Link to="/work" className="panel-sites-content">
 									<div>
 										<h2>Professional Work</h2>
-										<p>See a list of websites that I have built while working professionally</p>
+										<p>See a list of websites that I have built at an agency</p>
+									</div>
+									<div className="arrow-wrapper">
+										<div className="arrow">
+											<div className="arrow-top"></div>
+											<div className="arrow-bottom"></div>
+										</div>
+									</div>
+								</Link>
+								<Link to="/about" className="panel-sites-content">
+									<div>
+										<h2>About Steven</h2>
+										<p>See Steven's work experience and education</p>
 									</div>
 									<div className="arrow-wrapper">
 										<div className="arrow">

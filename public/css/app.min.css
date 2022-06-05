@@ -5821,8 +5821,9 @@ p {
 .header .nav-item a {
   color: #fff;
   font-family: expressway,sans-serif;
-  font-weight: 400;
-  text-transform: uppercase
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .9rem
 }
 .header .nav-item a.active {
   text-decoration: underline
@@ -5911,15 +5912,10 @@ p {
   font-size: .6rem;
   text-transform: uppercase
 }
-.arrow-wrapper {
-  position: relative;
-  width: 60px;
-  min-width: 60px
-}
 .arrow {
   cursor: pointer;
-  height: 60px;
-  right: -10px;
+  height: 50px;
+  right: 10px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -5927,7 +5923,14 @@ p {
   transition: -webkit-transform .1s;
   transition: transform .1s;
   transition: transform .1s,-webkit-transform .1s;
-  width: 30px
+  width: 25px
+}
+@media (max-width:575.98px) {
+  .arrow {
+    height: 40px;
+    width: 20px;
+    right: 8px
+  }
 }
 .arrow-bottom,
 .arrow-top {
@@ -6192,15 +6195,19 @@ figure.vimeo-embed figcaption {
 .panel.panel-sites {
   margin-top: 100px
 }
+.panel.panel-sites a {
+  margin-bottom: .75rem
+}
 .panel.panel-sites .panel-sites-content {
+  position: relative;
   border-radius: 10px;
   border: 1px solid #fff;
   padding: 1.5rem;
+  padding-right: 45px;
   text-decoration: none;
   color: #fff;
   transition: all .2s ease-in-out;
-  display: flex;
-  justify-content: space-between
+  display: block
 }
 .panel.panel-sites .panel-sites-content:focus,
 .panel.panel-sites .panel-sites-content:hover {
@@ -6312,7 +6319,8 @@ figure.vimeo-embed figcaption {
 @media screen and (max-width:400px) {
   .page-sites .web-projects button.clear {
     display: block;
-    margin: .4rem 0 2rem
+    width: 100%;
+    margin-top: .5rem
   }
 }
 .page-sites .web-projects ul {
