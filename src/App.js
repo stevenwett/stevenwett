@@ -2,26 +2,34 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import moment from 'moment';
 
-import Home from './components/Home';
-import NoMatch from './components/NoMatch';
+import Home from './routes/Home';
+import Projects from './routes/Projects';
+import ProjectGeminiMemorialDesigner from './routes/projects/ProjectGeminiMemorialDesigner';
+import Work from './routes/Work';
+import About from './routes/About';
+import NoMatch from './routes/NoMatch';
 
 const App = () => {
   const year = moment().year();
 
   return (
-    <>
+    <div className="app">
       <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/projects' component={Projects} />
+          <Route exact path='/projects/gemini-memorial-designer' component={ProjectGeminiMemorialDesigner} />
+          <Route exact path='/work' component={Work} />
+          <Route exact path='/about' component={About} />
           <Route component={NoMatch}/>
         </Switch>
       </BrowserRouter>
-      <div className="background-image">
+      {/*<div className="background-image">
         <picture>
           <source srcSet="/images/wett-colorado-stars.webp" type="image/webp" />
           <img src="/images/wett-colorado-stars.jpg" alt="Colorado at night" />
         </picture>
-      </div>
+      </div>*/}
       <footer className="main-footer">
         <div className="container">
           <div className="row">
@@ -32,7 +40,7 @@ const App = () => {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
 

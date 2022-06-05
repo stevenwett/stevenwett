@@ -1,8 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import Header from './Header';
+import Header from '../components/Header';
+import { Container, Row, Col } from 'react-bootstrap';
+// import { useHistory } from 'react-router-dom';
 
-class Home extends React.Component {
+class Work extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -230,6 +231,10 @@ class Home extends React.Component {
 		};
 	}
 
+	componentDidMount() {
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	}
+
 	handleIndustryChange(value) {
 		this.setState({
 			industryOptionSelected: value,
@@ -308,87 +313,80 @@ class Home extends React.Component {
 		}
 
 		return (
-			<>
-				<div className="page-home">
-					<div className="container">
-						<div className="row">
-							<div className="col-12 col-md-10 col-lg-8 col-xl-6">
-								<div className="intro">
-									<div className="row">
-										<div className="col-12 col-md-10 col-lg-10">
-											<div className="name-title">
-												<div className="pre-title">Web Developer</div>
-												<h1>Steven Wett</h1>
-											</div>
-											<p className="large-text">Passionate about great design, stellar user experience, and building accessible websites</p>
-											{/*<Link className="btn btn-outline-white" to="/about">About Me</Link>*/}
+			<div className="page page-sites">
+				<Header route="/work" />
+				<div className="panel panel-intro">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8} xl={6}>
+								<h1>Professional Work</h1>
+								<div className="subtitle">Websites</div>
+								<p>Below are some custom web projects that my team and I have developed during my time at Neuger. Use the dropdown to see the industry variety of my web projects.</p>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<Container>
+					<Row className="justify-content-center">
+						<Col xs={12} md={10} lg={8} xl={6}>
+							<div className="web-projects">
+								<div className="filter">
+									<div className="dropdown">
+										<label htmlFor="web-projects-filter" className="visually-hidden">Filter</label>
+										<div className="select-wrapper">
+											<select
+												value={industryOptionSelected}
+												id="web-projects-filter"
+												onChange={(e) => this.handleIndustryChange(e.target.value)}>
+													<option
+														key="all"
+														value=""
+													>
+														All Industries
+													</option>
+												{industryOptions.length > 0
+													? industryOptions.map((option, index) => {
+														return (
+															<option
+																key={index}
+																value={option.key}
+															>
+																{option.name}
+															</option>
+														)
+													}) : null
+												}
+											</select>
 										</div>
 									</div>
 								</div>
-								{/*<div className="circle"></div>*/}
-								<div className="web-projects">
-									<div className="filter">
-										<h2>Web Projects</h2>
-										<div className="dropdown">
-											<label htmlFor="web-projects-filter" className="visually-hidden">Filter</label>
-											<div className="select-wrapper">
-												<select
-													value={industryOptionSelected}
-													id="web-projects-filter"
-													onChange={(e) => this.handleIndustryChange(e.target.value)}>
-														<option
-															key="all"
-															value=""
-														>
-															All Industries
-														</option>
-													{industryOptions.length > 0
-														? industryOptions.map((option, index) => {
-															return (
-																<option
-																	key={index}
-																	value={option.key}
-																>
-																	{option.name}
-																</option>
-															)
-														}) : null
+								<div className="projects">
+									{null !== industryOptionSelected
+										? (getIndustryName(industryOptionSelected)
+											? <p className="results">
+												Showing {projects.length} {resultText} categorized as &ldquo;{getIndustryName(industryOptionSelected)}&rdquo;
+												<button
+													className="clear"
+													onClick={
+														() => this.handleIndustryChange('')
 													}
-												</select>
-											</div>
-										</div>
-										<div className="text">
-											<p>As the lead developer, below are some custom web projects that my team and I have developed during my time at Neuger.</p>
-										</div>
-									</div>
-									<div className="projects">
-										{null !== industryOptionSelected
-											? (getIndustryName(industryOptionSelected)
-												? <p className="results">
-													Showing {projects.length} {resultText} categorized as &ldquo;{getIndustryName(industryOptionSelected)}&rdquo;
-													<button
-														className="clear"
-														onClick={
-															() => this.handleIndustryChange('')
-														}
-													>
-														Show All
-													</button>
-												  </p>
-												: null
-											) : null
-										}
-										{projects}
+												>
+													Show All
+												</button>
+												</p>
+											: null
+										) : null
+									}
+									{projects}
 
-									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-			</>
+						</Col>
+					</Row>
+				</Container>
+			</div>
 		);
 	}
 }
 
-export default Home;
+export default Work;

@@ -1,20 +1,12 @@
-.page-home {
-	position: relative;
-	min-height: 100vh;
-	background-repeat: no-repeat;
-	background-position: 0 100%;
-	color: $white;
-	overflow: hidden;
-	z-index: 1;
+.page-sites {
+	.panel-intro {
+		// margin-bottom: 0;
 
-	.container {
-		position: relative;
-		height: 100%;
-		padding-top: 130px;
-	}
-
-	h1 {
-		margin-bottom: 0.25rem;
+		// .row {
+		// 	&::after {
+		// 		content: none;
+		// 	}
+		// }
 	}
 
 	h2 {
@@ -27,59 +19,12 @@
 		}
 	}
 
-	.intro {
-		position: relative;
-
-		.name-title {
-			margin-bottom: 1.5rem;
-			opacity: 0;
-			z-index: 2;
-			animation-name: fade-in;
-			animation-duration: 3s;
-			animation-delay: 0.25s;
-			animation-fill-mode: forwards;
-			transition: $transition-base;
-
-			@media screen and (min-width: 1100px) {
-				transform: translateX(-3rem);
-			}
-
-			@media screen and (min-width: 1200px) {
-				transform: translateX(0);
-			}
-
-			@media screen and (min-width: 1250px) {
-				transform: translateX(-3rem);
-			}
-
-			@media screen and (min-width: 1400px) {
-				transform: translateX(0);
-			}
-
-			@media screen and (min-width: 1450px) {
-				transform: translateX(-3rem);
-			}
-		}
-
-		p {
-			opacity: 0;
-			animation-name: fade-in;
-			animation-duration: 3s;
-			animation-delay: 0.75s;
-			animation-fill-mode: forwards;
-			transition: $transition-base;
-		}
-	}
-
 	.web-projects {
-		margin-bottom: 6rem;
-		padding-top: 2rem;
-		border-top: 1px solid $transparent-white;
-		opacity: 0;
-		animation-name: fade-in;
-		animation-duration: 3s;
-		animation-delay: 1s;
-		animation-fill-mode: forwards;
+		// opacity: 0;
+		// animation-name: fade-in;
+		// animation-duration: 3s;
+		// animation-delay: 1s;
+		// animation-fill-mode: forwards;
 		transition: $transition-base;
 
 		p,
@@ -96,6 +41,7 @@
 
 			&.results {
 				margin-bottom: 1rem;
+				text-align: center;
 			}
 		}
 
@@ -121,7 +67,7 @@
 
 		.filter {
 			display: flex;
-			justify-content: flex-start;
+			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
 
@@ -169,27 +115,26 @@
 					border: 8px solid transparent;
 					border-top-color: $white;
 					position: absolute;
-					top: 1rem;
-					right: 0.75rem;
+					top: 22px;
+					right: 1.5rem;
 					z-index: -1;
 				}
 			}
 
 			select {
-				border-top-right-radius: 5px;
-				border-top-left-radius: 5px;
+				border-radius: $border-radius-sm;
 				background: none;
 				background-color: rgba(255, 255, 255, 0.1);
 				color: $white;
 				outline: 0;
-				padding: 0.5rem $grid-gutter-width / 2;
+				padding: 0.75rem $grid-gutter-width;
 				padding-right: 35px;
 				font-family: $font-family-base;
 				appearance: unset;
 				border: 0;
-				border-bottom: 2px solid $white;
+				// border-bottom: 2px solid $white;
 				font-weight: $font-weight-bold;
-				font-size: 1rem;
+				font-size: 1.1rem;
 				width: 100%;
 				max-width: 400px;
 			}
@@ -216,11 +161,11 @@
 
 			.inner {
 				position: relative;
-				border: 1px solid $transparent-white;
+				border: 1px solid $white;
 				border-radius: $border-radius-sm;
 				display: flex;
 				text-align: left;
-				padding: $grid-gutter-width / 2;
+				padding: $grid-gutter-width;
 
 				@media screen and (max-width: 400px) {
 					flex-direction: column;
@@ -234,6 +179,10 @@
 				width: calc(100% - 150px);
 				order: 1;
 				transition: $transition-base;
+
+				h3 {
+					font-size: 1.25rem;
+				}
 
 				@include media-breakpoint-down(sm) {
 					padding-right: $grid-gutter-width;
@@ -275,9 +224,9 @@
 					height: 150px;
 					position: absolute;
 					top: 0;
-					right: -1.5rem;
+					right: -44px;
 					box-sizing: content-box;
-					border-radius: 5px;
+					// border-radius: 5px;
 					overflow: hidden;
 					transition: $transition-base;
 
