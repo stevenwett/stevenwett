@@ -65,7 +65,7 @@ class Home extends React.Component {
 								<Link to="/about" className="panel-sites-content">
 									<div>
 										<h2>About Steven</h2>
-										<p>See Steven's work experience and education</p>
+										<p>See my work experience and education</p>
 									</div>
 									<div className="arrow-wrapper">
 										<div className="arrow">
