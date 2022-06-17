@@ -41,7 +41,7 @@ class Home extends React.Component {
 								<Link to="/projects" className="panel-sites-content">
 									<div>
 										<h2>Projects</h2>
-										<p>See a list of featured UX projects</p>
+										<p>See a list of my featured UX projects</p>
 									</div>
 									<div className="arrow-wrapper">
 										<div className="arrow">
