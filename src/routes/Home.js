@@ -41,7 +41,7 @@ class Home extends React.Component {
 								<Link to="/projects" className="panel-sites-content">
 									<div>
 										<h2>Projects</h2>
-										<p>See a list of featured projects</p>
+										<p>See a list of featured UX projects</p>
 									</div>
 									<div className="arrow-wrapper">
 										<div className="arrow">
@@ -53,7 +53,7 @@ class Home extends React.Component {
 								<Link to="/work" className="panel-sites-content">
 									<div>
 										<h2>Professional Work</h2>
-										<p>See a list of websites that I have built at an agency</p>
+										<p>See a list of my development work</p>
 									</div>
 									<div className="arrow-wrapper">
 										<div className="arrow">
