@@ -15,7 +15,7 @@ const Header = (props) => {
 							onSelect={(selectedKey => history.push(selectedKey))}
 						>
 							<Nav.Item>
-								<Nav.Link eventKey="/projects">Projects</Nav.Link>
+								<Nav.Link eventKey="/ux-projects">UX Projects</Nav.Link>
 							</Nav.Item>
 							<Nav.Item>
 								<Nav.Link eventKey="/work">Work</Nav.Link>

@@ -6438,9 +6438,9 @@ figure.vimeo-embed figcaption {
 .page-sites .web-projects .project .project-content {
   padding-right: 1rem;
   flex-grow: 1;
-  flex-basis: calc(100% - 150px);
-  width: calc(100% - 150px);
-  order: 1;
+  flex-basis: calc(100% - 125px);
+  width: calc(100% - 125px);
+  order: 2;
   transition: all .2s ease-in-out
 }
 .page-sites .web-projects .project .project-content h3 {
@@ -6449,24 +6449,23 @@ figure.vimeo-embed figcaption {
 @media (max-width:575.98px) {
   .page-sites .web-projects .project .project-content {
     padding-right: 1.5rem;
-    flex-basis: calc(100% - 100px);
-    width: calc(100% - 100px)
+    flex-basis: calc(100% - 140px);
+    width: calc(100% - 140px)
   }
 }
 @media screen and (max-width:400px) {
   .page-sites .web-projects .project .project-content {
     padding-right: 0;
     flex-basis: 100%;
-    width: 100%;
-    order: 2
+    width: 100%
   }
 }
 .page-sites .web-projects .project .project-image {
   flex-grow: 1;
-  flex-basis: 150px;
-  width: 150px;
+  flex-basis: 125px;
+  width: 125px;
   position: relative;
-  order: 2;
+  order: 1;
   transition: all .2s ease-in-out
 }
 @media (max-width:575.98px) {
@@ -6478,8 +6477,7 @@ figure.vimeo-embed figcaption {
 @media screen and (max-width:400px) {
   .page-sites .web-projects .project .project-image {
     position: unset;
-    order: 1;
-    flex-basis: 150px;
+    flex-basis: 110px;
     width: 100%
   }
 }
@@ -6489,7 +6487,7 @@ figure.vimeo-embed figcaption {
   height: 150px;
   position: absolute;
   top: 0;
-  right: -44px;
+  right: 25px;
   box-sizing: content-box;
   overflow: hidden;
   transition: all .2s ease-in-out
@@ -6514,7 +6512,9 @@ figure.vimeo-embed figcaption {
 @media (max-width:575.98px) {
   .page-sites .web-projects .project .project-image .image {
     width: 100px;
-    height: 100px
+    height: 100px;
+    right: 20px;
+    top: -35px
   }
 }
 @media screen and (max-width:400px) {
@@ -6522,7 +6522,7 @@ figure.vimeo-embed figcaption {
     width: 125px;
     height: 125px;
     left: 1.5rem;
-    top: 1.5rem
+    top: -10px
   }
 }
 .page-sites .web-projects .project .project-image .image svg {

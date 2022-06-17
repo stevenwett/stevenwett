@@ -25,8 +25,9 @@ class Projects extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8} xl={6}>
-								<h1>Projects</h1>
+								<h1>UX Projects</h1>
 								<div className="subtitle">Case Studies</div>
+								<p>More to come ...</p>
 							</Col>
 						</Row>
 					</Container>

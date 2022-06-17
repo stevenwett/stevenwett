@@ -180,9 +180,9 @@
 			.project-content {
 				padding-right: 1rem;
 				flex-grow: 1;
-				flex-basis: calc(100% - 150px);
-				width: calc(100% - 150px);
-				order: 1;
+				flex-basis: calc(100% - 125px);
+				width: calc(100% - 125px);
+				order: 2;
 				transition: $transition-base;
 
 				h3 {
@@ -191,24 +191,23 @@
 
 				@include media-breakpoint-down(sm) {
 					padding-right: $grid-gutter-width;
-					flex-basis: calc(100% - 100px);
-					width: calc(100% - 100px);
+					flex-basis: calc(100% - 140px);
+					width: calc(100% - 140px);
 				}
 
 				@media screen and (max-width: 400px) {
 					padding-right: 0;
 					flex-basis: 100%;
 					width: 100%;
-					order: 2;
 				}
 			}
 
 			.project-image {
 				flex-grow: 1;
-				flex-basis: 150px;
-				width: 150px;
+				flex-basis: 125px;
+				width: 125px;
 				position: relative;
-				order: 2;
+				order: 1;
 				transition: $transition-base;
 
 				@include media-breakpoint-down(sm) {
@@ -218,8 +217,7 @@
 
 				@media screen and (max-width: 400px) {
 					position: unset;
-					order: 1;
-					flex-basis: 150px;
+					flex-basis: 110px;
 					width: 100%;
 				}
 
@@ -229,7 +227,7 @@
 					height: 150px;
 					position: absolute;
 					top: 0;
-					right: -44px;
+					right: 25px;
 					box-sizing: content-box;
 					// border-radius: 5px;
 					overflow: hidden;
@@ -254,13 +252,15 @@
 					@include media-breakpoint-down(sm) {
 						width: 100px;
 						height: 100px;
+						right: 20px;
+						top: -35px;
 					}
 
 					@media screen and (max-width: 400px) {
 						width: 125px;
 						height: 125px;
 						left: $grid-gutter-width;
-						top: $grid-gutter-width;
+						top: -10px;
 					}
 
 					svg {

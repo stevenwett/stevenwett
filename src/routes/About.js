@@ -24,8 +24,9 @@ class About extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8} xl={6}>
-								<h1>About</h1>
+								<h1>About Me</h1>
 								<div className="subtitle">Steven Wett</div>
+								<p>I'm a designer/developer who lives in Atlanta with over 7 years of UX/UI design and web development experience. I am currently enrolled in a UX Design Master's program with MICA while remotely working full-time at Neuger, an agency in Minnesota.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -84,7 +85,7 @@ class About extends React.Component {
 										</svg>
 									</a>
 								</div>
-								<p className="download-resume"><a download href="/files/wett-resume-2020-06-05.pdf">Download my resume</a></p>
+								{/*<p className="download-resume"><a download href="/files/wett-resume-2020-06-05.pdf">Download my resume</a></p>*/}
 							</Col>
 						</Row>
 					</Container>

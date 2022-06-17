@@ -12,7 +12,7 @@ class Work extends React.Component {
 			projectsList: [
 				{
 					name: 'Duets By Gemini',
-					description: 'A custom WordPress site for a brand of Gemini, a manufacturing company headquartered in Minnesota with locations throughout North America.',
+					description: 'A brand of Gemini, a signage manufacturing company headquartered in Minnesota with locations across North America',
 					industries: [
 						'industrial',
 						'business-to-business',
@@ -27,7 +27,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Engage Print',
-					description: 'A custom WordPress site for Engage Print, a commercial printing company in Minnesota.',
+					description: 'A commercial printing company in Minnesota',
 					industries: [
 						'industrial',
 						'professional-services',
@@ -44,7 +44,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Gemini',
-					description: 'A custom WordPress site for Gemini, a manufacturing company headquartered in Minnesota with locations throughout North America.',
+					description: 'A signage manufacturing company headquartered in Minnesota with locations across North America',
 					industries: [
 						'industrial',
 						'business-to-business',
@@ -65,7 +65,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'InMotion Realty',
-					description: 'A custom WordPress site for InMotion Realty, a Realtor in Minnesota.',
+					description: 'A Realtor in Minnesota',
 					industries: [
 						'realty',
 					],
@@ -79,7 +79,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Neuger',
-					description: 'A custom WordPress site for Neuger, an agency in Minnesota.',
+					description: 'A full-service communication agency in Minnesota',
 					industries: [
 						'professional-services',
 						'business-to-business',
@@ -95,7 +95,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'NorthfieldWiFi',
-					description: 'A custom WordPress site for NorthfieldWiFi, an internet service provider in Minnesota and Wisconsin.',
+					description: 'An internet service provider (ISP) in Minnesota and Wisconsin',
 					industries: [
 						'consumer-services',
 						'business-to-business',
@@ -112,7 +112,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Plainview Milk Products Cooperative',
-					description: 'A custom WordPress site for Plainview Milk, a agriculture cooperative in Minnesota and Wisconsin.',
+					description: 'An agriculture cooperative in Minnesota and Wisconsin',
 					industries: [
 						'agriculture',
 						'business-to-business',
@@ -128,7 +128,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Portico Healthnet',
-					description: 'A custom WordPress site for Portico Healthnet, a healthcare advocacy nonprofit in Minnesota.',
+					description: 'A healthcare advocacy nonprofit in Minnesota',
 					industries: [
 						'healthcare',
 						'consumer-services',
@@ -145,7 +145,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Riggs Cat',
-					description: 'A custom WordPress site for Riggs Cat, a Caterpillar dealership in Arkansas.',
+					description: 'A caterpillar dealership in Arkansas',
 					industries: [
 						'industrial',
 						'agriculture',
@@ -162,7 +162,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Valley View Farms',
-					description: 'A custom WordPress site for Valley View Farms, a dairy producer in Minnesota.',
+					description: 'A dairy producer in Minnesota',
 					industries: [
 						'agriculture',
 						'business-to-business',
@@ -178,7 +178,7 @@ class Work extends React.Component {
 				},
 				{
 					name: 'Ziegler CAT',
-					description: 'A custom WordPress site for Ziegler CAT, a Caterpillar dealership in Minnesota and Iowa.',
+					description: 'A Caterpillar dealership in Minnesota and Iowa',
 					industries: [
 						'industrial',
 						'agriculture',
@@ -319,9 +319,9 @@ class Work extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8} xl={6}>
-								<h1>Professional Work</h1>
+								<h1>Development Work</h1>
 								<div className="subtitle">Websites</div>
-								<p>Below are some custom web projects that my team and I have developed during my time at Neuger. Use the dropdown to see the industry variety of my web projects.</p>
+								<p>Below is a list of notable projects that I have developed during my time at Neuger. For each of these projects, I played a major role in creating the website in collaboration with my coworkers and clients.</p>
 							</Col>
 						</Row>
 					</Container>
