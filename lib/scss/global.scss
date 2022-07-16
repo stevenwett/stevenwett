@@ -80,9 +80,11 @@ li {
 
 	.logo-wrapper {
 		text-align: center;
+		margin-right: 0.5rem;
 
 		@include media-breakpoint-down(md) {
 			margin: 1rem 0;
+			width: 100%;
 		}
 
 		a {
@@ -94,9 +96,14 @@ li {
 			display: inline-block;
 			transition: $transition-base;
 
+			&.active,
 			&:hover,
 			&:focus {
-				border: 2px solid $white;
+				border: 2px solid $transparent-white;
+			}
+
+			&:hover {
+				border-color: $white;
 			}
 
 			&:active {
@@ -106,9 +113,7 @@ li {
 	}
 
 	.nav {
-		@include media-breakpoint-down(md) {
-			justify-content: center;
-		}
+		justify-content: center;
 
 		@include media-breakpoint-down(sm) {
 			font-size: 0.9rem;
@@ -116,7 +121,6 @@ li {
 	}
 
 	.logo {
-		margin-right: 0.75rem;
 		height: 40px;
 		width: 40px;
 		// opacity: 0;
@@ -124,6 +128,10 @@ li {
 		// animation-duration: 3s;
 		// animation-fill-mode: forwards;
 		transition: $transition-base;
+	}
+
+	.nav-item {
+		align-self: center;
 	}
 
 	.nav-item a {

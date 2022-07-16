@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import { Container, Row, Col } from 'react-bootstrap';
-// import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Work extends React.Component {
 	constructor(props) {
@@ -11,8 +11,9 @@ class Work extends React.Component {
 			industryOptionSelected: '',
 			projectsList: [
 				{
+					slug: 'duetsbygemini',
 					name: 'Duets By Gemini',
-					description: 'A brand of Gemini, a signage manufacturing company headquartered in Minnesota with locations across North America',
+					description: 'A website for a brand of Gemini, a signage manufacturing company headquartered in Minnesota with locations across North America',
 					industries: [
 						'industrial',
 						'business-to-business',
@@ -26,8 +27,9 @@ class Work extends React.Component {
 					link: 'https://duetsbygemini.com/',
 				},
 				{
+					slug: 'engageprint',
 					name: 'Engage Print',
-					description: 'A commercial printing company in Minnesota',
+					description: 'A website for a commercial printing company in Minnesota',
 					industries: [
 						'industrial',
 						'professional-services',
@@ -43,20 +45,17 @@ class Work extends React.Component {
 					link: 'https://engageprint.com/',
 				},
 				{
-					name: 'Gemini',
-					description: 'A signage manufacturing company headquartered in Minnesota with locations across North America',
+					slug: 'gemini',
+					name: 'Gemini Signage',
+					description: 'A website for a signage manufacturing company headquartered in Minnesota with locations across North America',
 					industries: [
 						'industrial',
 						'business-to-business',
 					],
 					features: [
-						'Firebase Auth server integration',
-						'Custom OAuth server-to-server communication',
-						'Integrations to ERP for quotes and orders',
-						'Custom Canvas-based project designer',
-						'Custom quoting app with realtime price calculations',
-						'Tracking integration with UPS API',
 						'Reseller lookup using Google Maps API',
+						'Customer portal',
+						'Custom React components'
 					],
 					imageSrc: 'gemini.jpg',
 					imageWebpSrc: 'gemini.webp',
@@ -64,8 +63,9 @@ class Work extends React.Component {
 					link: 'https://geminimade.com/',
 				},
 				{
+					slug: 'inmotionrealty',
 					name: 'InMotion Realty',
-					description: 'A Realtor in Minnesota',
+					description: 'A website for a Realtor in Minnesota',
 					industries: [
 						'realty',
 					],
@@ -78,8 +78,9 @@ class Work extends React.Component {
 					link: 'https://inmotionrealty.com/',
 				},
 				{
+					slug: 'neuger',
 					name: 'Neuger',
-					description: 'A full-service communication agency in Minnesota',
+					description: 'A website for a full-service communication agency in Minnesota',
 					industries: [
 						'professional-services',
 						'business-to-business',
@@ -94,8 +95,24 @@ class Work extends React.Component {
 					link: 'https://neuger.com/',
 				},
 				{
+					slug: 'morningside',
+					name: 'Morningside University',
+					description: 'A website for a private college in Iowa',
+					industries: [
+						'education',
+					],
+					features: [
+						'Custom Joomla! modules',
+					],
+					imageSrc: '',
+					imageWebpSrc: '',
+					linkPretty: 'morningside.edu',
+					link: 'https://www.morningside.edu/',
+				},
+				{
+					slug: 'northfieldwifi',
 					name: 'NorthfieldWiFi',
-					description: 'An internet service provider (ISP) in Minnesota and Wisconsin',
+					description: 'A website for an internet service provider (ISP) in Minnesota and Wisconsin',
 					industries: [
 						'consumer-services',
 						'business-to-business',
@@ -111,8 +128,68 @@ class Work extends React.Component {
 					link: 'https://northfieldwifi.com/',
 				},
 				{
+					slug: 'northfieldschools',
+					name: 'Northfield Public Schools',
+					description: 'A website for a public school district in Minnesota',
+					industries: [
+						'education',
+					],
+					features: [
+						'Custom calendar',
+						'Staff sync and lookup',
+					],
+					imageSrc: '',
+					imageWebpSrc: '',
+					linkPretty: 'northfieldschools.org',
+					link: 'https://nortfieldschools.org/',
+				},
+				{
+					slug: 'northfieldwifi',
+					name: 'NorthfieldWiFi',
+					description: 'A website for an internet service provider (ISP) in Minnesota and Wisconsin',
+					industries: [
+						'consumer-services',
+						'business-to-business',
+					],
+					features: [
+						'Animated SVGs',
+						'Internet coverage map using Google Maps API',
+						'Job listings',
+					],
+					imageSrc: 'northfieldwifi.jpg',
+					imageWebpSrc: 'northfieldwifi.webp',
+					linkPretty: 'northfieldwifi.com',
+					link: 'https://northfieldwifi.com/',
+				},
+				{
+					slug: 'gemini-partner-portal',
+					name: 'Partner Portal',
+					description: 'A customer portal for Gemini with resources and the ability view past quotes and orders',
+					industries: [
+						'industrial',
+						'business-to-business',
+					],
+					features: [
+						'Firebase Auth server integration',
+						'Custom OAuth integration',
+						'Integrations to ERP for quotes and orders',
+						'Custom Canvas-based project designer',
+						'Custom quoting app with realtime price calculations',
+						'Tracking integration with UPS API',
+						'Reseller lookup using Google Maps API',
+						'Transactional emails with SendGrid',
+					],
+					imageSrc: 'gemini.jpg',
+					imageWebpSrc: 'gemini.webp',
+					linkPretty: 'geminimade.com/partner',
+					link: 'https://geminimade.com/partner/',
+					caseStudy: true,
+					caseStudyLink: '/projects/gemini-partner-portal',
+				},
+				{
+					slug: 'plainviewmilk',
 					name: 'Plainview Milk Products Cooperative',
-					description: 'An agriculture cooperative in Minnesota and Wisconsin',
+					description: 'A website for an agriculture cooperative in Minnesota and Wisconsin',
 					industries: [
 						'agriculture',
 						'business-to-business',
@@ -127,8 +204,9 @@ class Work extends React.Component {
 					link: 'https://plainviewmilk.com/',
 				},
 				{
+					slug: 'porticohealthnet',
 					name: 'Portico Healthnet',
-					description: 'A healthcare advocacy nonprofit in Minnesota',
+					description: 'A website for a healthcare advocacy nonprofit in Minnesota',
 					industries: [
 						'healthcare',
 						'consumer-services',
@@ -144,8 +222,9 @@ class Work extends React.Component {
 					link: 'https://porticohealthnet.org/',
 				},
 				{
+					slug: 'riggscat',
 					name: 'Riggs Cat',
-					description: 'A caterpillar dealership in Arkansas',
+					description: 'A website for a Caterpillar dealership in Arkansas',
 					industries: [
 						'industrial',
 						'agriculture',
@@ -161,8 +240,29 @@ class Work extends React.Component {
 					link: 'https://riggscat.com/',
 				},
 				{
+					slug: 'gemini-truequote',
+					name: 'TrueQuote',
+					description: 'A web app for sign shops to quote and purchase from the Gemini, the manufacturer',
+					industries: [
+						'industrial',
+						'business-to-business',
+					],
+					features: [
+						'Backbone web app',
+						'Realtime price calculations',
+						'Custom functionality for sales users',
+						'PDF downloads',
+						'Transactional emails with SendGrid',
+					],
+					imageSrc: 'gemini.jpg',
+					imageWebpSrc: 'gemini.webp',
+					caseStudy: true,
+					caseStudyLink: '/projects/gemini-truequote',
+				},
+				{
+					slug: 'valleyviewmilk',
 					name: 'Valley View Farms',
-					description: 'A dairy producer in Minnesota',
+					description: 'A website for a dairy producer in Minnesota',
 					industries: [
 						'agriculture',
 						'business-to-business',
@@ -177,8 +277,9 @@ class Work extends React.Component {
 					link: 'https://valleyviewmilk.com/',
 				},
 				{
+					slug: 'zieglercat',
 					name: 'Ziegler CAT',
-					description: 'A Caterpillar dealership in Minnesota and Iowa',
+					description: 'A website for a Caterpillar dealership in Minnesota and Iowa',
 					industries: [
 						'industrial',
 						'agriculture',
@@ -206,6 +307,10 @@ class Work extends React.Component {
 				{
 					key: 'consumer-services',
 					name: 'Consumer Services',
+				},
+				{
+					key: 'education',
+					name: 'Education',
 				},
 				{
 					key: 'healthcare',
@@ -236,9 +341,13 @@ class Work extends React.Component {
 	}
 
 	handleIndustryChange(value) {
-		this.setState({
-			industryOptionSelected: value,
-		});
+		this.setState(
+			{
+				industryOptionSelected: value,
+			},
+			() => {
+				window.scrollTo(0, 0);
+			});
 	}
 
 	render() {
@@ -272,7 +381,7 @@ class Work extends React.Component {
 		if (filteredProjectsList.length > 0) {
 			projects = filteredProjectsList.map((project, index) => {
 				return(
-					<article className="project" key={index}>
+					<article className="project" id={project.slug} key={index}>
 						<div className="inner">
 							<div className="project-content">
 								<h3>{project.name}</h3>
@@ -290,6 +399,11 @@ class Work extends React.Component {
 											})}
 										</ul>
 									) : null}
+								{project.caseStudy
+									? <footer>
+										<Link className="button" title={`View case study for ${project.name}`} to={project.caseStudyLink}>View Case Study</Link>
+									 </footer>
+									: null}
 							</div>
 							<div className="project-image">
 								<a className="image" href={project.link}>
@@ -320,7 +434,7 @@ class Work extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8} xl={6}>
 								<h1>Development Work</h1>
-								<div className="subtitle">Websites</div>
+								<div className="subtitle">Websites and Web Apps</div>
 								<p>Below is a list of notable projects that I have developed during my time at Neuger. For each of these projects, I played a major role in creating the website in collaboration with my coworkers and clients.</p>
 							</Col>
 						</Row>
@@ -378,7 +492,18 @@ class Work extends React.Component {
 										) : null
 									}
 									{projects}
-
+									{null !== industryOptionSelected
+										? <p className="results">
+											<button
+												className="clear"
+												onClick={
+													() => this.handleIndustryChange('')
+												}
+											>
+												Clear filters
+											</button>
+											</p>
+										: null}
 								</div>
 							</div>
 						</Col>

@@ -19,6 +19,7 @@
 				text-transform: uppercase;
 				font-family: $font-family-base;
 				margin-bottom: 1rem;
+				margin-top: 1rem;
 			}
 
 			@include media-breakpoint-down(sm) {
@@ -73,6 +74,15 @@
 	// }
 }
 
+.me {
+	height: 180px;
+	width: 180px;
+	border-radius: $border-radius;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+	border: 1px solid $transparent-white;
+}
+
 .panel {
 	.vimeo-embed {
 		margin: 1rem 0;
@@ -84,17 +94,15 @@
 
 		a {
 			color: $white;
-			text-decoration: none;
-
-			&:hover,
-			&:focus {
-				text-decoration: underline;
-			}
 		}
 
 		&.end-back {
 			margin: 3rem 0 0;
 		}
+	}
+
+	a {
+		color: $white;
 	}
 
 	&.panel-intro {
@@ -133,6 +141,7 @@
 			// }
 		}
 
+		.title,
 		.subtitle {
 			font-size: 2.75rem;
 			font-family: $headings-font-family;
@@ -142,6 +151,10 @@
 			@include media-breakpoint-down(md) {
 				font-size: 2.25rem;
 			}
+		}
+
+		.date {
+			font-style: italic;
 		}
 
 		.name-title {
@@ -290,7 +303,7 @@
 	}
 
 	&.panel-sites {
-		margin-top: 100px;
+		margin-top: 40px;
 
 		a {
 			margin-bottom: $grid-gutter-width / 2;

@@ -5795,11 +5795,13 @@ p {
   background-color: rgba(0,0,0,.3)
 }
 .header .logo-wrapper {
-  text-align: center
+  text-align: center;
+  margin-right: .5rem
 }
 @media (max-width:767.98px) {
   .header .logo-wrapper {
-    margin: 1rem 0
+    margin: 1rem 0;
+    width: 100%
   }
 }
 .header .logo-wrapper a {
@@ -5811,18 +5813,20 @@ p {
   display: inline-block;
   transition: all .2s ease-in-out
 }
+.header .logo-wrapper a.active,
 .header .logo-wrapper a:focus,
 .header .logo-wrapper a:hover {
-  border: 2px solid #fff
+  border: 2px solid rgba(255,255,255,.3)
+}
+.header .logo-wrapper a:hover {
+  border-color: #fff
 }
 .header .logo-wrapper a:active {
   -webkit-transform: scale(.96);
   transform: scale(.96)
 }
-@media (max-width:767.98px) {
-  .header .nav {
-    justify-content: center
-  }
+.header .nav {
+  justify-content: center
 }
 @media (max-width:575.98px) {
   .header .nav {
@@ -5830,10 +5834,12 @@ p {
   }
 }
 .header .logo {
-  margin-right: .75rem;
   height: 40px;
   width: 40px;
   transition: all .2s ease-in-out
+}
+.header .nav-item {
+  align-self: center
 }
 .header .nav-item a {
   color: #fff;
@@ -6040,7 +6046,8 @@ figure.vimeo-embed figcaption {
   font-size: 1.25rem;
   text-transform: uppercase;
   font-family: expressway,sans-serif;
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
+  margin-top: 1rem
 }
 @media (max-width:575.98px) {
   .page.page-home .panel-intro h1 {
@@ -6068,6 +6075,14 @@ figure.vimeo-embed figcaption {
   font-size: 1.5rem;
   text-transform: none
 }
+.me {
+  height: 180px;
+  width: 180px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255,255,255,.3)
+}
 .panel .vimeo-embed {
   margin: 1rem 0
 }
@@ -6075,15 +6090,13 @@ figure.vimeo-embed figcaption {
   margin-bottom: 3.5rem
 }
 .panel .back a {
-  color: #fff;
-  text-decoration: none
-}
-.panel .back a:focus,
-.panel .back a:hover {
-  text-decoration: underline
+  color: #fff
 }
 .panel .back.end-back {
   margin: 3rem 0 0
+}
+.panel a {
+  color: #fff
 }
 .panel.panel-intro {
   text-align: center;
@@ -6114,16 +6127,21 @@ figure.vimeo-embed figcaption {
   text-transform: uppercase;
   margin-bottom: .5rem
 }
-.panel.panel-intro .subtitle {
+.panel.panel-intro .subtitle,
+.panel.panel-intro .title {
   font-size: 2.75rem;
   font-family: gitan-latin,sans-serif;
   margin-bottom: 1.5rem;
   line-height: 1.2
 }
 @media (max-width:767.98px) {
-  .panel.panel-intro .subtitle {
+  .panel.panel-intro .subtitle,
+  .panel.panel-intro .title {
     font-size: 2.25rem
   }
+}
+.panel.panel-intro .date {
+  font-style: italic
 }
 .panel.panel-intro .name-title {
   margin-bottom: 1.5rem;
@@ -6218,7 +6236,7 @@ figure.vimeo-embed figcaption {
   opacity: .7
 }
 .panel.panel-sites {
-  margin-top: 100px
+  margin-top: 40px
 }
 .panel.panel-sites a {
   margin-bottom: .75rem
@@ -6425,7 +6443,8 @@ figure.vimeo-embed figcaption {
   font-weight: 700;
   font-size: 1.1rem;
   width: 100%;
-  max-width: 400px
+  max-width: 400px;
+  cursor: pointer
 }
 .page-sites .web-projects .projects {
   margin-top: 2rem
@@ -6470,6 +6489,26 @@ figure.vimeo-embed figcaption {
 }
 .page-sites .web-projects .project .project-content h3 {
   font-size: 1.25rem
+}
+.page-sites .web-projects .project .project-content footer {
+  display: flex;
+  margin-top: 1.5rem
+}
+.page-sites .web-projects .project .project-content .button {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8rem;
+  line-height: 1;
+  padding: .75rem 1rem;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  background-color: rgba(255,255,255,.1)
+}
+.page-sites .web-projects .project .project-content .button:focus,
+.page-sites .web-projects .project .project-content .button:hover {
+  background-color: rgba(255,255,255,.25)
 }
 @media (max-width:575.98px) {
   .page-sites .web-projects .project .project-content {

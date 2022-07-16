@@ -26,7 +26,8 @@ class About extends React.Component {
 							<Col xs={12} md={10} lg={8} xl={6}>
 								<h1>About</h1>
 								<div className="subtitle">Steven Wett</div>
-								<p>I'm a designer/developer who lives in Atlanta with over 7 years of UX/UI design and web development experience. I am currently enrolled in a UX Design Master's program with MICA while remotely working full-time at Neuger, an agency in Minnesota.</p>
+								<img className="me" src="/images/steven-wett.jpg" alt="Steven Wett" />
+								<p>I'm a web developer / UX designer who lives in Atlanta with over 7 years of experience. I am currently enrolled in a UX Design Master's program with MICA while remotely working full-time at Neuger, an agency in Minnesota.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -46,7 +47,7 @@ class About extends React.Component {
 										<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a> &nbsp;&middot;&nbsp; July 2015 - June 2017</p>
 									</section>
 									<section>
-										<h3>Technical Assistant</h3>
+										<h3>Product Development Assistant</h3>
 										<p><a href="https://www.linkedin.com/company/3m/">3M</a> &nbsp;&middot;&nbsp; August 2014 - May 2015</p>
 									</section>
 									<section>
