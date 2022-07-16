@@ -5877,7 +5877,7 @@ p {
   height: 100%;
   background-image: url(/images/wett-colorado-stars.jpg);
   background-size: cover;
-  opacity: .4
+  opacity: .45
 }
 .contact-nav {
   height: 100%;
@@ -6265,7 +6265,7 @@ figure.vimeo-embed figcaption {
   font-size: .85rem
 }
 .panel.panel-contact {
-  margin-top: 60px
+  margin-top: 40px
 }
 .panel.panel-contact article {
   padding: 1.5rem;

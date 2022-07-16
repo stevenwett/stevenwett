@@ -493,17 +493,20 @@ class Work extends React.Component {
 									}
 									{projects}
 									{null !== industryOptionSelected
-										? <p className="results">
-											<button
-												className="clear"
-												onClick={
-													() => this.handleIndustryChange('')
-												}
-											>
-												Clear filters
-											</button>
-											</p>
-										: null}
+										? (getIndustryName(industryOptionSelected)
+											? <p className="results">
+												<button
+													className="clear"
+													onClick={
+														() => this.handleIndustryChange('')
+													}
+												>
+													Clear filters
+												</button>
+												</p>
+											: null
+										) : null
+									}
 								</div>
 							</div>
 						</Col>
