@@ -36,7 +36,7 @@ class Projects extends React.Component {
 					link: '/projects/gemini-memorial-designer',
 				},
 				{
-					year: '2018',
+					year: '2017',
 					title: 'Web App for Quoting Signs',
 					description: 'A web app for sign shops to quote and purchase from the manufacturer',
 					img: '/images/project-truequote.jpg',

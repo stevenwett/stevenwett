@@ -33,18 +33,17 @@ class ProjectGeminiPartnerPortal extends React.Component {
 						</Row>
 					</Container>
 				</div>
-				{/*<div className="panel panel-project-single">
+				<div className="panel panel-project-single">
 					<section>
 						<Container>
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
-									<h2></h2>
-									<p></p>
+									<p>More details coming soon ...</p>
 								</Col>
 							</Row>
 						</Container>
 					</section>
-				</div>*/}
+				</div>
 			</div>
 		);
 	}
