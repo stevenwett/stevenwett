@@ -8,7 +8,43 @@ import PanelProjects from '../components/PanelProjects';
 class Projects extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			display: 'cards',
+			projectsList: [
+				{
+					year: '2022',
+					title: 'MICA Projects',
+					description: 'Projects that I completed throughout my UX Designer graducate program',
+					img: '/images/project-mica.jpg',
+					imgAlt: 'Final discovery report screenshot',
+					link: '/projects/mica-projects',
+				},
+				{
+					year: '2022',
+					title: 'Customer Portal for Sign Shops',
+					description: 'A customer portal with resources and the ability view past quotes and orders',
+					img: '/images/project-gemini-partner-portal.jpg',
+					imgAlt: 'Gemini Partner Portal screenshot',
+					link: '/projects/gemini-partner-portal',
+				},
+				{
+					year: '2020',
+					title: 'Web App for Designing Bronze Plaques',
+					description: 'A visual design web app for monument builders to design and quote bronze plaques',
+					img: '/images/project-memorial-designer.jpg',
+					imgAlt: 'Gemini Memorial Designer screenshot',
+					link: '/projects/gemini-memorial-designer',
+				},
+				{
+					year: '2018',
+					title: 'Web App for Quoting Signs',
+					description: 'A web app for sign shops to quote and purchase from the manufacturer',
+					img: '/images/project-truequote.jpg',
+					imgAlt: 'TrueQuote screenshot',
+					link: '/projects/gemini-truequote',
+				},
+			]
+		}
 	}
 
 	componentDidMount() {
@@ -16,7 +52,10 @@ class Projects extends React.Component {
 	}
 
 	render() {
-		// const {} = this.state;
+		const {
+			projectsList,
+			display
+		} = this.state;
 
 		return (
 			<div className="page page-projects">
@@ -27,12 +66,12 @@ class Projects extends React.Component {
 							<Col xs={12} md={10} lg={8} xl={6}>
 								<h1>UX Projects</h1>
 								<div className="subtitle">Project Case Studies</div>
-								<p>More to come ...</p>
+								<p>Below are some featured UX projects that I have been a part of. In each example, I will aim to outline my role for the project.</p>
 							</Col>
 						</Row>
 					</Container>
 				</div>
-				<PanelProjects />
+				<PanelProjects projectsList={projectsList} display={display} />
 			</div>
 		);
 	}

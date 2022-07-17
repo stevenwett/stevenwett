@@ -195,24 +195,6 @@
 					margin-top: 1.5rem;
 				}
 
-				.button {
-					color: $white;
-					text-decoration: none;
-					text-transform: uppercase;
-					font-weight: $font-weight-bold;
-					font-size: 0.8rem;
-					line-height: 1;
-					padding: 0.75rem 1rem;
-					border-radius: $border-radius-sm;
-					transition: $transition-base;
-					background-color: rgba(255, 255, 255, 0.1);
-
-					&:hover,
-					&:focus {
-						background-color: rgba(255, 255, 255, 0.25);
-					}
-				}
-
 				@include media-breakpoint-down(sm) {
 					padding-right: $grid-gutter-width;
 					flex-basis: calc(100% - 140px);

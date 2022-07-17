@@ -365,12 +365,6 @@
 
 			a {
 				color: $white;
-				text-decoration: none;
-
-				&:hover,
-				&:focus {
-					text-decoration: underline;
-				}
 			}
 
 			&:last-child {

@@ -33,7 +33,7 @@ const Header = (props) => {
 							</Nav.Item>
 						</Nav>
 					</Col>
-					{/*<Col md={5} className="order-3 order-sm-3 order-md-3">
+					<Col md={5} className="order-3 order-sm-3 order-md-3">
 						<nav className="contact-nav" id="contact">
 							<h1 className="visually-hidden" id="contact-nav-heading">Contact Menu</h1>
 							<ul role="menu" aria-labelledby="contact-nav-heading">
@@ -47,7 +47,7 @@ const Header = (props) => {
 								</li>
 							</ul>
 						</nav>
-					</Col>*/}
+					</Col>
 				</Row>
 			</Container>
 		</header>

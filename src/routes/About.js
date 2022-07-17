@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import moment from 'moment';
 
 import Header from '../components/Header';
 // import { useHistory } from 'react-router-dom';
@@ -16,6 +17,8 @@ class About extends React.Component {
 
 	render() {
 		// const {} = this.state;
+		const currentYear = moment().year(),
+			yearsSince2015 = currentYear - 2015;
 
 		return (
 			<div className="page page-about">
@@ -27,7 +30,7 @@ class About extends React.Component {
 								<h1>About</h1>
 								<div className="subtitle">Steven Wett</div>
 								<img className="me" src="/images/steven-wett.jpg" alt="Steven Wett" />
-								<p>I'm a web developer / UX designer who lives in Atlanta with over 7 years of experience. I am currently enrolled in a UX Design Master's program with MICA while remotely working full-time at Neuger, an agency in Minnesota.</p>
+								<p>I'm a web developer / UX designer who lives in Atlanta with over {yearsSince2015} years of agency experience. I am currently enrolled in a UX Design Master's program with MICA while remotely working full-time at Neuger, an agency in Minnesota.</p>
 							</Col>
 						</Row>
 					</Container>

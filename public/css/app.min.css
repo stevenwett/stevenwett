@@ -5796,7 +5796,8 @@ p {
 }
 .header .logo-wrapper {
   text-align: center;
-  margin-right: .5rem
+  margin-right: .5rem;
+  padding-left: 0
 }
 @media (max-width:767.98px) {
   .header .logo-wrapper {
@@ -5825,8 +5826,10 @@ p {
   -webkit-transform: scale(.96);
   transform: scale(.96)
 }
-.header .nav {
-  justify-content: center
+@media (max-width:767.98px) {
+  .header .nav {
+    justify-content: center
+  }
 }
 @media (max-width:575.98px) {
   .header .nav {
@@ -6028,6 +6031,23 @@ figure.vimeo-embed figcaption {
   figure.vimeo-embed.gemini-design .ratio::before {
     padding-top: 525px
   }
+}
+a.button {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8rem;
+  line-height: 1;
+  padding: .75rem 1rem;
+  border-radius: 10px;
+  transition: all .2s ease-in-out;
+  background-color: rgba(255,255,255,.1)
+}
+a.button:focus,
+a.button:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,.25)
 }
 .page {
   z-index: 1;
@@ -6286,12 +6306,7 @@ figure.vimeo-embed figcaption {
   margin: 2rem 0
 }
 .panel.panel-contact section a {
-  color: #fff;
-  text-decoration: none
-}
-.panel.panel-contact section a:focus,
-.panel.panel-contact section a:hover {
-  text-decoration: underline
+  color: #fff
 }
 .panel.panel-contact section:last-child {
   margin-bottom: 0
@@ -6493,22 +6508,6 @@ figure.vimeo-embed figcaption {
 .page-sites .web-projects .project .project-content footer {
   display: flex;
   margin-top: 1.5rem
-}
-.page-sites .web-projects .project .project-content .button {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: .8rem;
-  line-height: 1;
-  padding: .75rem 1rem;
-  border-radius: 10px;
-  transition: all .2s ease-in-out;
-  background-color: rgba(255,255,255,.1)
-}
-.page-sites .web-projects .project .project-content .button:focus,
-.page-sites .web-projects .project .project-content .button:hover {
-  background-color: rgba(255,255,255,.25)
 }
 @media (max-width:575.98px) {
   .page-sites .web-projects .project .project-content {
