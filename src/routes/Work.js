@@ -141,7 +141,7 @@ class Work extends React.Component {
 					imageSrc: 'northfieldschools.jpg',
 					imageWebpSrc: 'northfieldschools.webp',
 					linkPretty: 'northfieldschools.org',
-					link: 'https://nortfieldschools.org/',
+					link: 'https://northfieldschools.org/',
 				},
 				{
 					slug: 'gemini-partner-portal',

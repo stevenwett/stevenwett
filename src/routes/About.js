@@ -29,7 +29,7 @@ class About extends React.Component {
 							<Col xs={12} md={10} lg={8} xl={6}>
 								<h1>About</h1>
 								<div className="subtitle">Steven Wett</div>
-								<img className="me" src="/images/steven-wett.jpg" alt="Steven Wett" />
+								<img className="me" src="/images/steven-wett.jpg" alt="Steven Wett holding ice cream" />
 								<p>I'm a web developer / UX designer who lives in Atlanta with over {yearsSince2015} years of agency experience. I am currently enrolled in a UX Design Master's program with MICA while remotely working full-time at Neuger, an agency in Minnesota.</p>
 							</Col>
 						</Row>

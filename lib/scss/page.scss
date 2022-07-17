@@ -61,6 +61,14 @@
 			font-size: 1.5rem;
 			text-transform: none;
 		}
+
+		h3 {
+			margin-top: 1rem;
+			font-size: 1rem;
+			text-transform: uppercase;
+			font-family: $font-family-base;
+			font-weight: $font-weight-bold;
+		}
 	}
 
 	// &.page-about {
