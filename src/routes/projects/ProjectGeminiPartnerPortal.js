@@ -37,6 +37,16 @@ class ProjectGeminiPartnerPortal extends React.Component {
 					<section>
 						<Container>
 							<Row>
+								<Col xs={12} lg={10} xl={8}>
+									<figure>
+										<div className="ratio ratio-4x3">
+											<iframe src="https://player.vimeo.com/video/706628191?h=453896c132" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+										</div>
+										<figcaption></figcaption>
+									</figure>
+								</Col>
+							</Row>
+							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<p>More details coming soon ...</p>
 								</Col>

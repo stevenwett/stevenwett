@@ -6631,11 +6631,11 @@ a.button:hover {
     height: 125px
   }
 }
-.page-sites .web-projects .project .project-image .image:focus::after,
-.page-sites .web-projects .project .project-image .image:hover::after {
+.page-sites .web-projects .project .project-image a.image:focus::after,
+.page-sites .web-projects .project .project-image a.image:hover::after {
   opacity: .5
 }
-.page-sites .web-projects .project .project-image .image:focus svg,
-.page-sites .web-projects .project .project-image .image:hover svg {
+.page-sites .web-projects .project .project-image a.image:focus svg,
+.page-sites .web-projects .project .project-image a.image:hover svg {
   opacity: 1
 }

@@ -42,7 +42,7 @@ class ProjectMICAProjects extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<h2>UX Research</h2>
-									<p>For this class I chose an example client and devised a problem statement and sought to validate it. Over eight weeks I analyzed the compition, screened and interviewed 7 people, and analyzed the data in a discovery report.</p>
+									<p>For this class I chose an example client, devised a problem statement, and sought to validate it. Over eight weeks I analyzed the compition, screened and interviewed 7 people, and analyzed the data in a discovery report.</p>
 									<ul>
 										<li><a href="https://docs.google.com/document/d/1UgZJh3SXDzCz87K0GoXuaylFakP3SfdjEZXLrcUeVn8/edit?usp=sharing">User research plan</a></li>
 										<li><a href="https://docs.google.com/spreadsheets/d/1lztUkVBJKjYjH-MOIU1vUVqza0Q9hM0FzS8F4GC7LaE/edit?usp=sharing">Competitive analysis</a></li>
