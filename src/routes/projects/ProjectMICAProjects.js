@@ -22,7 +22,7 @@ class ProjectMICAProjects extends React.Component {
 				<div className="panel panel-intro">
 					<Container>
 						<Row>
-							<Col xs={12} md={10} lg={8} xl={6}>
+							<Col xs={12} md={10} lg={8} xl={6} className="intro-content">
 								<p className="back"><Link to="/ux-projects">&lsaquo; UX Projects</Link></p>
 								<h1>MICA UX Design</h1>
 								<div className="title">Projects From My Graduate Program at MICA</div>

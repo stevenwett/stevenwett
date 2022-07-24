@@ -166,7 +166,7 @@ class Work extends React.Component {
 					linkPretty: 'geminimade.com/partner',
 					link: 'https://geminimade.com/partner/',
 					caseStudy: true,
-					caseStudyLink: '/projects/gemini-partner-portal',
+					caseStudyLink: '/ux-projects/gemini-partner-portal',
 				},
 				{
 					slug: 'plainviewmilk',
@@ -239,7 +239,7 @@ class Work extends React.Component {
 					imageSrc: 'gemini-truequote.jpg',
 					imageWebpSrc: 'gemini-truequote.webp',
 					caseStudy: true,
-					caseStudyLink: '/projects/gemini-truequote',
+					caseStudyLink: '/ux-projects/gemini-truequote',
 				},
 				{
 					slug: 'valleyviewmilk',

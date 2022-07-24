@@ -39,10 +39,16 @@
 	&.page-projects-single {
 		.panel-intro {
 			text-align: left;
+			padding-bottom: 0;
 
 			.row::after {
-
+				content: none;
 			}
+		}
+
+		.intro-content {
+			border-bottom: 1px solid $white;
+			padding-bottom: 2rem;
 		}
 
 		section {
@@ -60,10 +66,12 @@
 		h2 {
 			font-size: 1.5rem;
 			text-transform: none;
+			margin-bottom: 0.75rem;
 		}
 
 		h3 {
-			margin-top: 1rem;
+			margin-top: 1.5rem;
+			margin-bottom: 0.75rem;
 			font-size: 1rem;
 			text-transform: uppercase;
 			font-family: $font-family-base;
@@ -92,8 +100,30 @@
 }
 
 .panel {
-	.vimeo-embed {
-		margin: 1rem 0;
+	figure {
+		img {
+			width: 100%;
+		}
+
+		figcaption {
+			font-style: italic;
+			font-size: 0.85rem;
+			margin: 1rem 0;
+			text-align: center;
+		}
+
+		&.vimeo-embed {
+			margin: 1rem 0;
+			border-bottom: 1px solid $white;
+
+			&.gemini-design {
+				@include media-breakpoint-up(lg) {
+					.ratio::before {
+						padding-top: 525px;
+					}
+				}
+			}
+		}
 	}
 
 

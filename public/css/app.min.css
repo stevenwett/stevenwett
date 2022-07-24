@@ -6018,20 +6018,6 @@ p {
   -webkit-transform: translateX(-50%) translateY(-50%) scale(.9);
   transform: translateX(-50%) translateY(-50%) scale(.9)
 }
-figure.vimeo-embed {
-  border-bottom: 1px solid #fff
-}
-figure.vimeo-embed figcaption {
-  font-style: italic;
-  font-size: .85rem;
-  margin: 1rem 0;
-  text-align: center
-}
-@media (min-width:992px) {
-  figure.vimeo-embed.gemini-design .ratio::before {
-    padding-top: 525px
-  }
-}
 a.button {
   color: #fff;
   text-decoration: none;
@@ -6080,7 +6066,15 @@ a.button:hover {
   }
 }
 .page.page-projects-single .panel-intro {
-  text-align: left
+  text-align: left;
+  padding-bottom: 0
+}
+.page.page-projects-single .panel-intro .row::after {
+  content: none
+}
+.page.page-projects-single .intro-content {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 2rem
 }
 .page.page-projects-single section {
   margin: 3.5rem 0
@@ -6093,10 +6087,12 @@ a.button:hover {
 }
 .page.page-projects-single h2 {
   font-size: 1.5rem;
-  text-transform: none
+  text-transform: none;
+  margin-bottom: .75rem
 }
 .page.page-projects-single h3 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: .75rem;
   font-size: 1rem;
   text-transform: uppercase;
   font-family: expressway,sans-serif;
@@ -6110,8 +6106,23 @@ a.button:hover {
   margin-bottom: 1.5rem;
   border: 1px solid rgba(255,255,255,.3)
 }
-.panel .vimeo-embed {
-  margin: 1rem 0
+.panel figure img {
+  width: 100%
+}
+.panel figure figcaption {
+  font-style: italic;
+  font-size: .85rem;
+  margin: 1rem 0;
+  text-align: center
+}
+.panel figure.vimeo-embed {
+  margin: 1rem 0;
+  border-bottom: 1px solid #fff
+}
+@media (min-width:992px) {
+  .panel figure.vimeo-embed.gemini-design .ratio::before {
+    padding-top: 525px
+  }
 }
 .panel .back {
   margin-bottom: 3.5rem

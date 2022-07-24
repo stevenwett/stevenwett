@@ -12,12 +12,12 @@ class Projects extends React.Component {
 			display: 'cards',
 			projectsList: [
 				{
-					year: '2022',
-					title: 'MICA Projects',
-					description: 'Projects that I completed throughout my UX Designer graducate program',
-					img: '/images/project-mica.jpg',
-					imgAlt: 'Final discovery report screenshot',
-					link: '/projects/mica-projects',
+					year: '2020',
+					title: 'Web App for Designing Bronze Plaques',
+					description: 'A visual design web app for monument builders to design and quote bronze plaques',
+					img: '/images/project-memorial-designer.jpg',
+					imgAlt: 'Gemini Memorial Designer screenshot',
+					link: '/ux-projects/gemini-memorial-designer',
 				},
 				{
 					year: '2022',
@@ -25,15 +25,7 @@ class Projects extends React.Component {
 					description: 'A customer portal with resources and the ability view past quotes and orders',
 					img: '/images/project-gemini-partner-portal.jpg',
 					imgAlt: 'Gemini Partner Portal screenshot',
-					link: '/projects/gemini-partner-portal',
-				},
-				{
-					year: '2020',
-					title: 'Web App for Designing Bronze Plaques',
-					description: 'A visual design web app for monument builders to design and quote bronze plaques',
-					img: '/images/project-memorial-designer.jpg',
-					imgAlt: 'Gemini Memorial Designer screenshot',
-					link: '/projects/gemini-memorial-designer',
+					link: '/ux-projects/gemini-partner-portal',
 				},
 				{
 					year: '2017',
@@ -41,7 +33,15 @@ class Projects extends React.Component {
 					description: 'A web app for sign shops to quote and purchase from the manufacturer',
 					img: '/images/project-truequote.jpg',
 					imgAlt: 'TrueQuote screenshot',
-					link: '/projects/gemini-truequote',
+					link: '/ux-projects/gemini-truequote',
+				},
+				{
+					year: '2022',
+					title: 'MICA Projects',
+					description: 'Projects that I completed throughout my UX Designer graducate program',
+					img: '/images/project-mica.jpg',
+					imgAlt: 'Final discovery report screenshot',
+					link: '/ux-projects/mica-projects',
 				},
 			]
 		}

@@ -22,7 +22,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 				<div className="panel panel-intro">
 					<Container>
 						<Row>
-							<Col xs={12} md={10} lg={8} xl={6}>
+							<Col xs={12} md={10} lg={8} xl={6} className="intro-content">
 								<p className="back"><Link to="/ux-projects">&lsaquo; UX Projects</Link></p>
 								<h1>NorthfieldWiFi</h1>
 								<div className="title">A Simplified Website for a Small Internet Service Provider</div>

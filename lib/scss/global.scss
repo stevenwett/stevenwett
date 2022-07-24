@@ -336,31 +336,6 @@ li {
 	}
 }
 
-figure.vimeo-embed {
-	// border: 1px solid $white;
-	// border-radius: $border-radius-sm;
-	// overflow: hidden;
-	// background-color: $white;
-	border-bottom: 1px solid $white;
-
-	figcaption {
-		// color: $black;
-		font-style: italic;
-		font-size: 0.85rem;
-		margin: 1rem 0;
-		text-align: center;
-		// font-weight: $font-weight-bold;
-	}
-
-	&.gemini-design {
-		@include media-breakpoint-up(lg) {
-			.ratio::before {
-				padding-top: 525px;
-			}
-		}
-	}
-}
-
 a.button {
 	color: $white;
 	text-decoration: none;
