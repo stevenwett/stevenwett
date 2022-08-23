@@ -1,0 +1,29 @@
+// Footer
+.footer {
+	padding: 1.5rem 0;
+	// background-color: $black;
+	// border-top: 1px solid $gray-900;
+	position: relative;
+
+	p {
+		font-size: 0.8rem;
+		color: $gray-500;
+		margin: 0;
+		text-align: left;
+
+		// @include media-breakpoint-down(sm) {
+		// 	text-align: center;
+		// }
+	}
+
+	p.photo-cred {
+		margin-bottom: 1rem;
+		color: rgba(255, 255, 255, 0.6);
+
+		span {
+			display: block;
+			font-size: 0.6rem;
+			text-transform: uppercase;
+		}
+	}
+}

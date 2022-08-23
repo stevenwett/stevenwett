@@ -1,265 +1,20 @@
-/* Main styles */
-
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes fade-in-background {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 0.6;
+html {
+	&::-webkit-scrollbar {
+		display: none;
 	}
 }
 
 // Global
-
-html {
-	height: 100%;
-
-	@include media-breakpoint-down(sm) {
-		height: auto;
-	}
-}
-
-body {
-	background-color: $black;
-	position: relative;
-}
-
-
-h1 {
-	font-family: $font-family-headings;
-	font-size: 3rem;
-	margin-bottom: 1.125rem;
-	line-height: 1.1;
-
-	@include media-breakpoint-down(sm) {
-		font-size: 2.75rem;
-		line-height: 1;
-	}
-
-	@media screen and (max-width: 400px) {
-		font-size: 2.5rem;
-	}
-}
-
-h2 {
-	text-transform: uppercase;
-
-	@media screen and (max-width: 400px) {
-		font-size: 1.75rem;
-	}
-}
-
-h3 {
-	line-height: 1.1;
-
-	@media screen and (max-width: 400px) {
-		font-size: 1.4rem;
-	}
+.main {
+	background-color: $dark;
 }
 
 p,
 li {
 	font-family: $font-family-base;
 	font-weight: $font-weight-base;
+	letter-spacing: 0.4px;
 }
-
-.header {
-	padding: 1rem 0;
-	background-color: rgba(0, 0, 0, 0.3);
-
-	.logo-wrapper {
-		text-align: center;
-		margin-right: 0.5rem;
-		padding-left: 0;
-
-		@include media-breakpoint-down(md) {
-			margin: 1rem 0;
-			width: 100%;
-		}
-
-		a {
-			border: 2px solid transparent;
-			border-radius: 100%;
-			padding: 5px;
-			width: 54px;
-			height: 54px;
-			display: inline-block;
-			transition: $transition-base;
-
-			&.active,
-			&:hover,
-			&:focus {
-				border: 2px solid $transparent-white;
-			}
-
-			&:hover {
-				border-color: $white;
-			}
-
-			&:active {
-				transform: scale(0.96);
-			}
-		}
-	}
-
-	.nav {
-		@include media-breakpoint-down(md) {
-			justify-content: center;
-		}
-
-		@include media-breakpoint-down(sm) {
-			font-size: 0.9rem;
-		}
-	}
-
-	.logo {
-		height: 40px;
-		width: 40px;
-		// opacity: 0;
-		// animation-name: fade-in;
-		// animation-duration: 3s;
-		// animation-fill-mode: forwards;
-		transition: $transition-base;
-	}
-
-	.nav-item {
-		align-self: center;
-	}
-
-	.nav-item a {
-		color: $white;
-		font-family: $font-family-base;
-		font-weight: $font-weight-bold;
-		text-transform: uppercase;
-		font-size: 0.9rem;
-		opacity: 1;
-		transition: $transition-base;
-
-		&.active {
-			text-decoration: underline;
-		}
-
-		&:hover,
-		&:focus {
-			opacity: 0.9;
-		}
-	}
-}
-
-.main {
-	overflow: hidden;
-	max-width: 2000px;
-	margin: 0 auto;
-	// border-left: 1px solid $gray-900;
-	// border-right: 1px solid $gray-900;
-	z-index: 2;
-
-	.app {
-		position: relative;
-		overflow: hidden;
-
-		&::before {
-			content: "";
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			width: 100%;
-			height: 100%;
-			background-image: url(/images/wett-colorado-stars.jpg);
-			background-size: cover;
-			opacity: 0.45;
-		}
-	}
-}
-
-.contact-nav {
-	height: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		justify-content: flex-end;
-
-		li {
-			text-transform: uppercase;
-		}
-	}
-
-	a {
-		color: $white;
-		text-decoration: none;
-		padding: 6px 10px;
-		margin-left: 0.25rem;
-		transition: $transition-base;
-		font-size: 0.9rem;
-		background-color: rgba(0, 0, 0, 0.2);
-		border-radius: $border-radius-sm;
-		opacity: 1;
-
-		&:hover,
-		&:focus {
-			color: $white;
-			text-decoration: underline;
-			opacity: 0.9;
-		}
-	}
-
-	@include media-breakpoint-down(md) {
-		display: none;
-	}
-}
-
-.main-footer {
-	padding: 1.5rem 0;
-	background-color: $black;
-	border-top: 1px solid $gray-900;
-	position: relative;
-
-	p {
-		font-size: 0.8rem;
-		color: $white;
-		margin: 0;
-		text-align: left;
-
-		@include media-breakpoint-down(sm) {
-			text-align: center;
-		}
-	}
-
-	p.photo-cred {
-		margin-bottom: 1rem;
-		color: rgba(255, 255, 255, 0.6);
-
-		span {
-			display: block;
-			font-size: 0.6rem;
-			text-transform: uppercase;
-		}
-	}
-}
-
-// .arrow-wrapper {
-// 	position: relative;
-// 	width: 60px;
-// 	min-width: 60px;
-// }
 
 .arrow {
 	cursor: pointer;
@@ -336,21 +91,21 @@ li {
 	}
 }
 
-a.button {
-	color: $white;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: $font-weight-bold;
-	font-size: 0.8rem;
-	line-height: 1;
-	padding: 0.75rem 1rem;
-	border-radius: $border-radius-sm;
-	transition: $transition-base;
-	background-color: rgba(255, 255, 255, 0.1);
+// a.button {
+// 	color: $white;
+// 	text-decoration: none;
+// 	text-transform: uppercase;
+// 	font-weight: $font-weight-bold;
+// 	font-size: 0.8rem;
+// 	line-height: 1;
+// 	padding: 0.75rem 1rem;
+// 	border-radius: $border-radius-sm;
+// 	transition: $transition-base;
+// 	background-color: rgba(255, 255, 255, 0.1);
 
-	&:hover,
-	&:focus {
-		color: $white;
-		background-color: rgba(255, 255, 255, 0.25);
-	}
-}
+// 	&:hover,
+// 	&:focus {
+// 		color: $white;
+// 		background-color: rgba(255, 255, 255, 0.25);
+// 	}
+// }
