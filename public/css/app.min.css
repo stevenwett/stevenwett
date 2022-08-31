@@ -6244,7 +6244,8 @@ p {
   border-top: 1px solid #495057;
   padding-top: 1.5rem;
   display: flex;
-  justify-content: flex-end
+  justify-content: flex-end;
+  margin-top: 2rem
 }
 .panel.single-work-after .next-work {
   padding-right: 35px;

@@ -141,10 +141,6 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 								<h2>Process</h2>
 								<h3>User Research</h3>
 								<p>We recruited existing Gemini customers in this user segment; customers who trust them with signage, but only occasionally purchase memorial plaques from them. We also recruited some internal Gemini staff with a deep knowledge of the industry. Along with my coworker, I conducted a total of six user interviews and gained crucial knowledge about the industry.</p>
-								<ul>
-									<li>Two Gemini employees</li>
-									<li>Four people in the monument builder industry</li>
-								</ul>
 								<h3>Competitive Analysis</h3>
 								<p>Gemini provided us with a list of names and logins to the existing tools of their competitors. My coworker and I investigated and assembled a competitive analysis to see how others were accomplishing this goal. We came up with the opportunities and threats of this new product to see where Gemini fit into the landscape.</p>
 								<h3>Information Architecture</h3>
@@ -227,7 +223,9 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 							<Col xs={12} md={10} lg={8}>
 								<h2>Outcomes and Lessons</h2>
 								<p>In our original planning we had wanted to include all of the various products that Gemini may offer to monument builder customers. After getting into the details and understanding the complexities, we narrowed the scope to be more akin to a minimal viable product.</p>
-								<p>The Memorial Designer first launched to key accounts to work out the process internally. With the launch of Gemini’s Partner Portal in 2022, it became available to all roughly fifty thousand of Gemini’s customers.</p>
+								<blockquote>
+									<p>The Memorial Designer first launched to key accounts to work out the process internally. With the launch of Gemini’s Partner Portal in 2022, it became available to all roughly fifty thousand of Gemini’s customers.</p>
+								</blockquote>
 								<p>The next step for this project would be to interview customers after they have been using the tool for a while. What works well? What could be improved upon? Then we could consider adding more of their product lines to expand the offering of the designer.</p>
 							</Col>
 						</Row>

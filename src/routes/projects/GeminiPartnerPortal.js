@@ -136,7 +136,7 @@ class ProjectGeminiPartnerPortal extends React.Component {
 								<h3>Functionality and Content Audits</h3>
 								<p>Gemini already had a customer portal on their old website and we needed to decide what should stay and what should be removed. We did a full functionality and content audit of the old portal. This audit made it easier to discuss with the client what content and features should remain.</p>
 								<h3>Getting Data from Internal Systems</h3>
-								<p>This project involved communicating with Gemini’s internal data systems, something that Gemini had never done before. I worked closely with their internal IT team and created detailed documentation for each of the endpoints we needed to provide current information to the customer. We worked with Gemini's team to custom API exclusively for this project to get data from Gemini’s internal systems.</p>
+								<p>This project involved communicating with Gemini’s internal data systems, something that Gemini had never done before. I worked closely with their internal IT team and created detailed documentation for each of the endpoints we needed, in order to provide current information to the customer. Our teams created a custom API exclusively for this project to get data from Gemini’s internal systems.</p>
 								<h3>Customer Journey</h3>
 								<p>We used insights from the analytics review and audits to establish the overall process of the user for the new portal. This journey included details for the one-time onboarding from the old system to the new, where the user would create an new individual login.</p>
 								<figure className="image-full">
@@ -191,7 +191,17 @@ class ProjectGeminiPartnerPortal extends React.Component {
 									</div>
 									<div>
 										<picture>
+											<img src="/images/partner-portal-screenshot-dashboard-recent.jpg" alt="Dashboard wireframe recent quotes and orders" />
+										</picture>
+									</div>
+									<div>
+										<picture>
 											<img src="/images/partner-portal-screenshot-2.jpg" alt="Orders wireframe" />
+										</picture>
+									</div>
+									<div>
+										<picture>
+											<img src="/images/partner-portal-screenshot-orders.jpg" alt="Orders wireframe" />
 										</picture>
 									</div>
 									<div>
