@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Slider from "react-slick";
 
-class ProjectGeminiPartnerPortal extends React.Component {
+class GeminiPartnerPortal extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -276,4 +276,4 @@ class ProjectGeminiPartnerPortal extends React.Component {
 	}
 }
 
-export default ProjectGeminiPartnerPortal;
+export default GeminiPartnerPortal;

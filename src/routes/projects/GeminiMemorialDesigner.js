@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Slider from "react-slick";
 
-class ProjectGeminiMemorialDesigner extends React.Component {
+class GeminiMemorialDesigner extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -142,7 +142,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 								<h3>User Research</h3>
 								<p>We recruited existing Gemini customers in this user segment; customers who trust them with signage, but only occasionally purchase memorial plaques from them. We also recruited some internal Gemini staff with a deep knowledge of the industry. Along with my coworker, I conducted a total of six user interviews and gained crucial knowledge about the industry.</p>
 								<h3>Competitive Analysis</h3>
-								<p>Gemini provided us with a list of names and logins to the existing tools of their competitors. My coworker and I investigated and assembled a competitive analysis to see how others were accomplishing this goal. We came up with the opportunities and threats of this new product to see where Gemini fit into the landscape.</p>
+								<p>My coworker and I investigated and assembled a competitive analysis to see how others were accomplishing this goal. We came up with the opportunities and threats of this new product to see where Gemini fit into the landscape.</p>
 								<h3>Information Architecture</h3>
 								<p>We met with Gemini over the series of weeks to fully understand the information that was needed for production of the memorial product. I created a content plan to organize the information.</p>
 								<h3>Customer Journey</h3>
@@ -246,7 +246,7 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
-									<Link to="/work/gemini-partner-portal" className="next-work no-line">Partner Portal</Link>
+									<Link to="/work/riggs-cat" className="next-work no-line">Riggs Cat</Link>
 								</div>
 							</Col>
 						</Row>
@@ -258,4 +258,4 @@ class ProjectGeminiMemorialDesigner extends React.Component {
 	}
 }
 
-export default ProjectGeminiMemorialDesigner;
+export default GeminiMemorialDesigner;

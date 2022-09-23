@@ -4,6 +4,7 @@ import moment from 'moment';
 // Projects.
 import GeminiMemorialDesigner from './routes/projects/GeminiMemorialDesigner';
 import GeminiPartnerPortal from './routes/projects/GeminiPartnerPortal';
+import RiggsCat from './routes/projects/RiggsCat';
 // import NewsOnSpotify from './routes/projects/NewsOnSpotify';
 
 // Pages.
@@ -17,7 +18,7 @@ const App = () => {
   const settings = {
     debug: false,
     slideshow: {
-      arrows: false,
+      arrows: true,
       dots: false,
       infinite: false,
       speed: 500,
@@ -54,6 +55,14 @@ const App = () => {
       name: 'Memorial Designer',
       image: '/images/memorial-designer-screenshot-3.jpg',
       video: '',
+    },
+    {
+      slug: 'riggs-cat',
+      category: 'website',
+      year: '2020',
+      name: 'Riggs Cat',
+      image: '/images/project-riggs-cat.jpg',
+      video: '',
     }
     // {
     //   slug: 'news-on-spotify',
@@ -72,6 +81,7 @@ const App = () => {
           <Route exact path='/' component={(component) => (<Home projects={projects} settings={settings} component={component} />)} />
           <Route exact path='/work/gemini-memorial-designer' component={(component) => (<GeminiMemorialDesigner projects={projects} settings={settings} component={component} />)} />
           <Route exact path='/work/gemini-partner-portal' component={(component) => (<GeminiPartnerPortal projects={projects} settings={settings} component={component} />)} />
+          <Route exact path='/work/riggs-cat' component={(component) => (<RiggsCat projects={projects} settings={settings} component={component} />)} />
           {/*<Route exact path='/work/news-on-spotify' component={(component) => (<NewsOnSpotify projects={projects} settings={settings} component={component} />)} />*/}
           <Route exact path='/work' component={(component) => (<Work projects={projects} settings={settings} component={component} />)} />
           <Route exact path='/about' component={(component) => (<About settings={settings} component={component} />)} />

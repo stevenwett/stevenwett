@@ -5743,6 +5743,84 @@ fieldset:disabled .btn {
 html::-webkit-scrollbar {
   display: none
 }
+.app {
+  overflow: hidden;
+  position: relative
+}
+.solar-system {
+  position: absolute;
+  bottom: -20px;
+  right: -50px;
+  z-index: 0
+}
+@media (max-width:991.98px) {
+  .solar-system {
+    right: -140px;
+    bottom: unset;
+    top: 35%
+  }
+}
+@media (max-width:575.98px) {
+  .solar-system {
+    width: 500px;
+    height: 350px;
+    right: -75px;
+    top: unset;
+    bottom: -20px
+  }
+}
+.solar-system .ellipse,
+.solar-system ellipse {
+  fill: none;
+  stroke: #393939
+}
+.solar-system circle {
+  z-index: 1
+}
+.solar-system .dashed-stroke {
+  stroke-dasharray: 5px;
+  isolation: isolate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear
+}
+.solar-system .dashed-stroke.ellipse-1 {
+  -webkit-animation-name: dashedstroke;
+  animation-name: dashedstroke;
+  -webkit-animation-duration: 240s;
+  animation-duration: 240s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate
+}
+.solar-system .dashed-stroke.ellipse-2 {
+  -webkit-animation-name: dashedstroke;
+  animation-name: dashedstroke;
+  -webkit-animation-duration: 160s;
+  animation-duration: 160s
+}
+.solar-system .dashed-stroke.ellipse-3 {
+  -webkit-animation-name: dashedstroke;
+  animation-name: dashedstroke;
+  -webkit-animation-duration: 120s;
+  animation-duration: 120s
+}
+@-webkit-keyframes dashedstroke {
+  from {
+    stroke-dashoffset: 0%
+  }
+  to {
+    stroke-dashoffset: 100%
+  }
+}
+@keyframes dashedstroke {
+  from {
+    stroke-dashoffset: 0%
+  }
+  to {
+    stroke-dashoffset: 100%
+  }
+}
 .main {
   background-color: #131313
 }
@@ -5823,6 +5901,17 @@ p {
 .arrow:active {
   -webkit-transform: translateX(-50%) translateY(-50%) scale(.9);
   transform: translateX(-50%) translateY(-50%) scale(.9)
+}
+a.btn {
+  margin-top: 1rem
+}
+a.btn.btn-outline-primary {
+  border: 1px solid #ddad02;
+  border-radius: 8px
+}
+a.btn.btn-outline-primary:focus,
+a.btn.btn-outline-primary:hover {
+  color: #ddad02
 }
 .header {
   padding: 1rem 0
@@ -5938,14 +6027,10 @@ p {
   margin: 0;
   text-align: left
 }
-.footer p.photo-cred {
-  margin-bottom: 1rem;
-  color: rgba(255,255,255,.6)
-}
-.footer p.photo-cred span {
-  display: block;
-  font-size: .6rem;
-  text-transform: uppercase
+@media (max-width:575.98px) {
+  .footer p {
+    font-size: .65rem
+  }
 }
 .page {
   z-index: 1;
@@ -6075,12 +6160,49 @@ p {
   letter-spacing: .3px
 }
 .panel .slick-slider {
-  margin: 2rem 0 3rem
+  margin: 2rem 0 2.5rem;
+  padding-bottom: 3.5rem;
+  position: relative
 }
 @media (min-width:768px) {
   .panel .slick-slider {
     width: calc(100% + 2rem);
     margin-left: -1rem
+  }
+}
+.panel .slick-slider .slick-arrow {
+  position: absolute;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+  top: unset;
+  left: unset;
+  right: unset
+}
+.panel .slick-slider .slick-arrow::before {
+  content: url(/images/arrow.svg);
+  font-family: unset;
+  font-size: unset;
+  line-height: unset;
+  color: unset
+}
+.panel .slick-slider .slick-arrow.slick-prev {
+  left: .75rem;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  bottom: 15px
+}
+@media (max-width:575.98px) {
+  .panel .slick-slider .slick-arrow.slick-prev {
+    left: 0
+  }
+}
+.panel .slick-slider .slick-arrow.slick-next {
+  left: 50px
+}
+@media (max-width:575.98px) {
+  .panel .slick-slider .slick-arrow.slick-next {
+    left: 38px
   }
 }
 .panel .slick-slider .slick-list {
@@ -6172,6 +6294,14 @@ p {
 }
 .panel.home-intro .content::after {
   content: none
+}
+@media (max-width:575.98px) {
+  .panel.home-intro h1 {
+    font-size: 1.25rem
+  }
+  .panel.home-intro p {
+    font-size: 1rem
+  }
 }
 .panel.home-work {
   margin-top: 120px
@@ -6342,6 +6472,11 @@ p {
   height: 16px;
   transition: all .2s ease-in-out
 }
+@media (max-width:575.98px) {
+  .panel .card h1 {
+    font-size: 1rem
+  }
+}
 .panel .card a {
   text-decoration: none
 }
@@ -6357,6 +6492,7 @@ p {
   content: none
 }
 .page-home {
+  position: relative;
   margin-bottom: 100px
 }
 .page-home .header .container {

@@ -4,6 +4,75 @@ html {
 	}
 }
 
+.app {
+	overflow: hidden;
+	position: relative;
+}
+
+.solar-system {
+	position: absolute;
+	bottom: -20px;
+	right: -50px;
+	z-index: 0;
+
+	@include media-breakpoint-down(lg) {
+		right: -140px;
+		bottom: unset;
+		top: 35%;
+	}
+
+	@include media-breakpoint-down(sm) {
+		width: 500px;
+		height: 350px;
+		right: -75px;
+		top: unset;
+		bottom: -20px;
+	}
+
+	ellipse,
+	.ellipse {
+		fill: none;
+		stroke: #393939;
+	}
+
+	circle {
+		z-index: 1;
+	}
+
+	.dashed-stroke {
+		stroke-dasharray: 5px;
+		isolation: isolate;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+
+		&.ellipse-1 {
+			animation-name: dashedstroke;
+			animation-duration: 240s;
+			animation-direction: alternate;
+		}
+
+		&.ellipse-2 {
+			animation-name: dashedstroke;
+			animation-duration: 160s;
+		}
+
+		&.ellipse-3 {
+			animation-name: dashedstroke;
+			animation-duration: 120s;
+		}
+	}
+}
+
+@keyframes dashedstroke {
+	from {
+		stroke-dashoffset: 0%;
+	}
+
+	to {
+		stroke-dashoffset: 100%;
+	}
+}
+
 // Global
 .main {
 	background-color: $dark;
@@ -109,3 +178,17 @@ li {
 // 		background-color: rgba(255, 255, 255, 0.25);
 // 	}
 // }
+
+a.btn {
+	margin-top: 1rem;
+
+	&.btn-outline-primary {
+		border: 1px solid $yellow;
+		border-radius: $border-radius;
+
+		&:hover,
+		&:focus {
+			color: $yellow;
+		}
+	}
+}

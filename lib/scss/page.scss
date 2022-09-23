@@ -144,11 +144,51 @@
 
 	// Slideshow.
 	.slick-slider {
-		margin: 2rem 0 3rem;
+		margin: 2rem 0 2.5rem;
+		padding-bottom: 3.5rem;
+		position: relative;
 
 		@include media-breakpoint-up(md) {
 			width: calc(100% + 2rem);
 			margin-left: -1rem;
+		}
+
+		.slick-arrow {
+			position: absolute;
+			bottom: 0;
+			height: 30px;
+			width: 30px;
+			top: unset;
+			left: unset;
+			right: unset;
+			// border: 1px solid $gray-700;
+			// border-radius: 100%;
+
+			&::before {
+				content: url(/images/arrow.svg);
+				font-family: unset;
+				font-size: unset;
+				line-height: unset;
+				color: unset;
+			}
+
+			&.slick-prev {
+				left: 0.75rem;
+				transform: scaleX(-1);
+				bottom: 15px;
+
+				@include media-breakpoint-down(sm) {
+					left: 0;
+				}
+			}
+
+			&.slick-next {
+				left: 50px;
+
+				@include media-breakpoint-down(sm) {
+					left: 38px;
+				}
+			}
 		}
 
 		.slick-list {
@@ -258,6 +298,16 @@
 
 		.content::after {
 			content: none;
+		}
+
+		@include media-breakpoint-down(sm) {
+			h1 {
+				font-size: 1.25rem;
+			}
+
+			p {
+				font-size: 1rem;
+			}
 		}
 	}
 
@@ -465,6 +515,10 @@
 				height: 16px;
 				transition: $transition-base;
 			}
+
+			@include media-breakpoint-down(sm) {
+				font-size: 1rem;
+			}
 		}
 
 		a {
@@ -490,6 +544,7 @@
 
 // Home page.
 .page-home {
+	position: relative;
 	margin-bottom: 100px;
 
 	.header .container {
