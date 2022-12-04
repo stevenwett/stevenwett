@@ -1,1 +1,69 @@
-{"name":"","short_name":"","icons":[{"src":"/images/favicon/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/images/favicon/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#ffffff","background_color":"#ffffff","display":"standalone"}
+{
+    "short_name": "Steven Wett",
+    "name": "Steven Wett: Web Developer / UX Designer",
+    "icons": [
+        {
+            "src": "/images/favicon/favicon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-57.png",
+            "sizes": "57x57",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-76.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-228.png",
+            "sizes": "228x228",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-120.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-152.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-196.png",
+            "sizes": "196x196",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/favicon/favicon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+    ],
+    "theme_color": "#393939",
+    "background_color": "#393939",
+    "display": "standalone"
+}

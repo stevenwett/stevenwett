@@ -72,9 +72,9 @@ class GeminiMemorialDesigner extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<a className="gemini-logo no-line" href="https://geminibronze.com">
+								{/*<a className="gemini-logo no-line" href="https://geminibronze.com">
 									<img src="/images/gemini-logo-memorials.jpg" alt="Gemini logo" />
-								</a>
+								</a>*/}
 								<h2>Overview</h2>
 								<p>The Gemini Memorial Designer is a web app that my team designed and built for a client. The client, Gemini, is North America’s largest manufacturer of signage. We have a long-standing relationship with Gemini and they came to us with a request for proposal to explore how they might create an online design tool for their customers in the memorials industry.</p>
 							</Col>
@@ -183,7 +183,7 @@ class GeminiMemorialDesigner extends React.Component {
 								<p>We met with the monument builder customers again and had them follow a guided scenario with specific tasks to complete. My coworker and I did three usability tests remotely where we had the customer share their screen and talk to us as they clicked through the wireframes.</p>
 								<p>After conducting the test, I updated the wireframes to fix many of the usability issues that we had found. One component that we removed during the iterative updates was the element options panel – where users could have another way to control emblems – because it wasn’t especially helpful. Originally we included it as the competitors also had it, but moving forward, we chose to remove it because we found it was overly complex during user testing.</p>
 								<h3>Visual Design</h3>
-								<p>I worked with our art director to use Gemini’s existing brand guidelines for the visual design of the app. The brand guidelines don’t have explicit details for web components so I developed design patterns based on the <a href="geminimade.com">geminimade.com</a> website.</p>
+								<p>I worked with our art director to use Gemini’s existing brand guidelines for the visual design of the app. The brand guidelines don’t have explicit details for web components so I developed design patterns based on the <a href="https://geminimade.com">geminimade.com</a> website.</p>
 								<p>Gemini was pleased with the clean and consistent design that followed Gemini branding. They were ultimately more focused on functionality and quickly approved the work.</p>
 								<Slider {...settings.slideshow}>
 									<div>
@@ -246,7 +246,7 @@ class GeminiMemorialDesigner extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
-									<Link to="/work/riggs-cat" className="next-work no-line">Riggs Cat</Link>
+									<Link to="/work/riggscat" className="next-work no-line">Riggs Cat Website</Link>
 								</div>
 							</Col>
 						</Row>

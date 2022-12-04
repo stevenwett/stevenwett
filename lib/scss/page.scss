@@ -246,7 +246,7 @@
 	&.intro {
 		// text-align: center;
 		padding-top: 80px;
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 		padding-bottom: 60px;
 
 		.content {
@@ -313,6 +313,10 @@
 
 	&.home-work {
 		margin-top: 120px;
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 64px;
+		}
 	}
 
 	&.contact {
@@ -327,7 +331,7 @@
 			margin-bottom: $grid-gutter-width;
 			border: 1px solid $gray-700;
 			border-radius: $border-radius-lg;
-			// background-color: $black;
+			background-color: $black;
 			// background: $black;
 			// background: linear-gradient(120deg, black 0%, rgba(0, 0, 0, 0.35) 15%, rgba(0, 0, 0, 0.1) 100%);
 		}
@@ -368,8 +372,7 @@
 
 		.contacts {
 			display: flex;
-			margin: 3rem 0 3rem $grid-gutter-width;
-			// justify-content: center;
+			margin: 3rem 0;
 
 			a {
 				margin-right: $grid-gutter-width;
@@ -383,6 +386,10 @@
 				&::after {
 					content: none;
 				}
+			}
+
+			@include media-breakpoint-down(sm) {
+				justify-content: center;
 			}
 		}
 
@@ -565,7 +572,14 @@
 			background-size: cover;
 			opacity: 0.4;
 
+			@include media-breakpoint-down(md) {
+				width: 680px;
+				height: 680px;
+				top: -350px;
+			}
+
 			@include media-breakpoint-down(sm) {
+				// content: none;
 				width: 550px;
 				height: 550px;
 				left: -260px;
@@ -640,30 +654,7 @@
 }
 
 // Work page.
-.page-work {
-	.cards {
-		// .card {
-		// 	width: calc(50% + 0.75rem);
-		// 	margin: 0 0 100px;
-
-		// 	&:nth-child(odd) {
-		// 		align-self: flex-start;
-		// 	}
-
-		// 	&:nth-child(even) {
-		// 		align-self: flex-end;
-		// 	}
-
-		// 	@include media-breakpoint-down(lg) {
-		// 		width: 75%;
-		// 	}
-
-		// 	@include media-breakpoint-down(sm) {
-		// 		width: 85%;
-		// 	}
-		// }
-	}
-}
+// .page-work {}
 
 // Work single.
 .page-work-single {
@@ -720,12 +711,6 @@
 
 // Page about.
 .page-about {
-	// .content {
-	// 	@include media-breakpoint-down(md) {
-	// 		padding-top: 50px;
-	// 	}
-	// }
-
 	.me {
 		height: 200px;
 		width: 200px;

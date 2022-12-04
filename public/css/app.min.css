@@ -5749,24 +5749,19 @@ html::-webkit-scrollbar {
 }
 .solar-system {
   position: absolute;
-  bottom: -20px;
-  right: -50px;
+  bottom: 0;
+  right: -120px;
   z-index: 0
 }
 @media (max-width:991.98px) {
   .solar-system {
-    right: -140px;
-    bottom: unset;
-    top: 35%
+    top: 350px;
+    bottom: unset
   }
 }
 @media (max-width:575.98px) {
   .solar-system {
-    width: 500px;
-    height: 350px;
-    right: -75px;
-    top: unset;
-    bottom: -20px
+    display: none
   }
 }
 .solar-system .ellipse,
@@ -6249,7 +6244,7 @@ a.btn.btn-outline-primary:hover {
 }
 .panel.intro {
   padding-top: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   padding-bottom: 60px
 }
 .panel.intro .content {
@@ -6306,6 +6301,11 @@ a.btn.btn-outline-primary:hover {
 .panel.home-work {
   margin-top: 120px
 }
+@media (max-width:575.98px) {
+  .panel.home-work {
+    margin-top: 64px
+  }
+}
 .panel.contact {
   overflow: unset
 }
@@ -6316,7 +6316,8 @@ a.btn.btn-outline-primary:hover {
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border: 1px solid #495057;
-  border-radius: 16px
+  border-radius: 16px;
+  background-color: #000
 }
 .panel.contact h2 {
   font-size: 1.125rem;
@@ -6346,7 +6347,7 @@ a.btn.btn-outline-primary:hover {
 }
 .panel.contact .contacts {
   display: flex;
-  margin: 3rem 0 3rem 1.5rem
+  margin: 3rem 0
 }
 .panel.contact .contacts a {
   margin-right: 1.5rem;
@@ -6358,6 +6359,11 @@ a.btn.btn-outline-primary:hover {
 }
 .panel.contact .contacts a::after {
   content: none
+}
+@media (max-width:575.98px) {
+  .panel.contact .contacts {
+    justify-content: center
+  }
 }
 .panel.contact .download-resume {
   text-align: center
@@ -6512,6 +6518,13 @@ a.btn.btn-outline-primary:hover {
   background-image: url(/images/wett-colorado-stars.jpg);
   background-size: cover;
   opacity: .4
+}
+@media (max-width:767.98px) {
+  .page-home .header .container::before {
+    width: 680px;
+    height: 680px;
+    top: -350px
+  }
 }
 @media (max-width:575.98px) {
   .page-home .header .container::before {

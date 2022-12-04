@@ -70,12 +70,13 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<a className="gemini-logo no-line" href="https://geminimade.com">
+								{/*<a className="gemini-logo no-line" href="https://geminimade.com">
 									<img src="/images/gemini-logo.jpg" alt="Gemini logo" />
-								</a>
+								</a>*/}
 								<h2>Overview</h2>
-								<p>Gemini had an existing customer portal on a legacy system that was expensive for them to maintain, in a confusing content management system, disconnected from their new geminimade.com website, and lacked integration with their internal systems. With this project, we set out to solve all of these problems. The plan was to implement the new partner portal in WordPress and to build integrations that would allow for real-time data for their customers.</p>
+								<p>Gemini had an existing customer portal on a legacy system that was expensive for them to maintain, in a confusing content management system, disconnected from their new website, and lacked integration with their internal systems. With this project, we set out to solve all of these problems. The plan was to implement the new partner portal in WordPress and to build integrations that would allow for real-time data for their customers.</p>
 								<p>This project was part of a digital transformation for Gemini and is the first time that they will provide current information from their internal systems to their customers.</p>
+								<a className="btn btn-outline-primary no-line" href="https://geminimade.com">Visit geminimade.com</a>
 							</Col>
 						</Row>
 					</Container>
@@ -99,7 +100,7 @@ class GeminiPartnerPortal extends React.Component {
 							<Col xs={12} md={10} lg={8}>
 								<h2>Users and Audience</h2>
 								<p>The primary audience for this project was a Gemini signage customer.</p>
-								<p>Gemini has other customer segments who will also have visibility to the new portal, but the majority of Gemini’s customers are in the signage industry. We created user personas during our geminimade.com website project and utilized these personas for this project as well. In the personas we determined goals, needs, and behaviors of each customer type.</p>
+								<p>Gemini has other customer segments who will also have visibility to the new portal, but the majority of Gemini’s customers are in the signage industry. We created user personas during our <a href="https://geminimade.com">geminimade.com</a> website project and utilized these personas for this project as well. In the personas we determined goals, needs, and behaviors of each customer type.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -216,7 +217,7 @@ class GeminiPartnerPortal extends React.Component {
 									</div>
 								</Slider>
 								<h3>Design Patterns</h3>
-								<p>In 2020, I worked on a project for Gemini to create the website geminimade.com. Gemini had an existing brand guide, but it didn’t include a full design system for the web. During that project I helped develop a series of design patterns to be used across the new website. I used the design patterns for the new portal visual design and created a couple new patterns too.</p>
+								<p>In 2020, I worked on a project for Gemini to create the website <a href="https://geminimade.com">geminimade.com</a>. Gemini had an existing brand guide, but it didn’t include a full design system for the web. During that project I helped develop a series of design patterns to be used across the new website. I used the design patterns for the new portal visual design and created a couple new patterns too.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -265,7 +266,7 @@ class GeminiPartnerPortal extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
-									<Link to="/work/gemini-memorial-designer" className="next-work">Memorial Designer</Link>
+									<Link to="/work/gemini-memorial-designer" className="next-work">Memorial Designer UX Case Study</Link>
 								</div>
 							</Col>
 						</Row>

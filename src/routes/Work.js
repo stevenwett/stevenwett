@@ -3,8 +3,6 @@ import Header from '../components/Header';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import {ReactComponent as SolarSystem} from '../images/solar-system.svg';
-
 class Work extends React.Component {
 	constructor(props) {
 		super(props);
@@ -72,7 +70,6 @@ class Work extends React.Component {
 						</Container>
 					</section>
 				</div>
-				<SolarSystem />
 			</>
 		);
 	}

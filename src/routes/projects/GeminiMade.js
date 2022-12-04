@@ -22,7 +22,7 @@ class RiggsCat extends React.Component {
 		// const {} = this.state;
 
 		return (
-			<div className="page page-work-single riggscat">
+			<div className="page page-work-single geminimade">
 				<Header route="/work" />
 				<div className="panel single-intro">
 					<Container>
@@ -32,11 +32,11 @@ class RiggsCat extends React.Component {
 									<div className="category">
 										<Link to="/work">Work</Link> <span>/</span> Website
 									</div>
-									<h1>Riggs Cat</h1>
+									<h1>Gemini</h1>
 									<div className="single-feature">
 										<div className="ratio ratio-4x3">
 											<picture>
-												<img src="/images/project-riggs-cat.jpg" alt="Riggs Cat website screenshot" />
+												<img src="/images/project-geminimade.jpg" alt="Gemini website screenshot" />
 											</picture>
 										</div>
 									</div>
@@ -68,9 +68,10 @@ class RiggsCat extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<h2>Overview</h2>
-								<p>Riggs Cat is an equipment dealer in Arkansas. They had an outdated website that was difficult to navigate for customers. They also wanted to display equipment that Caterpillar had available via an API alongside their own equipment.</p>
-								<p>To solve these two problems, my team and I planned and implemented a new website.</p>
-								<a className="btn btn-outline-primary no-line" href="https://riggscat.com">Visit riggscat.com</a>
+								<p>Gemini is North America's largest manufacturer of signage for building exteriors, internal signage and wayfinding, plaques and more. In addition to signage, they have other brands such as Gemstar and Duets that sell to separate customer segments.</p>
+								<p>Each of Gemini's brands had it's own website with no overarching website to connect them. This was a problem especially for the lesser known brands because it was hard to trust them as being part of a larger company. In addition, there were similar features on each website that could be consolidated. My team and I designed and developed the <a href="https://geminimade.com">geminimade.com</a> website to be an umbrella website for all of Gemini's brands. We built this website as a platform to centralize shared functionality such as careers, support, and news.</p>
+								<p>Within the geminimade.com website, we designed and built a new site for Gemini Signage – their largest brand. We later used this new platform to build the <Link to="/work/gemini-partner-portal">Partner Portal</Link> for customers to view their quotes and orders.</p>
+								<a className="btn btn-outline-primary no-line" href="https://geminimade.com">Visit geminimade.com</a>
 							</Col>
 						</Row>
 					</Container>
@@ -80,7 +81,7 @@ class RiggsCat extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
-									<Link to="/work/geminimade" className="next-work no-line">Gemini Website</Link>
+									<Link to="/work/gemini-partner-portal" className="next-work no-line">Partner Portal UX Case Study</Link>
 								</div>
 							</Col>
 						</Row>

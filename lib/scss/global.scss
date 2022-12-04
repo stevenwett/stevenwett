@@ -11,23 +11,26 @@ html {
 
 .solar-system {
 	position: absolute;
-	bottom: -20px;
-	right: -50px;
+	bottom: 0;
+	right: -120px;
 	z-index: 0;
 
 	@include media-breakpoint-down(lg) {
-		right: -140px;
+		top: 350px;
 		bottom: unset;
-		top: 35%;
 	}
 
 	@include media-breakpoint-down(sm) {
-		width: 500px;
-		height: 350px;
-		right: -75px;
-		top: unset;
-		bottom: -20px;
+		display: none;
 	}
+
+	// @include media-breakpoint-down(sm) {
+	// 	width: 500px;
+	// 	height: 350px;
+	// 	right: -75px;
+	// 	top: unset;
+	// 	bottom: -20px;
+	// }
 
 	ellipse,
 	.ellipse {

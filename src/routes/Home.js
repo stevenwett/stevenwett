@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
-import {ReactComponent as SolarSystem} from '../images/solar-system.svg';
 
 class Home extends React.Component {
 	constructor(props) {
@@ -83,7 +82,6 @@ class Home extends React.Component {
 						</Container>
 					</section>
 				</div>
-				<SolarSystem />
 			</>
 		);
 	}
