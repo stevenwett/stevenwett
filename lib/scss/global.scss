@@ -2,6 +2,10 @@ html {
 	&::-webkit-scrollbar {
 		display: none;
 	}
+
+	*:focus {
+		outline: none;
+	}
 }
 
 .app {
@@ -85,7 +89,25 @@ p,
 li {
 	font-family: $font-family-base;
 	font-weight: $font-weight-base;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.3px;
+	line-height: 1.6;
+
+	strong {
+		font-weight: $font-weight-bold;
+	}
+}
+
+
+ul {
+	margin-bottom: 1.5rem;
+
+	li {
+		list-style-type: "•  ";
+	}
+}
+
+li {
+	margin-bottom: 0.5rem;
 }
 
 .arrow {

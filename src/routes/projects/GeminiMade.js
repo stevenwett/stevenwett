@@ -30,7 +30,7 @@ class RiggsCat extends React.Component {
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
 									<div className="category">
-										<Link to="/work">Work</Link> <span>/</span> Website
+										Website
 									</div>
 									<h1>Gemini</h1>
 									<div className="single-feature">

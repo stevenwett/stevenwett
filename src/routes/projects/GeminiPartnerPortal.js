@@ -34,13 +34,18 @@ class GeminiPartnerPortal extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
-									<div className="category">
-										<Link to="/work">Work</Link> <span>/</span> UX Case Study
-									</div>
-									<h1>Partner Portal</h1>
+									<Link to="/work" className="back no-line">
+										<svg title="Back" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20.7071 8.97838C21.0976 8.58785 21.0976 7.95469 20.7071 7.56416L14.3431 1.2002C13.9526 0.809679 13.3195 0.809679 12.9289 1.2002C12.5384 1.59073 12.5384 2.22389 12.9289 2.61442L18.5858 8.27127L12.9289 13.9281C12.5384 14.3186 12.5384 14.9518 12.9289 15.3423C13.3195 15.7329 13.9526 15.7329 14.3431 15.3423L20.7071 8.97838ZM0.75 9.27127H20V7.27127H0.75V9.27127Z" fill="#DDAD02"/>
+										</svg>
+									</Link>
+									<div className="category">UX Case Study</div>
+									<h1>Gemini Partner Portal</h1>
 									<div className="single-feature">
 										<div className="ratio ratio-16x9">
-											<iframe src="https://player.vimeo.com/video/706628191?h=453896c132" width="960" height="540" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="Video preview of the Partner Portal"></iframe>
+											<picture>
+												<img src="/images/project-gemini-partner-portal.png" alt="Gemini partner portal" />
+											</picture>
 										</div>
 									</div>
 									<Row className="single-details">
@@ -54,7 +59,7 @@ class GeminiPartnerPortal extends React.Component {
 										</Col>
 										<Col xs={12} md={6} className="detail">
 											<h2>UX Skills</h2>
-											<p>Analytics Review, Personas, Content & Functionality Audits, User Journey Map, Design Patterns, Wireframes, Prototypes, Visual Design</p>
+											<p>Analytics Review, Content/Functionality Audit, User Journey Mapping, API Planning, Prototyping, Visual Design</p>
 										</Col>
 										<Col xs={12} md={6} className="detail">
 											<h2>Year</h2>
@@ -70,13 +75,9 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								{/*<a className="gemini-logo no-line" href="https://geminimade.com">
-									<img src="/images/gemini-logo.jpg" alt="Gemini logo" />
-								</a>*/}
-								<h2>Overview</h2>
-								<p>Gemini had an existing customer portal on a legacy system that was expensive for them to maintain, in a confusing content management system, disconnected from their new website, and lacked integration with their internal systems. With this project, we set out to solve all of these problems. The plan was to implement the new partner portal in WordPress and to build integrations that would allow for real-time data for their customers.</p>
-								<p>This project was part of a digital transformation for Gemini and is the first time that they will provide current information from their internal systems to their customers.</p>
-								<a className="btn btn-outline-primary no-line" href="https://geminimade.com">Visit geminimade.com</a>
+								<h2>Background</h2>
+								<p>Gemini is North America’s largest manufacturer of made-to-order signage.</p>
+								<p>The Partner Portal was part of a digital transformation for Gemini. This case study focuses on a project to provide realtime quote and order status information to their 10,000+ customer accounts.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -85,11 +86,20 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Problem Statement</h2>
-								<p>Gemini has a fragmented quoting system because customers can create quotes for themselves in the Partner Portal, and they can also call in and create quotes with Gemini. Customers could only see the quotes that they created online but didn’t have visibility to any quotes from Gemini’s internal systems. For this project, we set out to design a way for customers to view their entire interaction history with Gemini and see quotes and orders from Gemini’s internal systems.</p>
-								<blockquote>
-									<p>How might we provide Gemini customers with up-to-date information so that they can know the current status of their quotes and orders?</p>
-								</blockquote>
+								<h2>The problem</h2>
+								<p>In 2021, Gemini came to my team with a request to improve their customer portal. Their previous system was:</p>
+								<ul>
+									<li>Expensive for them to maintain</li>
+									<li>In a confusing content management system</li>
+									<li>Disconnected from their new website, and</li>
+									<li>Lacked integration with their internal systems</li>
+								</ul>
+								<p>Gemini’s customers could not see their full quote history or their current order status. My team and I designed a personalized logged-in portal for <strong>customers to view their entire interaction history and see quotes and orders from Gemini’s internal systems</strong>.</p>
+								<p>During this project, we hoped to address this question 🧐:</p>
+								<article className="callout hmw">
+									<h3>How Might We ...</h3>
+									<p>How might we provide Gemini customers with up-to-date information so that they can know the the status of their project?</p>
+								</article>
 							</Col>
 						</Row>
 					</Container>
@@ -98,9 +108,8 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Users and Audience</h2>
+								<h2>Audience</h2>
 								<p>The primary audience for this project was a Gemini signage customer.</p>
-								<p>Gemini has other customer segments who will also have visibility to the new portal, but the majority of Gemini’s customers are in the signage industry. We created user personas during our <a href="https://geminimade.com">geminimade.com</a> website project and utilized these personas for this project as well. In the personas we determined goals, needs, and behaviors of each customer type.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -109,9 +118,8 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Roles and Responsibilities</h2>
-								<p>I co-lead the design and development for this project. My team consisted of myself, a project manager, another UX designer, a content strategist, and an art director.</p>
-								<p>The Gemini team also played a large part in developing a bridge between their internal systems and the website. This project also affected their customer support and sales teams so they coordinated internal training themselves.</p>
+								<h2>Roles & responsibilities</h2>
+								<p><strong>I co-lead the design and development for this project.</strong> My team consisted of myself, a project manager, another UX designer, a content strategist, and an art director.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -120,9 +128,9 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Scope and Constraints</h2>
-								<p>Gemini came to us with this project as a request for proposal. We established a budget and timeline that included time for discovery, testing, implementation, quality assurance and launch. The proposal was approved by Gemini and we were constrained by the timeline and the budget.</p>
-								<p>This project was also constrained by the IT and technical resources on Gemini’s end. In order to get real-time information from Gemini’s systems they needed to create a bridge between their internal systems and the website.</p>
+								<h2>Project scope</h2>
+								<p>Gemini came to us with this project as a request for proposal. We established a budget and timeline that included time for discovery, testing, implementation, quality assurance and launch.</p>
+								<p>The proposal was approved by Gemini and we were constrained by the timeline and the budget.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -131,33 +139,48 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Process</h2>
+								<h2>Reviews & audits</h2>
+								<p>First off, we wanted to understand how users were using the old system and what content and features were currently there.</p>
 								<h3>Analytics Review</h3>
-								<p>To better understand how customers were using the old portal, I conducted an analytics review and presented it to the client. In this review, I explained the overall user behavior, user location, and current online quoting usage.</p>
-								<h3>Functionality and Content Audits</h3>
-								<p>Gemini already had a customer portal on their old website and we needed to decide what should stay and what should be removed. We did a full functionality and content audit of the old portal. This audit made it easier to discuss with the client what content and features should remain.</p>
-								<h3>Getting Data from Internal Systems</h3>
-								<p>This project involved communicating with Gemini’s internal data systems, something that Gemini had never done before. I worked closely with their internal IT team and created detailed documentation for each of the endpoints we needed, in order to provide current information to the customer. Our teams created a custom API exclusively for this project to get data from Gemini’s internal systems.</p>
-								<h3>Customer Journey</h3>
-								<p>We used insights from the analytics review and audits to establish the overall process of the user for the new portal. This journey included details for the one-time onboarding from the old system to the new, where the user would create an new individual login.</p>
-								<figure className="image-full">
-									<picture>
-										<img src="/images/gemini-journey-map.jpg" alt="An obscured customer user flow" />
-									</picture>
-									<figcaption>The customer user flow (obscured)</figcaption>
-								</figure>
+								<p>I conducted an analytics review and presented it to the client. My review outlined the user behavior on the old portal to understand current user trends.</p>
+								<h3>Content & Functionality Audits</h3>
+								<p>We did a functionality and content audit of the old portal. These audits made it easier to discuss with the client what content and features should remain.</p>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<h2>Planning</h2>
+								<p>This project involved migrating users and complex features, so we needed a solid plan.</p>
 								<h3>Content Plan</h3>
-								<p>Using the content audit and the client planning meetings, I created a working document to outline the content structure of the new portal. This content plan outlined the page hierarchy and contained details such as the URL structure, content needs, the purpose, and calls to action for each page. I worked alongside my coworker who is a content strategist to create this plan.</p>
-								<h3>Customer Onboarding Plan</h3>
-								<p>We developed flow charts to outline all of the different actions within the customer portal. The most complicated processes were onboarding from the old system to the new system and creating a way for a user to easily and securely sign into the new portal. These flow charts helped us and the client understand the process with more confidence.</p>
+								<p>I put together a content plan for the new portal with our content strategist. The plan outlined page hierarchy and contained details such as the URL structure, content needs, the purpose, and calls to action for each page.</p>
+								<h3>Onboarding Plan</h3>
+								<p>Transitioning 15,000+ users from the legacy system to the new system involved careful planning. We mapped out the complete system to ensure a successful migration. <strong>This service diagram helped the client understand the process with more confidence.</strong></p>
 								<figure className="image-full">
 									<picture>
 										<img src="/images/gemini-login-service-diagram.jpg" alt="A service diagram of the customer login process" />
 									</picture>
-									<figcaption>A service diagram outlining the customer onboarding process (obscured)</figcaption>
+									{/*<figcaption>A service diagram outlining the customer onboarding process (obscured)</figcaption>*/}
 								</figure>
-								<h3>Prototyping</h3>
-								<p>I developed a series of low-fidelity wireframes to step through the process before getting into code. These wireframes helped us discuss major actions and functionality with the client so that we could focus on the user’s goals.</p>
+								<article className="callout">
+									<h3>API Planning</h3>
+									<p>This project involved communicating with the client’s internal data systems — something that Gemini had never done before.</p>
+									<p><strong>We worked closely with Gemini’s IT team and created detailed API documentation for each of the endpoints.</strong> Our teams created a custom RESTful API exclusively for this project to get data from Gemini’s internal systems.</p>
+								</article>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<h2>Prototyping</h2>
+								<h3>Wireframes</h3>
+								<p>I developed a series of low- and mid-fidelity prototypes to step through the process with the client before getting into code. <strong>These prototypes helped us discuss major actions and functionality with the client so that we could focus on the user’s goals.</strong></p>
 								<p>We worked with the client for several weeks to finalize the wireframes. Our teams discussed priorities, user goals, and what functionality was possible given our infrastructure constraints.</p>
 								<Slider {...settings.slideshow}>
 									<div>
@@ -182,42 +205,35 @@ class GeminiPartnerPortal extends React.Component {
 									</div>
 								</Slider>
 								<h3>Visual Design</h3>
-								<p>I worked with our art director to apply branding to the wireframes to create high-fidelity visual designs. We followed Gemini's existing brand guide.</p>
+								<p>I worked with our art director to apply branding to the wireframes to create high-fidelity prototypes. We followed Gemini's existing brand guide.</p>
 								<p>In subsequent meetings with Gemini I tweaked the visual design and adjusted components until the client was satisfied.</p>
 								<Slider {...settings.slideshow}>
 									<div>
 										<picture>
-											<img src="/images/partner-portal-screenshot-1.jpg" alt="Dashboard wireframe" />
+											<img src="/images/partner-portal-screenshot-1.jpg" alt="Dashboard screenshot" />
 										</picture>
 									</div>
 									<div>
 										<picture>
-											<img src="/images/partner-portal-screenshot-dashboard-recent.jpg" alt="Dashboard wireframe recent quotes and orders" />
+											<img src="/images/partner-portal-screenshot-2.jpg" alt="Orders screenshot" />
 										</picture>
 									</div>
 									<div>
 										<picture>
-											<img src="/images/partner-portal-screenshot-2.jpg" alt="Orders wireframe" />
+											<img src="/images/partner-portal-screenshot-3.jpg" alt="Quotes screenshot" />
 										</picture>
 									</div>
 									<div>
 										<picture>
-											<img src="/images/partner-portal-screenshot-orders.jpg" alt="Orders wireframe" />
+											<img src="/images/partner-portal-screenshot-4.jpg" alt="Account screenshot" />
 										</picture>
 									</div>
 									<div>
 										<picture>
-											<img src="/images/partner-portal-screenshot-3.jpg" alt="Quotes wireframe" />
-										</picture>
-									</div>
-									<div>
-										<picture>
-											<img src="/images/partner-portal-screenshot-4.jpg" alt="Account wireframe" />
+											<img src="/images/partner-portal-screenshot-5.jpg" alt="Account screenshot" />
 										</picture>
 									</div>
 								</Slider>
-								<h3>Design Patterns</h3>
-								<p>In 2020, I worked on a project for Gemini to create the website <a href="https://geminimade.com">geminimade.com</a>. Gemini had an existing brand guide, but it didn’t include a full design system for the web. During that project I helped develop a series of design patterns to be used across the new website. I used the design patterns for the new portal visual design and created a couple new patterns too.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -226,52 +242,63 @@ class GeminiPartnerPortal extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Outcomes and Lessons</h2>
-								<p>This project successfully launched in the Spring of 2022. We achieved our goal of allowing for customers to view their total quote and order history in real time.</p>
+								<h2>Outcomes & lessons</h2>
 								<p>To alleviate pressures on Gemini’s customer service team, we launched this project to Gemini’s customers in a stepwise approach over the course of three weeks. This also allowed for us to test the load and make performance enhancements as more customers were onboarding.</p>
-								<p>The stepped onboarding process went smoothly and over 8,000 individuals onboarded successfully to the new system and activated their accounts within the first month. We also took this opportunity for customers to update their information and provide new and clean data for Gemini.</p>
-								<blockquote>
-									<p>In July 2022, three months after the launch, 14,183 users have created accounts.</p>
-								</blockquote>
-							</Col>
-						</Row>
-					</Container>
-				</div>
-				<div className="panel">
-					<Container>
-						<Row>
-							<Col xs={12} md={10} lg={8}>
-								<h2>Next Steps</h2>
-								<p>This portal contains a quoting web app called TrueQuote that we built for Gemini. The next steps would be to further integrate this quoting tool into their internal systems. While it is a big improvement for customers to have full visibility of quotes, there are still several kinds of quotes in their account, which could be confusing.</p>
-								<p>Also, now that we have a connection in place with Gemini’s internal systems, we have additional opportunities. Another next step would be to download PDFs of quotes and orders directly from Gemini’s internal systems. This would allow for a more consistent experience for the customer.</p>
-								<blockquote>
-									<p>My team and I continue to work with Gemini on ongoing improvements.</p>
-								</blockquote>
-							</Col>
-						</Row>
-					</Container>
-				</div>
-				<div className="panel">
-					<Container>
-						<Row>
-							<Col xs={12} md={10} lg={8}>
-								<h2>Accessibility</h2>
-								<p>Because I also coded the project, I am very familiar with how accessibility can directly affect a website or web app. I adhered to a WCAG 2.1 AA standard for this project, even though the client wasn’t legally required to do so. This is because one of my core values is that the web should be accessible to as many types of people as possible.</p>
-							</Col>
-						</Row>
-					</Container>
-				</div>
-				<div className="panel single-work-after">
-					<Container>
-						<Row>
-							<Col xs={12} md={10} lg={8}>
-								<div className="content">
-									<Link to="/work/gemini-memorial-designer" className="next-work">Memorial Designer UX Case Study</Link>
+								<p>The stepped onboarding process went smoothly and <strong>over 8,000 individuals onboarded successfully to the new system and activated their accounts within the first month.</strong> We also took this opportunity for customers to update their information and provide new and clean data for Gemini 👏.</p>
+								<p><strong>Signage customers are now able to see their Gemini quote and order statuses.</strong></p>
+								<article className="callout stat">
+									<h3>🎉 17k+ users</h3>
+									<p>onboarded within 30 weeks</p>
+								</article>
+								<h3>Partner Portal Demo</h3>
+								<div className="image-full ratio ratio-16x9">
+									<iframe title="Partner Portal Demo" src="https://player.vimeo.com/video/704705719?h=61139a7c5e&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
 								</div>
 							</Col>
 						</Row>
 					</Container>
 				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<h2>Next steps</h2>
+								<p>This portal contains a quoting web app called TrueQuote that my team previously built for Gemini. <strong>The next steps would be to further integrate the quoting tool into their internal systems.</strong></p>
+								<p>Now that we have a connection in place with Gemini’s internal systems, we have additional opportunities 🚀.</p>
+								<p>Some next steps include:</p>
+								<ul>
+									<li>Allow users to download quote and order PDFs</li>
+									<li>Improve how customers can reach out to support</li>
+									<li>Enhancing the self-serve quoting tool</li>
+								</ul>
+								<p><strong>My team and I continue to work with Gemini on ongoing improvements.</strong></p>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<article className="callout">
+									<h2>Accessibility</h2>
+									<p>Because I also coded the project, I am very familiar with how accessibility can directly affect a website or web app. <strong>We adhered to a WCAG 2.1 AA standard for this project, even though the client wasn’t legally required to do so.</strong> This is because one of my core values is that the web should be accessible to as many types of people as possible.</p>
+								</article>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				{/*<div className="panel single-work-after">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<div className="content">
+									<Link to="/work/gemini-memorial-designer" className="next-work">Gemini Memorial Designer</Link>
+								</div>
+							</Col>
+						</Row>
+					</Container>
+				</div>*/}
 			</div>
 		);
 	}

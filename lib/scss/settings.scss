@@ -13,7 +13,7 @@ $font-weight-light:   200;
 $font-weight-normal:  400;
 $font-weight-bold:    700;
 $font-weight-bolder:  900;
-$font-weight-base:    $font-weight-normal;
+$font-weight-base:    $font-weight-light;
 
 $blue: #007bfe;
 $light-blue: #5badee;
@@ -28,6 +28,7 @@ $green: #468032;
 $dark-yellow: darken($yellow, 5%);
 
 $transparent-white: rgba(255, 255, 255, 0.3);
+$transparent-yellow: rgba(221, 173, 2, 0.5);
 
 $dark: #131313;
 

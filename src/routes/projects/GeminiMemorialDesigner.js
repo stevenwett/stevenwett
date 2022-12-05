@@ -34,14 +34,17 @@ class GeminiMemorialDesigner extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
-									<div className="category">
-										<Link to="/work">Work</Link> <span>/</span> UX Case Study
-									</div>
-									<h1>Memorial Designer</h1>
+									<Link to="/work" className="back no-line">
+										<svg title="Back" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20.7071 8.97838C21.0976 8.58785 21.0976 7.95469 20.7071 7.56416L14.3431 1.2002C13.9526 0.809679 13.3195 0.809679 12.9289 1.2002C12.5384 1.59073 12.5384 2.22389 12.9289 2.61442L18.5858 8.27127L12.9289 13.9281C12.5384 14.3186 12.5384 14.9518 12.9289 15.3423C13.3195 15.7329 13.9526 15.7329 14.3431 15.3423L20.7071 8.97838ZM0.75 9.27127H20V7.27127H0.75V9.27127Z" fill="#DDAD02"/>
+										</svg>
+									</Link>
+									<div className="category">UX Case Study</div>
+									<h1>Gemini Memorial Designer</h1>
 									<div className="single-feature">
 										<div className="ratio ratio-16x9">
 											<picture>
-												<img src="/images/memorial-designer-screenshot-3.jpg" alt="Memorial designer screenshot" />
+												<img src="/images/project-gemini-memorial-designer.png" alt="Gemini memorial designer" />
 											</picture>
 										</div>
 									</div>
@@ -56,7 +59,7 @@ class GeminiMemorialDesigner extends React.Component {
 										</Col>
 										<Col xs={12} md={6} className="detail">
 											<h2>UX Skills</h2>
-											<p>Interview Guide, User Interviews, Competitive Analysis, Service Diagrams, Wireframes, Prototypes, Usability Tests, Visual Design</p>
+											<p>Interview Guide, User Interviews, Competitive Analysis, Service Diagrams, Wireframes, Prototypes, User Testing, Visual Design</p>
 										</Col>
 										<Col xs={12} md={6} className="detail">
 											<h2>Year</h2>
@@ -72,42 +75,21 @@ class GeminiMemorialDesigner extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								{/*<a className="gemini-logo no-line" href="https://geminibronze.com">
-									<img src="/images/gemini-logo-memorials.jpg" alt="Gemini logo" />
-								</a>*/}
-								<h2>Overview</h2>
-								<p>The Gemini Memorial Designer is a web app that my team designed and built for a client. The client, Gemini, is North America’s largest manufacturer of signage. We have a long-standing relationship with Gemini and they came to us with a request for proposal to explore how they might create an online design tool for their customers in the memorials industry.</p>
-							</Col>
-						</Row>
-					</Container>
-				</div>
-				<div className="panel">
-					<Container>
-						<Row>
-							<Col xs={12} md={10} lg={8}>
-								<h2>Problem Statement</h2>
-								<p>Gemini has been around for nearly sixty years and has multiple foundries for making plaques. They have mainly focused their efforts on their signage customer segments and haven’t established a strong foothold with monument builders in the memorials industry. Their monument builder customers like working with Gemini for signage because of Gemini’s great quality and customer service, however, Gemini doesn’t currently have a way for them to quickly design and order bronze memorials.</p>
-								<blockquote>
-									<p>How might we help monument builder customers design and order a bronze plaque quickly in order to help them finalize a sale with the end client?</p>
-								</blockquote>
-							</Col>
-						</Row>
-					</Container>
-				</div>
-				<div className="panel">
-					<Container>
-						<Row>
-							<Col xs={12} md={10} lg={8}>
 								<figure className="image-full">
 									<picture>
 										<img src="/images/foundary-photo-with-plaque.jpg" alt="An example plaque" />
 									</picture>
 									<figcaption>An example of a memorial bronze plaque</figcaption>
 								</figure>
-								<h2>Users and Audience</h2>
-								<p>The primary audience for this project was a designer within the monument builder industry.</p>
-								<p>The monument builder industry is composed of small businesses that design and create memorials for people’s loved ones. They work with granite and occasionally a project will require a bronze plaque, which is when they would work with Gemini.</p>
-								<p>We found that monument builders require a way to design a memorial quickly alongside their customers so that they can instantly show options and save the project before the customer leaves the store. This is because monument builders are mostly brick-and-mortar small businesses who may be time constrained and might not have the time to follow up with a customer or attempt to design over the phone.</p>
+								<h2>Background</h2>
+								<p>Gemini has been around for nearly sixty years and has multiple foundries for making plaques. </p>
+								<p>They have mainly focused their efforts on their signage customer segments and haven’t established a strong foothold with monument builders in the memorials industry.</p>
+								<p>This project works to remedy that issue. <strong>Gemini doesn’t currently have a way for designers in the monument builder industry to quickly design and order bronze memorials from them.</strong></p>
+								<p>During this project, we hoped to address this question 🧐:</p>
+								<article className="callout hmw">
+									<h3>How Might We ...</h3>
+									<p>How might we help monument builder customers design and order a bronze plaque quickly in order to help them finalize a sale with the end client?</p>
+								</article>
 							</Col>
 						</Row>
 					</Container>
@@ -116,9 +98,14 @@ class GeminiMemorialDesigner extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Roles and Responsibilities</h2>
-								<p>I co-lead the design and development for this project and worked closely on a team and with Gemini, the client. My team consisted of myself, a project manager, another UX designer, and an art director.</p>
-								<p>The Gemini team also played a part in recruiting people to interview, understanding the industry, and developing art assets for the designer.</p>
+								<h2>Audience</h2>
+								<p>The primary audience for this project was designers in the monument builder industry.</p>
+								<p>They require:</p>
+								<ul>
+									<li>A way to design a memorial quickly alongside their customers</li>
+									<li>A way to download a realistic preview for approval</li>
+									<li>An easy way to purchase the plaque</li>
+								</ul>
 							</Col>
 						</Row>
 					</Container>
@@ -127,9 +114,8 @@ class GeminiMemorialDesigner extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Scope and Constraints</h2>
-								<p>My team gathered information from the client and assembled a sales proposal. We established a budget and timeline that included time for discovery, testing, implementation and quality assurance. The proposal was approved by Gemini and we were constrained by the timeline and the budget.</p>
-								<p>One aspect of this project was to create photorealistic renderings of the final product. Gemini’s internal layout team was tasked with creating these assets. Their internal layout team’s time was also a constraint on the timeline of this project.</p>
+								<h2>Roles & responsibilities</h2>
+								<p><strong>I co-lead the design and development for this project.</strong> My team consisted of myself, a project manager, another UX designer, a content strategist, and an art director.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -138,25 +124,45 @@ class GeminiMemorialDesigner extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Process</h2>
+								<h2>Project scope</h2>
+								<p>Gemini came to us with this project as a request for proposal. We established a budget and timeline that included time for discovery, testing, implementation, quality assurance and launch.</p>
+								<p>The proposal was approved by Gemini and we were constrained by the timeline and the budget.</p>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<h2>Planning</h2>
 								<h3>User Research</h3>
-								<p>We recruited existing Gemini customers in this user segment; customers who trust them with signage, but only occasionally purchase memorial plaques from them. We also recruited some internal Gemini staff with a deep knowledge of the industry. Along with my coworker, I conducted a total of six user interviews and gained crucial knowledge about the industry.</p>
-								<h3>Competitive Analysis</h3>
-								<p>My coworker and I investigated and assembled a competitive analysis to see how others were accomplishing this goal. We came up with the opportunities and threats of this new product to see where Gemini fit into the landscape.</p>
+								<p>We recruited:</p>
+								<ul>
+									<li>Gemini customers in the monument builder industry (x4)</li>
+									<li>Knowledgeable internal staff (x2)</li>
+								</ul>
 								<h3>Information Architecture</h3>
-								<p>We met with Gemini over the series of weeks to fully understand the information that was needed for production of the memorial product. I created a content plan to organize the information.</p>
-								<h3>Customer Journey</h3>
-								<p>Now that we had an idea of what information we needed to collect, we were able to propose a user flow chart to capture the customer’s journey. This map helped us identify the complete process of the user. The service diagram is a redacted example of the user’s steps, when transactional emails are sent, and actions taken by Gemini.</p>
+								<p>We worked with Gemini over a series of weeks to fully understand what what details were needed for this designer.</p>
+								<h3>Service Blueprint</h3>
+								<p>We mapped the processes from the beginning to the end of the journey. <strong>This service blueprint helped the client understand the process with more confidence.</strong></p>
 								<figure className="image-full">
 									<picture>
 										<img src="/images/gemini-bronze-service-diagram.jpg" alt="Customer journey map" />
 									</picture>
-									<figcaption>A monument builder customer journey service diagram</figcaption>
+									{/*<figcaption>A monument builder customer journey service diagram</figcaption>*/}
 								</figure>
-								<h3>Design Patterns</h3>
-								<p>I grouped the data we needed to collect into similar groupings and identified the control types that would be best to collect the information. The use of design patterns, especially for control types, allowed for the prototype, and ultimately the design, to be consistent and more intuitive for the user.</p>
-								<h3>Prototyping</h3>
-								<p>I first created a series of low-fidelity wireframes that followed the customer journey to identify the major actions that the user needed to take. These prototypes were helpful for the client to understand for the first time how the user would use the product. We were able to have more constructive conversations of priorities and the user flow.</p>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<h2>Prototyping</h2>
+								<h3>Wireframes</h3>
+								<p>I created a series of low-fidelity wireframes that followed the customer journey to identify the major actions that the user needed to take.</p>
 								<Slider {...settings.slideshow}>
 									<div>
 										<picture>
@@ -180,11 +186,11 @@ class GeminiMemorialDesigner extends React.Component {
 									</div>
 								</Slider>
 								<h3>Usability Testing</h3>
-								<p>We met with the monument builder customers again and had them follow a guided scenario with specific tasks to complete. My coworker and I did three usability tests remotely where we had the customer share their screen and talk to us as they clicked through the wireframes.</p>
-								<p>After conducting the test, I updated the wireframes to fix many of the usability issues that we had found. One component that we removed during the iterative updates was the element options panel – where users could have another way to control emblems – because it wasn’t especially helpful. Originally we included it as the competitors also had it, but moving forward, we chose to remove it because we found it was overly complex during user testing.</p>
+								<p>We met with the monument builder customers again and had them follow a guided scenario with specific tasks to complete.</p>
+								<p>One component that we removed during the iterative updates was the element options panel – where users could have another way to control emblems – because it wasn’t especially helpful. We chose to remove it because we found it was overly complex during user testing.</p>
 								<h3>Visual Design</h3>
-								<p>I worked with our art director to use Gemini’s existing brand guidelines for the visual design of the app. The brand guidelines don’t have explicit details for web components so I developed design patterns based on the <a href="https://geminimade.com">geminimade.com</a> website.</p>
-								<p>Gemini was pleased with the clean and consistent design that followed Gemini branding. They were ultimately more focused on functionality and quickly approved the work.</p>
+								<p>I worked with our art director to use Gemini’s existing brand guidelines for the visual design of the app. <strong>The brand guidelines don’t have details for web components so I developed design patterns closely following the guide.</strong></p>
+								<p>Gemini was pleased with the clean and consistent design that followed Gemini branding.</p>
 								<Slider {...settings.slideshow}>
 									<div>
 										<picture>
@@ -207,12 +213,6 @@ class GeminiMemorialDesigner extends React.Component {
 										</picture>
 									</div>
 								</Slider>
-								{/*<figure className="image-full">
-									<picture>
-										<img src="/images/project-memorial-designer.png" alt="A screenshot of the Memorial Designer" />
-									</picture>
-									<figcaption>Screenshot of the Memorial Designer</figcaption>
-								</figure>*/}
 							</Col>
 						</Row>
 					</Container>
@@ -221,12 +221,10 @@ class GeminiMemorialDesigner extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Outcomes and Lessons</h2>
-								<p>In our original planning we had wanted to include all of the various products that Gemini may offer to monument builder customers. After getting into the details and understanding the complexities, we narrowed the scope to be more akin to a minimal viable product.</p>
-								<blockquote>
-									<p>The Memorial Designer first launched to key accounts to work out the process internally. With the launch of Gemini’s Partner Portal in 2022, it became available to all roughly fifty thousand of Gemini’s customers.</p>
-								</blockquote>
-								<p>The next step for this project would be to interview customers after they have been using the tool for a while. What works well? What could be improved upon? Then we could consider adding more of their product lines to expand the offering of the designer.</p>
+								<h2>Outcomes & lessons</h2>
+								<p>In our original planning we had wanted to include all of the various products that Gemini may offer to monument builder customers. After getting into the details and understanding the complexities, <strong>we narrowed the scope to be more akin to a minimal viable product.</strong></p>
+								<p>The Memorial Designer first launched to key accounts to work out the process internally. <strong>When the Partner Portal launched in 2022, ~50,000 customers gained access to the designer.</strong></p>
+								<p>Gemini is still new to the industry and are slowly growing their customer base with this designer.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -235,13 +233,30 @@ class GeminiMemorialDesigner extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
-								<h2>Accessibility</h2>
-								<p>Because I also coded the project, I am very familiar with how accessibility can directly affect a website or web app. I adhered to a WCAG 2.1 AA standard for this project, even though the client wasn’t legally required to do so. This is because one of my core values is that the web should be accessible to as many types of people as possible.</p>
+								<h2>Next steps</h2>
+								<ul>
+									<li>Continue to interview customers and iterate on this project to make it better</li>
+									<li>Add more product lines</li>
+									<li>Add additional options, such as colors, textures, and emblem</li>
+									<li>Make the designer public facing</li>
+								</ul>
 							</Col>
 						</Row>
 					</Container>
 				</div>
-				<div className="panel single-work-after">
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<article className="callout">
+									<h2>Accessibility</h2>
+									<p>Because I also coded the project, I am very familiar with how accessibility can directly affect a website or web app. <strong>We adhered to a WCAG 2.1 AA standard for this project, even though the client wasn’t legally required to do so.</strong> This is because one of my core values is that the web should be accessible to as many types of people as possible.</p>
+								</article>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+{/*				<div className="panel single-work-after">
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8}>
@@ -251,7 +266,7 @@ class GeminiMemorialDesigner extends React.Component {
 							</Col>
 						</Row>
 					</Container>
-				</div>
+				</div>*/}
 			</div>
 
 		);

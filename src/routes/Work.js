@@ -1,7 +1,8 @@
 import React from 'react';
-import Header from '../components/Header';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+import Header from '../components/Header';
 
 class Work extends React.Component {
 	constructor(props) {
@@ -19,7 +20,9 @@ class Work extends React.Component {
 	}
 
 	render() {
-		const { projects } = this.state;
+		const {
+			projects
+		} = this.state;
 
 		return (
 			<>
@@ -30,45 +33,48 @@ class Work extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<div className="content">
-										<h1>Work</h1>
-										<div className="title">UX Projects and Websites</div>
-										<p>Featured UX projects and websites I’ve designed and launched for clients{/* of Neuger and at my graduate program at MICA*/}.</p>
+										<h1 class="visually-hidden">Steven Wett</h1>
+										<div class="title">Steven Wett <span>is full-stack web developer and UX designer.</span></div>
 									</div>
 								</Col>
 							</Row>
 						</Container>
 					</div>
-					<section className="panel work">
-						<h1 className="visually-hidden">Featured Work</h1>
+					<div className="panel work-list">
 						<Container>
 							<Row>
-								<Col xs={12} md={10}>
+								<Col xs={12} md={12} lg={12} xl={12}>
 									<div className="content">
 										{projects.length > 0 ? (
-												<div className="cards">
+											<>
+												<h2>UX Case Studies</h2>
+												<div className="home-cards cards">
 													{projects.map(project => (
 														<article className="card" key={ project.slug }>
 															<Link to={`/work/${ project.slug }`}>
-																<div className="card-head">
-																	<div>{project.category === 'case-study' ? 'UX Case Study' : 'Website'}</div>
-																	<div className="year">{ project.year }</div>
-																</div>
 																<div className="card-image">
-																	<picture>
-																		<img src={ project.image } alt={ project.name } />
-																	</picture>
+																	<div className="ratio ratio-4x3">
+																		<picture>
+																			<img src={ project.image } alt={ project.name } />
+																		</picture>
+																	</div>
+																</div>
+																<div className="card-details">
+																	<span className="card-category">{project.category === 'case-study' ? 'UX Case Study' : 'Website'}</span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<span className="year">{ project.year }</span>
 																</div>
 																<h1>{ project.name }</h1>
+																<p>{ project.text }</p>
 															</Link>
 														</article>
 													))}
 												</div>
-											) : null}
+											</>
+										) : null}
 									</div>
 								</Col>
 							</Row>
 						</Container>
-					</section>
+					</div>
 				</div>
 			</>
 		);
