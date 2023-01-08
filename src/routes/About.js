@@ -34,7 +34,7 @@ class About extends React.Component {
 								<div className="content">
 									<h1>About</h1>
 									<div className="title">Steven Wett</div>
-									<p>I'm a full-stack web developer and UX designer who lives in Atlanta with over {yearsSince2015} years of agency experience. I am currently enrolled in a UX Design Master's program with MICA while remotely working full-time at Neuger.</p>
+									<p>I'm a UX/UI designer and full-stack web developer based in Atlanta. I have over {yearsSince2015} years of design and development experience and am currently working on a Master's Degree in UX Design at MICA while working full-time at Neuger.</p>
 								</div>
 							</Col>
 						</Row>
