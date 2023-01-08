@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stevenwett.com</loc>
-    <lastmod>2022-04-01</lastmod>
+    <loc>https://stevenwett.com/work</loc>
+    <lastmod>2022-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://stevenwett.com/work/gemini-memorial-designer</loc>
+    <lastmod>2022-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://stevenwett.com/work/gemini-partner-portal</loc>
+    <lastmod>2022-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://stevenwett.com/work/news-on-spotify</loc>
+    <lastmod>2022-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://stevenwett.com/blog</loc>
+    <lastmod>2022-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://stevenwett.com/blog/human-factors-mobile-banking</loc>
+    <lastmod>2022-12-11</lastmod>
+  </url>
+  <url>
+    <loc>https://stevenwett.com/about</loc>
+    <lastmod>2022-12-11</lastmod>
   </url>
 </urlset>

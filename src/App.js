@@ -4,8 +4,9 @@ import moment from 'moment';
 // Projects.
 import GeminiMemorialDesigner from './routes/projects/GeminiMemorialDesigner';
 import GeminiPartnerPortal from './routes/projects/GeminiPartnerPortal';
-import RiggsCat from './routes/projects/RiggsCat';
-import GeminiMade from './routes/projects/GeminiMade';
+import NewsOnSpotify from './routes/projects/NewsOnSpotify';
+// import RiggsCat from './routes/projects/RiggsCat';
+// import GeminiMade from './routes/projects/GeminiMade';
 
 // Articles.
 import HumanFactorsMobileBanking from './routes/blog/HumanFactorsMobileBanking';
@@ -52,39 +53,35 @@ const App = () => {
       category: 'case-study',
       year: '2022',
       name: 'Gemini Partner Portal',
+      imageWebp: '/images/project-gemini-partner-portal.webp',
       image: '/images/project-gemini-partner-portal.png',
       text: 'Designing a customer portal with realtime information from internal systems.',
-      video: '',
+    },
+    {
+      slug: 'news-on-spotify',
+      category: 'case-study',
+      year: '2022',
+      name: 'News On Spotify',
+      imageWebp: '/images/project-news-on-spotify.webp',
+      image: '/images/project-news-on-spotify.png',
+      text: 'User research, prototyping and usability testing a new feature for Spotify.',
     },
     {
       slug: 'gemini-memorial-designer',
       category: 'case-study',
       year: '2021',
       name: 'Gemini Memorial Designer',
-      image: '/images/project-gemini-memorial-designer.png',
+      imageWebp: '/images/project-gemini-memorial-designer.webp',
+      image: '/images/project-gemini-memorial-designer.webp',
       text: 'Researching and designing a bronze memorial plaque web app.',
-      video: '',
     }
-    // {
-    //   slug: 'riggscat',
-    //   category: 'website',
-    //   year: '2020',
-    //   name: 'Riggs Cat',
-    //   image: '/images/project-riggs-cat.jpg',
-    //   video: '',
-    // }
-    // {
-    //   slug: 'geminimade',
-    //   category: 'website',
-    //   year: '2020',
-    //   name: 'Gemini',
-    //   image: '/images/project-geminimade.jpg',
-    //   video: '',
-    // }
   ];
 
   return (
     <div className="app">
+      <picture>
+        <img alt="" aria-hidden="true" className="background-stars" src="/images/background-stars.webp" width="1000" />
+      </picture>
       <BrowserRouter>
         <Switch>
           <Route
@@ -109,6 +106,11 @@ const App = () => {
           />
           <Route
             exact
+            path='/work/news-on-spotify'
+            component={(component) => (<NewsOnSpotify settings={settings} component={component} />)}
+          />
+{/*          <Route
+            exact
             path='/work/riggscat'
             component={(component) => (<RiggsCat projects={projects} settings={settings} component={component} />)}
           />
@@ -116,7 +118,7 @@ const App = () => {
             exact
             path='/work/geminimade'
             component={(component) => (<GeminiMade projects={projects} settings={settings} component={component} />)}
-          />
+          />*/}
           <Route
             exact
             path='/about'

@@ -45,6 +45,7 @@ class Blog extends React.Component {
 							<Col xs={12} md={10} lg={8}>
 								<Link to="/blog/human-factors-mobile-banking">
 									<article>
+										<div className="date">December 6, 2022</div>
 										<h2>The Human Factors of Mobile Banking</h2>
 										<p>A usability inspection of three mobile banking apps and analyzing their human factors.</p>
 									</article>

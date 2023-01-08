@@ -27,7 +27,7 @@ class HumanFactorsMobileBanking extends React.Component {
 				<div className="panel intro single-intro">
 					<Container>
 						<Row>
-							<Col xs={12} md={10} lg={8}>
+							<Col xs={12} md={10} lg={8} xl={7}>
 								<div className="content">
 									<Link to="/blog" className="back no-line">
 										<svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg" title="Back">
@@ -45,17 +45,17 @@ class HumanFactorsMobileBanking extends React.Component {
 				<div className="panel">
 					<Container>
 						<Row>
-							<Col xs={12} md={10} lg={8}>
+							<Col xs={12} md={10} lg={8} xl={7}>
 								<div className="content">
-									<p>Most of us have used our phones to check our bank accounts or to transfer money to a friend. When the app is well-designed, we hardly notice. However, when we run into a difficult scenario – such as, you can’t find how to transfer funds or you’re not sure if the payment went through – it can be infuriating.</p>
+									<p>Most of us have used our phones to check our bank accounts or to transfer money to a friend. When the app is well-designed, we hardly notice. However, when we run into a difficult scenario – you can’t find how to transfer funds or you’re not sure if the payment went through – it can be infuriating.</p>
 
-									<h2>What are “human factors”?</h2>
+									<h2>What are <em>human factors</em>?</h2>
 									<p>The term <em>human factors</em> has its roots in ergonomics and historically has focused on designing jobs and equipment that are fit for people. Another similar concept called <em>human-centered design</em> is an approach to problem-solving that aims to make the system usable for the people for whom it was designed. Using these concepts, we can find out why we get frustrated when a system doesn’t behave how we expect.</p>
 									<p>In this review, we will inspect the interface designs of three mobile banking apps and critique them using evidence-based, human-centered design principles. By the end, we’ll identify how certain aspects of the designs might help or harm users.</p>
 
 									<h2>Evaluating interface designs</h2>
-									<p>Cognitive psychologist and design pioneer Don Norman claims that two of the most important characteristics of good design are <em>discoverability</em> and <em>understanding</em>.<sup className="inline-refs"><a href="#ref6">[6]</a></sup> For those designing interfaces, these characteristics are an important reminder that they are created for and used by humans. It may seem obvious, but specifically centering the focus on the humans for whom the product was intended ensures that the designs match their needs and capabilities. When the business goals are prioritized over human goals, there can be a mismatch between user needs and options available.</p>
-									<p><strong>How might we evaluate a user interface design?</strong> Another prominent design legend named Jakob Nielson, who co-founded a consulting firm with Don Norman, developed a set of general principles called “heuristics” to help us evaluate interface designs. We’ll complete a usability inspection using Nielson’s <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a> to help us identify patterns in the designs.</p>
+									<p>Cognitive psychologist and design pioneer, Don Norman, claims that two of the most important characteristics of good design are <em>discoverability</em> and <em>understanding</em>.<sup className="inline-refs"><a href="#ref6">[6]</a></sup> For those designing interfaces, these characteristics are an important reminder that they are created for and used by humans. It may seem obvious, but specifically centering the focus on the humans for whom the product was intended ensures that the designs match their needs and capabilities. When business goals are prioritized over human goals, there can be a mismatch between user needs and options available.</p>
+									<p><strong>How might we evaluate a user interface design?</strong> Another prominent design legend named Jakob Nielson, who co-founded a consulting firm with Don Norman, developed a set of general principles called <em>heuristics</em> to help us evaluate interface designs. We’ll complete a usability inspection using Nielson’s <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">10 Usability Heuristics for User Interface Design</a> to help us identify patterns in the designs.</p>
 
 									<h2>Mobile banking in a nutshell</h2>
 									<p>It’s easy to take it for granted that today you can check your bank account balances and transfer funds on your phone from anywhere. Mobile banking is a service provided by a bank that allows people to process financial transactions using a smartphone or mobile device. In 2012, about a third of Americans were using mobile banking. Today, about two-thirds of Americans and 80% of millennials have reported using mobile banking.<sup className="inline-refs"><a href="#ref1">[1]</a><a href="#ref2">[2]</a><a href="#ref4">[4]</a></sup></p>
@@ -79,7 +79,7 @@ class HumanFactorsMobileBanking extends React.Component {
 										<picture>
 											<img src="/images/human-factors-memory-recall.jpg" alt="Screenshots of icons within the apps" />
 										</picture>
-										<figcaption>Figure 1. Icon usage in the mobile banking apps</figcaption>
+										<figcaption>Icon usage in the mobile banking apps</figcaption>
 									</figure>
 									<h4>Inspecting the banking apps</h4>
 									<p><strong>Clear actions with unique icons</strong> – Chase’s transfer page has buttons that are unique and recognizable with clear and concise labels that use familiar and action-oriented language. The icons are meaningful and distinct from one another. Similarly, Merchant's menu has good, clear icons that are distinct and intuitively understandable.</p>
@@ -99,7 +99,7 @@ class HumanFactorsMobileBanking extends React.Component {
 										<picture>
 											<img src="/images/human-factors-flexibility-efficiency.jpg" alt="Screenshots of personalization within the apps" />
 										</picture>
-										<figcaption>Figure 2. Personalization in the mobile banking apps</figcaption>
+										<figcaption>Personalization in the mobile banking apps</figcaption>
 									</figure>
 									<h4>Inspecting the banking apps</h4>
 									<p><strong>Good contextually placed personalization</strong> – Chase’s dashboard provides personalization and customization that allows experienced users ways to be more efficient. Examples of personalization found in the app:</p>
@@ -126,7 +126,7 @@ class HumanFactorsMobileBanking extends React.Component {
 										<picture>
 											<img src="/images/human-factors-help-documentation.jpg" alt="Screenshots of help and documentation within the apps" />
 										</picture>
-										<figcaption>Figure 3. Help and documentation in the mobile banking apps</figcaption>
+										<figcaption>Help and documentation in the mobile banking apps</figcaption>
 									</figure>
 									<h4>Inspecting the banking apps</h4>
 									<p><strong>An unhelpful chat bot</strong> – Chase has a digital assistant, or a chat bot, available for you to ask it a question and it provides a response. If the chat bot is not given a question it is programmed to receive, it provides you with suggested questions. In practice, this chat bot is less useful and more burdensome than simply having a frequently asked questions (FAQs) section because recall requires more cognitive effort than recognition. The app also has other support features including FAQs, a series of phone numbers and the ability to schedule an in-person meeting.</p>

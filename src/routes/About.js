@@ -30,7 +30,7 @@ class About extends React.Component {
 				<div className="panel intro">
 					<Container>
 						<Row>
-							<Col xs={12} md={10} lg={8}>
+							<Col xs={12} md={10} lg={8} xl={7}>
 								<div className="content">
 									<h1>About</h1>
 									<div className="title">Steven Wett</div>
@@ -49,36 +49,37 @@ class About extends React.Component {
 									<article>
 										<h2>Work Experience</h2>
 										<section>
+											<div className="date">2017 - Present</div>
 											<h3>Senior Web Developer & UX Designer</h3>
-											<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a> &nbsp;&middot;&nbsp; 2017 - Present</p>
-											{/*<h4>Case Studies</h4>
-											<ul>
-												<li><strong><Link to="/work/geminimade">Gemini Corporate Website</Link></strong> – built a custom WordPress website for the signage and hard plastic company, Gemini. Built to serve as a foundational platform for the upcoming Partner Portal project.</li>
-												<li><strong><Link to="/work/gemini-partner-portal">Gemini Partner Portal</Link></strong> – created a custom customer portal with integrations to the client's internal systems. Planned the migration of 9,000 customers from one system to another. The portal provides customers realtime quote and order information and syncs with Gemini's internal systems.</li>
-											</ul>*/}
+											<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a></p>
 										</section>
 										<section>
+											<div className="date">2015 - 2017</div>
 											<h3>Web Specialist</h3>
-											<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a> &nbsp;&middot;&nbsp; 2015 - 2017</p>
+											<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a></p>
 										</section>
 										<section>
+											<div className="date">2014 - 2015</div>
 											<h3>Technical Assistant</h3>
-											<p><a href="https://www.linkedin.com/company/3m/">3M – Abrasive Systems Division</a> &nbsp;&middot;&nbsp; 2014 - 2015</p>
+											<p><a href="https://www.linkedin.com/company/3m/">3M – Abrasive Systems Division</a></p>
 										</section>
 										<section>
+											<div className="date">2013</div>
 											<h3>Animation Intern</h3>
-											<p><a href="https://www.linkedin.com/company/purisfoods/">Puris</a> &nbsp;&middot;&nbsp; 2013</p>
+											<p><a href="https://www.linkedin.com/company/purisfoods/">Puris</a></p>
 										</section>
 									</article>
 									<article>
 										<h2>Education</h2>
 										<section>
+											<div className="date">2022 - Present</div>
 											<h3>Maryland Institute College of Art</h3>
-											<p>UX Design (MPS) &nbsp;&middot;&nbsp; 2022 - Present</p>
+											<p>UX Design (MPS)</p>
 										</section>
 										<section>
+											<div className="date">2011 - 2015</div>
 											<h3>St. Olaf College</h3>
-											<p>Chemistry (BA) &nbsp;&middot;&nbsp; 2011 - 2015</p>
+											<p>Chemistry (BA)</p>
 										</section>
 									</article>
 									<div className="contacts">

@@ -33,8 +33,8 @@ class Work extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={6}>
 									<div className="content">
-										<h1 class="visually-hidden">Steven Wett</h1>
-										<div class="title">Steven Wett <span>is full-stack web developer and UX designer.</span></div>
+										<h1 className="visually-hidden">Steven Wett</h1>
+										<div className="title">Steven Wett <span>is a UX/UI designer and full-stack web developer.</span></div>
 									</div>
 								</Col>
 							</Row>
@@ -55,6 +55,7 @@ class Work extends React.Component {
 																<div className="card-image">
 																	<div className="ratio ratio-4x3">
 																		<picture>
+																			<source srcSet={ project.imageWebp } type="image/webp" />
 																			<img src={ project.image } alt={ project.name } />
 																		</picture>
 																	</div>

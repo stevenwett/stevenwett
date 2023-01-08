@@ -5751,6 +5751,13 @@ html :focus {
   overflow: hidden;
   position: relative
 }
+.background-stars {
+  position: absolute;
+  z-index: 0;
+  width: 1000px;
+  max-width: 100%;
+  opacity: .5
+}
 .solar-system {
   position: absolute;
   bottom: 0;
@@ -5929,9 +5936,6 @@ a.btn.btn-outline-primary:hover {
 .header {
   padding: 1rem 0
 }
-.header .container {
-  padding: 0
-}
 .header .logo-wrapper {
   text-align: center;
   margin-right: 1rem;
@@ -6049,7 +6053,8 @@ a.btn.btn-outline-primary:hover {
 }
 .panel a.back svg {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg)
+  transform: rotate(180deg);
+  vertical-align: unset
 }
 .panel a.back:focus,
 .panel a.back:hover {
@@ -6132,22 +6137,37 @@ a.btn.btn-outline-primary:hover {
 .panel .image-full + h3 {
   margin-top: 1.5rem
 }
+.panel .image-full iframe,
 .panel .image-full img {
+  background-color: #000;
   width: 100%;
   border-radius: 8px;
   overflow: hidden
+}
+@media (max-width:767.98px) {
+  .panel .image-full .ratio-4x3,
+  .panel .image-full.ratio-4x3 {
+    --bs-aspect-ratio: 100%
+  }
 }
 .panel .image-full figcaption {
   text-align: right;
   font-size: .8rem;
   margin-top: .5rem;
   font-weight: 200;
-  letter-spacing: .3px
+  letter-spacing: .3px;
+  padding-left: 5%
+}
+@media (min-width:768px) {
+  .panel .image-full figcaption {
+    padding-left: 15%
+  }
 }
 .panel article.callout {
   border-radius: 16px;
   border: 2px solid #495057;
-  padding: 1.875rem 1.5rem
+  padding: 1.875rem 1.5rem;
+  position: relative
 }
 .panel article.callout h2,
 .panel article.callout h3 {
@@ -6168,6 +6188,19 @@ a.btn.btn-outline-primary:hover {
   font-size: 2.25rem;
   font-weight: 900
 }
+.panel article.callout.hmw {
+  margin-top: 2.25rem
+}
+.panel article.callout.hmw svg {
+  height: 18px;
+  width: 23px;
+  position: absolute;
+  left: 11px;
+  top: -20px;
+  background-color: #131313;
+  padding: .75rem 7px;
+  box-sizing: content-box
+}
 .panel .inline-refs a {
   border: 0
 }
@@ -6186,6 +6219,107 @@ a.btn.btn-outline-primary:hover {
 }
 .panel article.references li {
   font-size: .9rem
+}
+.panel .kinds-of-podcasts {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem
+}
+.panel .kinds-of-podcasts div {
+  padding-right: .375rem;
+  padding-left: .375rem
+}
+.panel .kinds-of-podcasts div:first-child {
+  padding-left: .75rem
+}
+.panel .kinds-of-podcasts div:last-child {
+  padding-right: .75rem
+}
+.panel .kinds-of-podcasts article {
+  border: 2px solid rgba(255,255,255,.3);
+  border-radius: 16px;
+  padding: 1.5rem 1.5rem 4.5rem;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative
+}
+.panel .kinds-of-podcasts article::after {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  bottom: 1.5rem;
+  left: 50%;
+  margin-left: -17px;
+  border: 2px solid rgba(255,255,255,.3);
+  border-radius: 100%
+}
+.panel .kinds-of-podcasts article.selected {
+  border-color: #fff
+}
+.panel .kinds-of-podcasts article.selected::after {
+  background-color: #fff;
+  border-color: #fff
+}
+.panel .kinds-of-podcasts article.selected svg {
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  margin-left: -7px;
+  height: 20px;
+  width: 16px;
+  z-index: 1
+}
+.panel .kinds-of-podcasts article h4 {
+  margin: 0;
+  margin-bottom: .75rem
+}
+.panel .kinds-of-podcasts article p {
+  line-height: 1.4;
+  font-size: .9rem;
+  margin-bottom: .5rem
+}
+@media (max-width:575.98px) {
+  .panel .kinds-of-podcasts article {
+    justify-content: flex-start;
+    padding: 2.25rem .375rem 4.5rem
+  }
+  .panel .kinds-of-podcasts article h4 {
+    font-size: 1rem;
+    margin-bottom: .75rem
+  }
+  .panel .kinds-of-podcasts article p {
+    font-size: .65rem;
+    line-height: 1.5
+  }
+}
+.panel .user-statements blockquote {
+  border: 2px solid rgba(255,255,255,.3);
+  border-radius: 16px;
+  padding: 1.5rem
+}
+.panel .user-statements blockquote p {
+  font-size: 1rem
+}
+.panel .user-statements blockquote p:last-child {
+  margin: 0
+}
+.panel .user-statements blockquote:nth-child(odd) {
+  border-bottom-right-radius: 0;
+  margin-right: 10%
+}
+.panel .user-statements blockquote:nth-child(even) {
+  border-bottom-left-radius: 0;
+  margin-left: 10%
+}
+@media (max-width:575.98px) {
+  .panel .user-statements blockquote {
+    margin-top: .75rem;
+    margin-bottom: .75rem
+  }
 }
 .panel .slick-slider {
   margin: 2rem 0 2.5rem;
@@ -6301,7 +6435,8 @@ a.btn.btn-outline-primary:hover {
   font-size: 1rem;
   font-weight: 100;
   text-transform: uppercase;
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
+  letter-spacing: .3px
 }
 @media (max-width:575.98px) {
   .panel.work-list {
@@ -6315,7 +6450,7 @@ a.btn.btn-outline-primary:hover {
 }
 .panel.work-list .card {
   margin-right: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   max-width: 100%;
   width: 320px
 }
@@ -6365,11 +6500,12 @@ a.btn.btn-outline-primary:hover {
   font-weight: 100;
   margin-bottom: .5rem;
   font-size: 13px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  letter-spacing: .3px
 }
 .panel.work-list .card h1 {
   font-size: 1.125rem;
-  margin: .75rem 0;
+  margin: .75rem 0 .55rem;
   font-weight: 700;
   font-family: expressway,sans-serif;
   position: relative;
@@ -6402,6 +6538,14 @@ a.btn.btn-outline-primary:hover {
   border-radius: 16px;
   background-color: #000;
   transition: all .2s ease-in-out
+}
+.panel.blog .date,
+.panel.contact .date {
+  letter-spacing: .3px;
+  font-weight: 100;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem
 }
 .panel.blog a {
   display: block;
@@ -6437,17 +6581,20 @@ a.btn.btn-outline-primary:hover {
   font-size: 1rem;
   font-family: expressway,sans-serif;
   margin: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 100;
   text-transform: uppercase
 }
 .panel.contact h3 {
   text-transform: inherit;
   font-weight: 700;
-  margin-bottom: .25rem
+  margin-bottom: .25rem;
+  margin-top: 0
 }
 .panel.contact section {
-  margin: 2rem 0
+  margin: 1.5rem 0;
+  border-top: 1px solid #212529;
+  padding-top: 1.5rem
 }
 .panel.contact section a {
   color: #fff;
@@ -6478,6 +6625,10 @@ a.btn.btn-outline-primary:hover {
 @media (max-width:575.98px) {
   .panel.contact .contacts {
     justify-content: center
+  }
+  .panel.contact .contacts a {
+    margin-right: .75rem;
+    margin-left: .75rem
   }
 }
 .panel.contact .download-resume {
@@ -6564,56 +6715,6 @@ a.btn.btn-outline-primary:hover {
 .page-work-single .detail p {
   font-weight: 700;
   line-height: 1.4
-}
-.page-about .me {
-  height: 200px;
-  width: 200px;
-  border-radius: 100%;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  border: 1px solid #495057;
-  position: absolute;
-  top: -100px;
-  right: -70px
-}
-@media (max-width:767.98px) {
-  .page-about .me {
-    right: -1rem
-  }
-}
-@media (max-width:575.98px) {
-  .page-about .me {
-    height: 150px;
-    width: 150px;
-    right: 1.5rem
-  }
-}
-.gemini-logo {
-  margin: 3rem 0 1.5rem 1.5rem;
-  float: right;
-  border: 1px solid #ddad02;
-  padding: 6px;
-  border-radius: 100%;
-  shape-outside: circle();
-  transition: all .2s ease-in-out
-}
-.gemini-logo img {
-  width: 125px;
-  height: 125px;
-  border-radius: 100%
-}
-.gemini-logo:focus,
-.gemini-logo:hover {
-  border-color: #c49902
-}
-@media (max-width:575.98px) {
-  .gemini-logo {
-    margin: 2rem .5rem 1rem 1rem
-  }
-  .gemini-logo img {
-    width: 100px;
-    height: 100px
-  }
 }
 .page-sites h2 {
   margin-bottom: 1rem;
