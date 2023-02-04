@@ -34,7 +34,7 @@ class About extends React.Component {
 								<div className="content">
 									<h1>About</h1>
 									<div className="title">Steven Wett</div>
-									<p>I'm a UX/UI designer and full-stack web developer based in Atlanta. I have over {yearsSince2015} years of design and development experience and am currently working on a Master's Degree in UX Design at MICA while working full-time at Neuger.</p>
+									<p>I'm a UX/UI designer and full-stack web developer based in Atlanta. I have over {yearsSince2015} years of design and development experience and am currently working on a Master's Degree in UX Design at MICA while working full-time.</p>
 								</div>
 							</Col>
 						</Row>
@@ -47,37 +47,31 @@ class About extends React.Component {
 								<div className="content">
 									{/*<img className="me" title="Steven Wett" src="/images/steven-wett.jpg" alt="Steven Wett holding ice cream" />*/}
 									<article>
-										<h2>Work Experience</h2>
+										<h2>Experience</h2>
 										<section>
-											<div className="date">2017 - Present</div>
+											<div className="date">2023&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/pro-media-dr/">ProMedia</a></div>
+											<h3>UX/UI Architect</h3>
+										</section>
+										<section>
+											<div className="date">2017&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/neugerteam/">Neuger</a></div>
 											<h3>Senior Web Developer & UX Designer</h3>
-											<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a></p>
+											<p>Lead the design and development of custom websites and web apps for clients.</p>
 										</section>
 										<section>
-											<div className="date">2015 - 2017</div>
+											<div className="date">2015&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/neugerteam/">Neuger</a></div>
 											<h3>Web Specialist</h3>
-											<p><a href="https://www.linkedin.com/company/276990/admin/">Neuger</a></p>
-										</section>
-										<section>
-											<div className="date">2014 - 2015</div>
-											<h3>Technical Assistant</h3>
-											<p><a href="https://www.linkedin.com/company/3m/">3M – Abrasive Systems Division</a></p>
-										</section>
-										<section>
-											<div className="date">2013</div>
-											<h3>Animation Intern</h3>
-											<p><a href="https://www.linkedin.com/company/purisfoods/">Puris</a></p>
+											<p>Developed custom websites for clients.</p>
 										</section>
 									</article>
 									<article>
 										<h2>Education</h2>
 										<section>
-											<div className="date">2022 - Present</div>
+											<div className="date">Currently Enrolled</div>
 											<h3>Maryland Institute College of Art</h3>
 											<p>UX Design (MPS)</p>
 										</section>
 										<section>
-											<div className="date">2011 - 2015</div>
+											<div className="date">Graduated 2015</div>
 											<h3>St. Olaf College</h3>
 											<p>Chemistry (BA)</p>
 										</section>
