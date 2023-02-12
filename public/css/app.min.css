@@ -5756,76 +5756,8 @@ html :focus {
   z-index: 0;
   width: 1000px;
   max-width: 100%;
+  height: auto;
   opacity: .5
-}
-.solar-system {
-  position: absolute;
-  bottom: 0;
-  right: -120px;
-  z-index: 0
-}
-@media (max-width:991.98px) {
-  .solar-system {
-    top: 350px;
-    bottom: unset
-  }
-}
-@media (max-width:575.98px) {
-  .solar-system {
-    display: none
-  }
-}
-.solar-system .ellipse,
-.solar-system ellipse {
-  fill: none;
-  stroke: #393939
-}
-.solar-system circle {
-  z-index: 1
-}
-.solar-system .dashed-stroke {
-  stroke-dasharray: 5px;
-  isolation: isolate;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear
-}
-.solar-system .dashed-stroke.ellipse-1 {
-  -webkit-animation-name: dashedstroke;
-  animation-name: dashedstroke;
-  -webkit-animation-duration: 240s;
-  animation-duration: 240s;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate
-}
-.solar-system .dashed-stroke.ellipse-2 {
-  -webkit-animation-name: dashedstroke;
-  animation-name: dashedstroke;
-  -webkit-animation-duration: 160s;
-  animation-duration: 160s
-}
-.solar-system .dashed-stroke.ellipse-3 {
-  -webkit-animation-name: dashedstroke;
-  animation-name: dashedstroke;
-  -webkit-animation-duration: 120s;
-  animation-duration: 120s
-}
-@-webkit-keyframes dashedstroke {
-  from {
-    stroke-dashoffset: 0%
-  }
-  to {
-    stroke-dashoffset: 100%
-  }
-}
-@keyframes dashedstroke {
-  from {
-    stroke-dashoffset: 0%
-  }
-  to {
-    stroke-dashoffset: 100%
-  }
 }
 .main {
   background-color: #131313
@@ -6165,9 +6097,9 @@ a.btn.btn-outline-primary:hover {
 }
 .panel article.callout {
   border-radius: 16px;
-  border: 2px solid #495057;
   padding: 1.875rem 1.5rem;
-  position: relative
+  position: relative;
+  background-color: #000
 }
 .panel article.callout h2,
 .panel article.callout h3 {
@@ -6189,7 +6121,9 @@ a.btn.btn-outline-primary:hover {
   font-weight: 900
 }
 .panel article.callout.hmw {
-  margin-top: 2.25rem
+  margin-top: 2.25rem;
+  border: 1px solid #495057;
+  background-color: #131313
 }
 .panel article.callout.hmw svg {
   height: 18px;
@@ -6199,7 +6133,8 @@ a.btn.btn-outline-primary:hover {
   top: -20px;
   background-color: #131313;
   padding: .75rem 7px;
-  box-sizing: content-box
+  box-sizing: content-box;
+  border-radius: 100%
 }
 .panel .inline-refs a {
   border: 0
@@ -6423,10 +6358,14 @@ a.btn.btn-outline-primary:hover {
   font-size: 2.75rem;
   font-weight: 900;
   line-height: 1.2;
-  margin-bottom: 1.5rem
+  margin-bottom: 1.5rem;
+  font-size: 2.25rem
 }
 .panel.intro .title span {
   font-weight: 200
+}
+.panel.intro .title:last-child {
+  margin-bottom: 0
 }
 .panel.work-list {
   margin-top: 120px
@@ -6476,7 +6415,8 @@ a.btn.btn-outline-primary:hover {
   transition: all .2s ease-in-out;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid rgba(221,173,2,.5)
+  border: 2px solid rgba(221,173,2,.5);
+  background-color: #000
 }
 .panel.work-list .card a {
   display: block;
@@ -6534,7 +6474,6 @@ a.btn.btn-outline-primary:hover {
   padding: 1.5rem;
   padding-bottom: 2rem;
   margin-bottom: 1.5rem;
-  border: 2px solid #495057;
   border-radius: 16px;
   background-color: #000;
   transition: all .2s ease-in-out
@@ -6552,7 +6491,7 @@ a.btn.btn-outline-primary:hover {
   border: 0
 }
 .panel.blog a article {
-  border-color: rgba(221,173,2,.5)
+  border: 2px solid rgba(221,173,2,.5)
 }
 .panel.blog a::after {
   content: none
@@ -6577,6 +6516,9 @@ a.btn.btn-outline-primary:hover {
 .panel.contact .content {
   position: relative
 }
+.panel.contact article {
+  padding-bottom: 2.5rem
+}
 .panel.contact h2 {
   font-size: 1rem;
   font-family: expressway,sans-serif;
@@ -6586,15 +6528,50 @@ a.btn.btn-outline-primary:hover {
   text-transform: uppercase
 }
 .panel.contact h3 {
-  text-transform: inherit;
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0 0 1rem
+}
+.panel.contact .date {
+  margin-bottom: .5rem
+}
+.panel.contact .position-title,
+.panel.contact h3.institution {
+  font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: .25rem;
-  margin-top: 0
+  margin-bottom: .5rem;
+  text-transform: none
+}
+.panel.contact .position {
+  margin-bottom: 2rem
+}
+.panel.contact .position:last-child {
+  margin-bottom: 0
 }
 .panel.contact section {
   margin: 1.5rem 0;
   border-top: 1px solid #212529;
-  padding-top: 1.5rem
+  padding-top: 1.5rem;
+  display: flex
+}
+.panel.contact section .icon-wrapper {
+  width: 45px
+}
+.panel.contact section .icon-wrapper ~ div {
+  padding-left: 1.5rem
+}
+.panel.contact section .icon-wrapper .icon {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 100%
+}
+.panel.contact section .icon-wrapper .icon img {
+  width: 45px;
+  height: 45px
+}
+.panel.contact section .icon-wrapper .icon.dark {
+  border: 1px solid #fff
 }
 .panel.contact section a {
   color: #fff;
@@ -6608,7 +6585,8 @@ a.btn.btn-outline-primary:hover {
 }
 .panel.contact .contacts {
   display: flex;
-  margin: 3rem 0
+  margin: 3rem 0;
+  justify-content: center
 }
 .panel.contact .contacts a {
   margin-right: 1.5rem;
@@ -6623,9 +6601,6 @@ a.btn.btn-outline-primary:hover {
   content: none
 }
 @media (max-width:575.98px) {
-  .panel.contact .contacts {
-    justify-content: center
-  }
   .panel.contact .contacts a {
     margin-right: .75rem;
     margin-left: .75rem
@@ -6675,7 +6650,7 @@ a.btn.btn-outline-primary:hover {
   padding-top: 3.75rem
 }
 .page-blog-single .single-intro .content {
-  border-bottom: 2px solid #495057;
+  border-bottom: 1px solid #495057;
   padding-bottom: 2.25rem
 }
 .page-work-single .single-feature {
@@ -6690,15 +6665,19 @@ a.btn.btn-outline-primary:hover {
 .page-work-single .single-feature > * {
   border-radius: 8px;
   overflow: hidden;
-  border: 2px solid #343a40
+  border: 0;
+  border: 1px solid #495057
 }
 .page-work-single .single-intro {
   padding-top: 3.75rem;
   margin-bottom: 3rem
 }
+.page-work-single .single-intro h1 {
+  margin-bottom: 2rem
+}
 .page-work-single .single-intro .content {
   padding-bottom: 2rem;
-  border-bottom: 2px solid #495057
+  border-bottom: 1px solid #495057
 }
 .page-work-single .detail {
   margin-bottom: .75rem
@@ -6715,6 +6694,25 @@ a.btn.btn-outline-primary:hover {
 .page-work-single .detail p {
   font-weight: 700;
   line-height: 1.4
+}
+.page-about .title-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between
+}
+.page-about .me {
+  height: 200px;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 100%;
+  shape-outside: circle();
+  float: right
+}
+@media (max-width:575.98px) {
+  .page-about .me {
+    height: 150px;
+    width: 150px
+  }
 }
 .page-sites h2 {
   margin-bottom: 1rem;

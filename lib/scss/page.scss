@@ -16,7 +16,6 @@
 		position: relative;
 
 		&:not(.no-line) {
-			// font-weight: $font-weight-normal;
 			border-bottom: 1px solid $yellow;
 		}
 
@@ -116,10 +115,6 @@
 		margin-top: 2rem;
 		margin-bottom: 0.75rem;
 		letter-spacing: 0.1px;
-
-		// @include media-breakpoint-down(md) {
-		// 	font-size: 1.125rem;
-		// }
 	}
 
 	// Full image.
@@ -365,17 +360,6 @@
 		padding-bottom: 3.5rem;
 		position: relative;
 
-		// &::after {
-		// 	content: "";
-		// 	height: 100%;
-		// 	width: 200px;
-		// 	background: linear-gradient(90deg, rgba(19, 19, 19, 0) 0%, rgba(19, 19, 19, 0.8) 80%, rgba(19, 19, 19, 1) 100%);
-		// 	position: absolute;
-		// 	top: 0;
-		// 	right: 0;
-		// 	z-index: 1;
-		// }
-
 		@include media-breakpoint-up(md) {
 			width: calc(100% + 2rem);
 			margin-left: -1rem;
@@ -389,8 +373,6 @@
 			top: unset;
 			left: unset;
 			right: unset;
-			// border: 1px solid $gray-700;
-			// border-radius: 100%;
 
 			&::before {
 				content: url(/images/arrow.svg);
@@ -472,23 +454,8 @@
 	}
 
 	&.intro {
-		// text-align: center;
 		padding-top: $grid-gutter-width * 4;
 		margin-bottom: $grid-gutter-width * 2;
-
-		// .content {
-		// 	position: relative;
-
-		// 	&::after {
-		// 		content: "";
-		// 		position: absolute;
-		// 		height: 1px;
-		// 		width: 10%;
-		// 		bottom: -40px;
-		// 		left: 0;
-		// 		background-color: $gray-700;
-		// 	}
-		// }
 
 		h1 {
 			font-size: 1rem;
@@ -506,45 +473,16 @@
 			span {
 				font-weight: $font-weight-light;
 			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@include media-breakpoint-down(xs) {
+				font-size: 2.25rem;
+			}
 		}
 	}
-
-	// &.home-intro {
-	// 	padding-top: 100px;
-	// 	padding-bottom: 0;
-	// 	margin-bottom: 0;
-
-	// 	h1 {
-	// 		font-size: 1.625rem;
-	// 		font-family: $headings-font-family;
-	// 		text-transform: unset;
-	// 		margin-bottom: 1.25rem;
-
-	// 		span {
-	// 			font-weight: $font-weight-light;
-	// 		}
-	// 	}
-
-	// 	p {
-	// 		font-size: 1.25rem;
-	// 		line-height: 1.6;
-	// 		font-weight: $font-weight-light;
-	// 	}
-
-	// 	.content::after {
-	// 		content: none;
-	// 	}
-
-	// 	@include media-breakpoint-down(sm) {
-	// 		h1 {
-	// 			font-size: 1.25rem;
-	// 		}
-
-	// 		p {
-	// 			font-size: 1rem;
-	// 		}
-	// 	}
-	// }
 
 	&.work-list {
 		margin-top: 120px;
@@ -856,116 +794,14 @@
 // Home page.
 .page-work {
 	position: relative;
-	// margin-bottom: 100px;
-
-	// .header .container {
-	// 	position: relative;
-
-	// 	&::before {
-	// 		content: "";
-	// 		position: absolute;
-	// 		z-index: -1;
-	// 		width: 720px;
-	// 		height: 720px;
-	// 		left: -340px;
-	// 		top: -120px;
-	// 		border: 1px solid $gray-800;
-	// 		border-radius: 100%;
-	// 		overflow: hidden;
-	// 		background-image: url(/images/wett-colorado-stars.jpg);
-	// 		background-size: cover;
-	// 		opacity: 0.4;
-
-	// 		@include media-breakpoint-down(md) {
-	// 			width: 680px;
-	// 			height: 680px;
-	// 			top: -350px;
-	// 		}
-
-	// 		@include media-breakpoint-down(sm) {
-	// 			// content: none;
-	// 			width: 550px;
-	// 			height: 550px;
-	// 			left: -260px;
-	// 			top: -210px;
-	// 		}
-	// 	}
-	// }
-
-	// .home-cards {
-	// 	display: flex;
-	// 	flex-wrap: wrap;
-
-	// 	@include media-breakpoint-up(lg) {
-	// 		flex-direction: row; /* stylelint-disable-line declaration-block-no-redundant-longhand-properties */
-
-	// 		.card {
-	// 			width: 320px;
-	// 			margin: 0 3rem 1rem 0;
-	// 		}
-	// 	}
-
-	// 	@include media-breakpoint-only(md) {
-	// 		.card {
-	// 			margin-right: 1.5rem;
-	// 		}
-	// 	}
-
-	// 	// @include media-breakpoint-down(md) {
-	// 	// 	.card {
-	// 	// 		margin: 0 0 100px;
-	// 	// 	}
-	// 	// }
-
-	// 	a.more-work {
-	// 		height: 60px;
-	// 		width: 60px;
-	// 		border: 1px solid $transparent-white;
-	// 		align-self: center;
-	// 		display: flex;
-	// 		align-items: center;
-	// 		justify-content: center;
-	// 		border-radius: 100%;
-	// 		transition: $transition-base;
-	// 		transform: translateX(0);
-
-	// 		&:hover,
-	// 		&:focus {
-	// 			border-color: $white;
-
-	// 			svg {
-	// 				transform: translateX(8px);
-	// 			}
-	// 		}
-
-	// 		svg {
-	// 			transition: $transition-base;
-	// 		}
-
-	// 		&::after {
-	// 			content: none;
-	// 		}
-
-	// 		@include media-breakpoint-down(lg) {
-	// 			display: none;
-	// 		}
-	// 	}
-
-	// 	@include media-breakpoint-down(md) {
-	// 		flex-direction: column;
-	// 	}
-	// }
 }
-
-// Work page.
-// .page-work {}
 
 .page-blog-single {
 	.single-intro {
 		padding-top: $grid-gutter-width * 2.5;
 
 		.content {
-			border-bottom: 2px solid $gray-700;
+			border-bottom: 1px solid $gray-700;
 			padding-bottom: $grid-gutter-width * 1.5;
 		}
 	}
@@ -979,11 +815,6 @@
 		overflow: hidden;
 		background-color: $gray-800;
 
-		// @include media-breakpoint-up(md) {
-		// 	width: calc(100% + 2rem);
-		// 	margin-left: -1rem;
-		// }
-
 		img {
 			max-width: 100%;
 		}
@@ -991,7 +822,8 @@
 		& > * {
 			border-radius: $border-radius;
 			overflow: hidden;
-			border: 2px solid $gray-800;
+			border: 0;
+			border: 1px solid $gray-700;
 		}
 	}
 
@@ -999,9 +831,13 @@
 		padding-top: $grid-gutter-width * 2.5;
 		margin-bottom: $grid-gutter-width * 2;
 
+		h1 {
+			margin-bottom: 2rem;
+		}
+
 		.content {
 			padding-bottom: 2rem;
-			border-bottom: 2px solid $gray-700;
+			border-bottom: 1px solid $gray-700;
 		}
 	}
 

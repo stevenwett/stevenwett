@@ -22,73 +22,6 @@ html {
 	opacity: 0.5;
 }
 
-.solar-system {
-	position: absolute;
-	bottom: 0;
-	right: -120px;
-	z-index: 0;
-
-	@include media-breakpoint-down(lg) {
-		top: 350px;
-		bottom: unset;
-	}
-
-	@include media-breakpoint-down(sm) {
-		display: none;
-	}
-
-	// @include media-breakpoint-down(sm) {
-	// 	width: 500px;
-	// 	height: 350px;
-	// 	right: -75px;
-	// 	top: unset;
-	// 	bottom: -20px;
-	// }
-
-	ellipse,
-	.ellipse {
-		fill: none;
-		stroke: #393939;
-	}
-
-	circle {
-		z-index: 1;
-	}
-
-	.dashed-stroke {
-		stroke-dasharray: 5px;
-		isolation: isolate;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
-
-		&.ellipse-1 {
-			animation-name: dashedstroke;
-			animation-duration: 240s;
-			animation-direction: alternate;
-		}
-
-		&.ellipse-2 {
-			animation-name: dashedstroke;
-			animation-duration: 160s;
-		}
-
-		&.ellipse-3 {
-			animation-name: dashedstroke;
-			animation-duration: 120s;
-		}
-	}
-}
-
-@keyframes dashedstroke {
-	from {
-		stroke-dashoffset: 0%;
-	}
-
-	to {
-		stroke-dashoffset: 100%;
-	}
-}
-
 // Global
 .main {
 	background-color: $dark;
@@ -193,25 +126,6 @@ li {
 		transform: translateX(-50%) translateY(-50%) scale(0.9);
 	}
 }
-
-// a.button {
-// 	color: $white;
-// 	text-decoration: none;
-// 	text-transform: uppercase;
-// 	font-weight: $font-weight-bold;
-// 	font-size: 0.8rem;
-// 	line-height: 1;
-// 	padding: 0.75rem 1rem;
-// 	border-radius: $border-radius-sm;
-// 	transition: $transition-base;
-// 	background-color: rgba(255, 255, 255, 0.1);
-
-// 	&:hover,
-// 	&:focus {
-// 		color: $white;
-// 		background-color: rgba(255, 255, 255, 0.25);
-// 	}
-// }
 
 a.btn {
 	margin-top: 1rem;
