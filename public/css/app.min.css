@@ -6071,7 +6071,7 @@ a.btn.btn-outline-primary:hover {
 }
 .panel .image-full iframe,
 .panel .image-full img {
-  background-color: #000;
+  background-color: #0c0c0c;
   width: 100%;
   border-radius: 8px;
   overflow: hidden
@@ -6099,7 +6099,7 @@ a.btn.btn-outline-primary:hover {
   border-radius: 16px;
   padding: 1.875rem 1.5rem;
   position: relative;
-  background-color: #000
+  background-color: #0c0c0c
 }
 .panel article.callout h2,
 .panel article.callout h3 {
@@ -6122,7 +6122,7 @@ a.btn.btn-outline-primary:hover {
 }
 .panel article.callout.hmw {
   margin-top: 2.25rem;
-  background-color: #000;
+  background-color: #0c0c0c;
   padding-top: 2.5rem
 }
 .panel article.callout.hmw svg {
@@ -6175,7 +6175,7 @@ a.btn.btn-outline-primary:hover {
   align-items: center;
   text-align: center;
   position: relative;
-  background-color: #000
+  background-color: #0c0c0c
 }
 .panel .kinds-of-podcasts article::after {
   content: "";
@@ -6412,7 +6412,7 @@ a.btn.btn-outline-primary:hover {
   border-radius: 16px;
   overflow: hidden;
   border: 2px solid rgba(221,173,2,.5);
-  background-color: #000
+  background-color: #0c0c0c
 }
 .panel.work-list .card a {
   display: block;
@@ -6471,7 +6471,7 @@ a.btn.btn-outline-primary:hover {
   padding-bottom: 2rem;
   margin-bottom: 1.5rem;
   border-radius: 16px;
-  background-color: #000;
+  background-color: #0c0c0c;
   transition: all .2s ease-in-out
 }
 .panel.blog .date,
