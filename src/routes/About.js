@@ -30,8 +30,9 @@ class About extends React.Component {
 				<div className="panel intro">
 					<Container>
 						<Row>
-							<Col xs={12} md={10} lg={8} xl={7}>
+							<Col xs={12} md={10} lg={8}>
 								<div className="content">
+									<img className="me" title="Steven Wett" src="/images/steven-wett.jpg" alt="Steven Wett holding ice cream" />
 									<h1>About</h1>
 									<div className="title">Steven Wett</div>
 									<p>I'm a UX/UI designer and full-stack web developer based in Atlanta. I have over {yearsSince2015} years of design and development experience and am currently working on a Master's Degree in UX Design at MICA while working full-time.</p>
@@ -45,35 +46,70 @@ class About extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
-									{/*<img className="me" title="Steven Wett" src="/images/steven-wett.jpg" alt="Steven Wett holding ice cream" />*/}
 									<article>
 										<h2>Experience</h2>
 										<section>
-											<div className="date">2023&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/pro-media-dr/">ProMedia</a></div>
-											<h3>UX/UI Architect</h3>
+											<div className="icon-wrapper">
+												<div className="icon">
+													<img src="/images/promedia-logo.jpg" alt="ProMedia" />
+												</div>
+											</div>
+											<div>
+												<h3><a href="https://www.linkedin.com/company/pro-media-dr/">ProMedia</a></h3>
+												<div className="date">2023</div>
+												<div className="position">
+													<div className="position-title">UX/UI Architect</div>
+												</div>
+											</div>
 										</section>
 										<section>
-											<div className="date">2017&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/neugerteam/">Neuger</a></div>
-											<h3>Senior Web Developer & UX Designer</h3>
-											<p>Lead the design and development of custom websites and web apps for clients.</p>
-										</section>
-										<section>
-											<div className="date">2015&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/neugerteam/">Neuger</a></div>
-											<h3>Web Specialist</h3>
-											<p>Developed custom websites for clients.</p>
+											<div className="icon-wrapper">
+												<div className="icon">
+													<img src="/images/neuger-logo.jpg" alt="Neuger" />
+												</div>
+											</div>
+											<div>
+												<h3><a href="https://www.linkedin.com/company/neugerteam/">Neuger</a></h3>
+												<div className="position">
+													<div className="date">2017</div>
+													<div className="position-title">Senior Web Developer & UX Designer</div>
+													<p>Lead the design and development of custom websites and web apps for clients.</p>
+												</div>
+												<div className="position">
+													<div className="date">2015</div>
+													<div className="position-title">Web Specialist</div>
+													<p>Developed custom websites for clients.</p>
+												</div>
+											</div>
 										</section>
 									</article>
 									<article>
 										<h2>Education</h2>
 										<section>
-											<div className="date">Currently Enrolled</div>
-											<h3>Maryland Institute College of Art</h3>
-											<p>UX Design (MPS)</p>
+											<div className="icon-wrapper">
+												<div className="icon dark">
+													<img src="/images/mica-logo.jpg" alt="Maryland Institute College of Art" />
+												</div>
+											</div>
+											<div>
+												<div className="position">
+													<div className="date">Currently Enrolled</div>
+													<h3 className="institution">Maryland Institute College of Art</h3>
+													<p>UX Design (MPS)</p>
+												</div>
+											</div>
 										</section>
 										<section>
-											<div className="date">Graduated 2015</div>
-											<h3>St. Olaf College</h3>
-											<p>Chemistry (BA)</p>
+											<div className="icon-wrapper">
+												<div className="icon dark">
+													<img src="/images/st-olaf-logo.jpg" alt="St. Olaf College" />
+												</div>
+											</div>
+											<div>
+												<div className="date">Graduated 2015</div>
+												<h3 className="institution">St. Olaf College</h3>
+												<p>Chemistry (BA)</p>
+											</div>
 										</section>
 									</article>
 									<div className="contacts">
