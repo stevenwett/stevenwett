@@ -193,19 +193,15 @@
 
 		&.hmw {
 			margin-top: $grid-gutter-width * 1.5;
-			border: 1px solid $gray-700;
-			background-color: $dark;
+			background-color: $black;
+			padding-top: 2.5rem;
 
 			svg {
-				height: 18px;
+				height: 23px;
 				width: 23px;
 				position: absolute;
-				left: 11px;
-				top: -20px;
-				background-color: $dark;
-				padding: $grid-gutter-width / 2 7px;
-				box-sizing: content-box;
-				border-radius: 100%;
+				left: 19px;
+				top: -3px;
 			}
 		}
 	}
