@@ -6535,8 +6535,7 @@ a.btn.btn-outline-primary:hover {
 .panel.contact .date {
   margin-bottom: .6rem
 }
-.panel.contact .position-title,
-.panel.contact h3.institution {
+.panel.contact .position-title {
   font-size: 1.125rem;
   font-weight: 700;
   margin-bottom: .4rem;

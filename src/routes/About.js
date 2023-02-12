@@ -92,10 +92,9 @@ class About extends React.Component {
 												</div>
 											</div>
 											<div>
+												<h3><a href="https://www.linkedin.com/school/maryland-institute-college-of-art/">Maryland Institute College of Art</a></h3>
 												<div className="position">
-													<div className="date">Currently Enrolled</div>
-													<h3 className="institution">Maryland Institute College of Art</h3>
-													<p>UX Design (MPS)</p>
+													<div className="date">Currently Enrolled&nbsp;&nbsp;&middot;&nbsp;&nbsp;UX Design (MPS)</div>
 												</div>
 											</div>
 										</section>
@@ -106,9 +105,10 @@ class About extends React.Component {
 												</div>
 											</div>
 											<div>
-												<div className="date">Graduated 2015</div>
-												<h3 className="institution">St. Olaf College</h3>
-												<p>Chemistry (BA)</p>
+												<h3><a href="https://www.linkedin.com/school/stolaf/">St. Olaf College</a></h3>
+												<div className="position">
+													<div className="date">Graduated 2015&nbsp;&nbsp;&middot;&nbsp;&nbsp;Chemistry (BA)</div>
+												</div>
 											</div>
 										</section>
 									</article>
