@@ -33,7 +33,7 @@ class Blog extends React.Component {
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
 									<h1>Blog</h1>
-									<div className="title">Usability Blog</div>
+									<div className="title">Organized Thoughts</div>
 								</div>
 							</Col>
 						</Row>

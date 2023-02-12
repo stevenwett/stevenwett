@@ -61,7 +61,7 @@ class Work extends React.Component {
 																	</div>
 																</div>
 																<div className="card-details">
-																	<span className="year">{ project.year }</span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<span className="card-category">{project.category === 'case-study' ? 'UX Case Study' : 'Website'}</span>
+																	<span className="year">{ project.year }</span>
 																</div>
 																<h1>{ project.name }</h1>
 																<p>{ project.text }</p>
