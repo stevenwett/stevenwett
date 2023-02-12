@@ -6170,7 +6170,6 @@ a.btn.btn-outline-primary:hover {
   padding-right: .75rem
 }
 .panel .kinds-of-podcasts article {
-  border: 2px solid rgba(255,255,255,.3);
   border-radius: 16px;
   padding: 1.5rem 1.5rem 4.5rem;
   display: flex;
@@ -6179,7 +6178,8 @@ a.btn.btn-outline-primary:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative
+  position: relative;
+  background-color: #000
 }
 .panel .kinds-of-podcasts article::after {
   content: "";
@@ -6232,7 +6232,7 @@ a.btn.btn-outline-primary:hover {
   }
 }
 .panel .user-statements blockquote {
-  border: 2px solid rgba(255,255,255,.3);
+  border: 1px solid rgba(255,255,255,.3);
   border-radius: 16px;
   padding: 1.5rem
 }

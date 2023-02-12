@@ -255,7 +255,7 @@
 		}
 
 		article {
-			border: 2px solid $transparent-white;
+			// border: 1px solid $transparent-white;
 			border-radius: $border-radius-lg;
 			padding: $grid-gutter-width $grid-gutter-width $grid-gutter-width * 3;
 			display: flex;
@@ -266,6 +266,7 @@
 			text-align: center;
 			// overflow: hidden;
 			position: relative;
+			background-color: $black;
 
 			&::after {
 				content: "";
@@ -329,7 +330,7 @@
 	// Quotes.
 	.user-statements {
 		blockquote {
-			border: 2px solid $transparent-white;
+			border: 1px solid $transparent-white;
 			border-radius: $border-radius-lg;
 			padding: $grid-gutter-width;
 
