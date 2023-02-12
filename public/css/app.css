@@ -7053,14 +7053,14 @@ a.btn.btn-outline-primary:hover, a.btn.btn-outline-primary:focus {
 }
 
 .panel.contact .date {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .panel.contact .position-title,
 .panel.contact h3.institution {
   font-size: 1.125rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   text-transform: none;
 }
 
