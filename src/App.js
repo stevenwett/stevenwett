@@ -24,7 +24,7 @@ import NoMatch from './routes/NoMatch';
 const App = () => {
   const year = moment().year();
   const settings = {
-    debug: true,
+    debug: false,
     slideshow: {
       arrows: true,
       dots: false,
