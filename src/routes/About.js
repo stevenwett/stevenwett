@@ -35,7 +35,8 @@ class About extends React.Component {
 									<img className="me" title="Steven Wett" src="/images/steven-wett.jpg" alt="Steven Wett holding ice cream" />
 									<h1>About</h1>
 									<div className="title">Steven Wett</div>
-									<p>I'm a UX/UI designer and full-stack web developer based in Atlanta. I have over {yearsSince2015} years of design and development experience and am currently working on a Master's Degree in UX Design at MICA while working full-time.</p>
+									<p>I'm a UX/UI designer and full-stack web developer based in Atlanta. I've been creating experiences on the web for about {yearsSince2015} years.</p>
+									<p><a href="mailto:stevenwett@gmail.com">Send me an email</a> if you want to get in touch.</p>
 								</div>
 							</Col>
 						</Row>
