@@ -276,6 +276,13 @@ class NewsOnSpotify extends React.Component {
 									</picture>
 									<figcaption>Based on the our usability tests, we made adjustments to the prototypes</figcaption>
 								</figure>
+								<h2>Impact</h2>
+								<p>Overall, the layout and design is well received. Users like the clean interface and darker background, and are able to easily navigate throughout the app. By taking the feedback from our first round of usability testing, we made updates to the user flow of creating a group hike, and the identification feature. We then conducted a second usability test to determine if the updates were beneficial to the user. The impact of our updates were:</p>
+								<ul>
+									<li><strong>Identification</strong> – Users now understand the functionality surrounding the field guide identification feature.</li>
+									<li><strong>Invite transparency</strong> – Users are now able to see the status of invitees of a planned group hike.</li>
+									<li><strong>Ease of planning</strong> – Users can more easily adjust and edit the details of their planned group hike.</li>
+								</ul>
 							</Col>
 						</Row>
 					</Container>
@@ -284,13 +291,6 @@ class NewsOnSpotify extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} md={10} lg={8} xl={7}>
-								<h2>Impact</h2>
-								<p>Overall, the layout and design is well received. Users like the clean interface and darker background, and are able to easily navigate throughout the app. By taking the feedback from our first round of usability testing, we made updates to the user flow of creating a group hike, and the identification feature. We then conducted a second usability test to determine if the updates were beneficial to the user. The impact of our updates were:</p>
-								<ul>
-									<li><strong>Identification</strong> – Users now understand the functionality surrounding the field guide identification feature.</li>
-									<li><strong>Invite transparency</strong> – Users are now able to see the status of invitees of a planned group hike.</li>
-									<li><strong>Ease of planning</strong> – Users can more easily adjust and edit the details of their planned group hike.</li>
-								</ul>
 								<h2>Next steps</h2>
 								<p>During this project we learned an enormous amount about how people hike and what they're looking for in a digital field guide.</p>
 								<ul>
@@ -306,6 +306,7 @@ class NewsOnSpotify extends React.Component {
 					<Container>
 						<Row>
 							<Col xs={12} lg={12} xl={10}>
+								<hr />
 								<h2>Prototypes</h2>
 								<p>Below are the prototypes that I created for our usability testing. Feel free to play around with them!</p>
 								<h3>Scenario 1 – Find a trail based on recent flower sightings</h3>

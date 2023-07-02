@@ -110,7 +110,7 @@ class About extends React.Component {
 											<div>
 												<h3><a href="https://www.linkedin.com/school/stolaf/">St. Olaf College</a></h3>
 												<div className="position">
-													<div className="date">Graduated 2015&nbsp;&nbsp;&middot;&nbsp;&nbsp;Chemistry (BA)</div>
+													<div className="date">Graduated 2015&nbsp;&nbsp;&middot;&nbsp;&nbsp;Chemistry, Neuroscience (BA)</div>
 												</div>
 											</div>
 										</section>
