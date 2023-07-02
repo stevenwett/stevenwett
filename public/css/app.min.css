@@ -6091,6 +6091,12 @@ a.btn.btn-outline-primary:hover {
     --bs-aspect-ratio: 100%
   }
 }
+@media (max-width:575.98px) {
+  .panel .image-full .ratio-4x3,
+  .panel .image-full.ratio-4x3 {
+    --bs-aspect-ratio: 230%
+  }
+}
 .panel .image-full figcaption {
   text-align: right;
   font-size: .8rem;

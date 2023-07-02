@@ -156,6 +156,10 @@
 			@include media-breakpoint-down(md) {
 				--bs-aspect-ratio: 100%;
 			}
+
+			@include media-breakpoint-down(sm) {
+				--bs-aspect-ratio: 230%;
+			}
 		}
 
 		figcaption {

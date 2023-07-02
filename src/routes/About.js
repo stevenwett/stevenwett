@@ -75,7 +75,7 @@ class About extends React.Component {
 												<h3><a href="https://www.linkedin.com/school/stolaf/">St. Olaf College</a></h3>
 												<div className="position">
 													<div className="date">Graduated 2015</div>
-													<div className="position-title">Bachelor's degree (BA)</div>
+													<div className="position-title">Bachelor's Degree (BA)</div>
 													<p>Chemistry major</p>
 												</div>
 											</div>

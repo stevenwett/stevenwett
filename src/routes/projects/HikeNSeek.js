@@ -276,13 +276,9 @@ class NewsOnSpotify extends React.Component {
 									</picture>
 									<figcaption>Based on our usability test findings, we made adjustments to the prototypes</figcaption>
 								</figure>
-								<h2>Impact</h2>
-								<p>Overall, the layout and design is well received. Users like the clean interface and darker background, and are able to easily navigate throughout the app. By taking the feedback from our first round of usability testing, we made updates to the user flow of creating a group hike, and the identification feature. We then conducted a second usability test to determine if the updates were beneficial to the user. The impact of our updates were:</p>
-								<ul>
-									<li><strong>Identification</strong> – Users now understand the functionality surrounding the field guide identification feature.</li>
-									<li><strong>Invite transparency</strong> – Users are now able to see the status of invitees of a planned group hike.</li>
-									<li><strong>Ease of planning</strong> – Users can more easily adjust and edit the details of their planned group hike.</li>
-								</ul>
+								<h2>Updated design based on feedback</h2>
+								<p>Overall, the layout and design is well received. Users like the clean interface and darker background, and are able to easily navigate throughout the app.</p>
+								<p>By taking the feedback from our first round of usability testing, we made updates to the user flow of creating a group hike, and the identification feature. We then conducted a second usability test to determine if the updates were beneficial to the user.</p>
 							</Col>
 						</Row>
 					</Container>
@@ -294,7 +290,8 @@ class NewsOnSpotify extends React.Component {
 								<h2>Next steps</h2>
 								<p>During this project we learned an enormous amount about how people hike and what they're looking for in a digital field guide.</p>
 								<ul>
-									<li><strong>Continue research</strong> – Continue to research, understand, and test the functionality of the field guide database within the identification feature.</li>
+									<li><strong>Create an MVP</strong> – We should create a bare bones app for better user testing.</li>
+									<li><strong>Iterate based on feedback</strong> – After we get the MVP in the hands of real people, we can gather feedback and improve the simple app.</li>
 									<li><strong>Add more functionality</strong> – Add more functionality to the hike planning feature including adding multiple trails, assigning packing list items to specific people, etc. </li>
 									<li><strong>User-generated content</strong> – Explore user-generated content such as photos, ratings, and opinions of the trail(s).</li>
 								</ul>
@@ -302,7 +299,7 @@ class NewsOnSpotify extends React.Component {
 						</Row>
 					</Container>
 				</div>
-				<div className="panel">
+				<div className="panel d-none d-md-block">
 					<Container>
 						<Row>
 							<Col xs={12} lg={12} xl={10}>
