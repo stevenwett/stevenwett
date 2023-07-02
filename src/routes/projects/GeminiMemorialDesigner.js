@@ -269,6 +269,22 @@ class GeminiMemorialDesigner extends React.Component {
 						</Row>
 					</Container>
 				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<div className="content">
+									<Link to="/work/" className="btn btn-outline-primary back-button">
+										<svg title="Back" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20.7071 8.97838C21.0976 8.58785 21.0976 7.95469 20.7071 7.56416L14.3431 1.2002C13.9526 0.809679 13.3195 0.809679 12.9289 1.2002C12.5384 1.59073 12.5384 2.22389 12.9289 2.61442L18.5858 8.27127L12.9289 13.9281C12.5384 14.3186 12.5384 14.9518 12.9289 15.3423C13.3195 15.7329 13.9526 15.7329 14.3431 15.3423L20.7071 8.97838ZM0.75 9.27127H20V7.27127H0.75V9.27127Z" fill="#DDAD02"/>
+										</svg>
+										All Projects
+									</Link>
+								</div>
+							</Col>
+						</Row>
+					</Container>
+				</div>
 {/*				<div className="panel single-work-after">
 					<Container>
 						<Row>

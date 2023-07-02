@@ -168,9 +168,33 @@ class NewsOnSpotify extends React.Component {
 						<Row>
 							<Col xs={12} md={10} lg={8} xl={7}>
 								<h2>Process</h2>
+								<h3>Sprint Map</h3>
+								<figure className="image-full">
+									<picture>
+										<source srcSet="/images/news-on-spotify-sprint-map.webp" type="image/webp" />
+										<img src="/images/news-on-spotify-sprint-map.png" alt="User sprint map" />
+									</picture>
+									{/*<figcaption>Home and news page wireframes</figcaption>*/}
+								</figure>
+								<h3>Crazy 8s</h3>
+								<figure className="image-full">
+									<picture>
+										<source srcSet="/images/news-on-spotify-crazy-8s.webp" type="image/webp" />
+										<img src="/images/news-on-spotify-crazy-8s.png" alt="Crazy 8s" />
+									</picture>
+									<figcaption>An exercise to brainstorm potential features and interaction</figcaption>
+								</figure>
+								<h3>User Flow</h3>
+								<figure className="image-full">
+									<picture>
+										<source srcSet="/images/news-on-spotify-user-flow.webp" type="image/webp" />
+										<img src="/images/news-on-spotify-user-flow.png" alt="User flow" />
+									</picture>
+									<figcaption>How users will listen to episodes with the new feature</figcaption>
+								</figure>
 								<h3>Wireframes</h3>
-								<p>I started with low-fidelity wireframes to identify the main actions that we need for our user to take.</p>
-								<p>I received feedback from my instructor and peers and made adjustments.</p>
+								<p>After understanding the steps the user will take and brainstorming potential feature ideas, I created with low-fidelity wireframes to prepare to test this feature with users.</p>
+								{/*<p>I received feedback from my instructor and peers and made adjustments.</p>*/}
 								<figure className="image-full">
 									<picture>
 										<source srcSet="/images/news-on-spotify-wireframes-1.webp" type="image/webp" />
@@ -188,7 +212,7 @@ class NewsOnSpotify extends React.Component {
 									<figcaption>Remote usability testing via Zoom</figcaption>
 								</figure>
 								<h3>Guided Scenario</h3>
-								<p>I recruited four Spotify users who identified as a news junkie. I recorded their behavior as I guided them through a specific scenario with questions and tasks to perform.</p>
+								<p>I recruited four Spotify users who identified as news junkies. I recorded their behavior as I guided them through a specific scenario with questions and tasks to perform.</p>
 								<ul>
 									<li>How might you use the “Your latest news” section?</li>
 									<li>How do you expect this section to update?</li>
@@ -210,7 +234,6 @@ class NewsOnSpotify extends React.Component {
 									</picture>
 									<figcaption>During the usability testing sessions, I found that with the left example people didn't know that the cards were swipe-able, but with the right example they did.</figcaption>
 								</figure>
-								<p></p>
 								<h3>User Statements</h3>
 								<div className="user-statements">
 									<blockquote>
@@ -220,7 +243,7 @@ class NewsOnSpotify extends React.Component {
 										<p>“But when you put that blue ring, it's like that in my head triggers like, oh, the New York Times has recently uploaded a video that I need to watch.”</p>
 									</blockquote>
 									<blockquote>
-										<p>“Oh, yeah, this is easier than what I was mentioning before with [manually adding them to this list]. So you can you know, heart on un-heart, whatever you want to be populated into this list.”</p>
+										<p>“Oh, yeah, this is easier than what I was mentioning before with manually adding them to this list. So you can you know, heart on un-heart, whatever you want to be populated into this list.”</p>
 									</blockquote>
 								</div>
 							</Col>
@@ -279,6 +302,22 @@ class NewsOnSpotify extends React.Component {
 									</div>
 									<figcaption>News on Spotify case study Figma slide deck</figcaption>
 								</figure>
+							</Col>
+						</Row>
+					</Container>
+				</div>
+				<div className="panel">
+					<Container>
+						<Row>
+							<Col xs={12} md={10} lg={8}>
+								<div className="content">
+									<Link to="/work/" className="btn btn-outline-primary back-button">
+										<svg title="Back" width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20.7071 8.97838C21.0976 8.58785 21.0976 7.95469 20.7071 7.56416L14.3431 1.2002C13.9526 0.809679 13.3195 0.809679 12.9289 1.2002C12.5384 1.59073 12.5384 2.22389 12.9289 2.61442L18.5858 8.27127L12.9289 13.9281C12.5384 14.3186 12.5384 14.9518 12.9289 15.3423C13.3195 15.7329 13.9526 15.7329 14.3431 15.3423L20.7071 8.97838ZM0.75 9.27127H20V7.27127H0.75V9.27127Z" fill="#DDAD02"/>
+										</svg>
+										All Projects
+									</Link>
+								</div>
 							</Col>
 						</Row>
 					</Container>

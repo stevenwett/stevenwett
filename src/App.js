@@ -5,6 +5,7 @@ import moment from 'moment';
 import GeminiMemorialDesigner from './routes/projects/GeminiMemorialDesigner';
 import GeminiPartnerPortal from './routes/projects/GeminiPartnerPortal';
 import NewsOnSpotify from './routes/projects/NewsOnSpotify';
+import HikeNSeek from './routes/projects/HikeNSeek';
 // import RiggsCat from './routes/projects/RiggsCat';
 // import GeminiMade from './routes/projects/GeminiMade';
 
@@ -49,13 +50,22 @@ const App = () => {
 
   const projects = [
     {
+      slug: 'hike-n-seek',
+      category: 'case-study',
+      year: '2023',
+      name: 'Field Guide Hiking App',
+      imageWebp: '/images/project-hike-n-seek.webp',
+      image: '/images/project-hike-n-seek.png',
+      text: 'A class project where I teamed up with three other UX designers to design an exploration and hiking app.',
+    },
+    {
       slug: 'gemini-partner-portal',
       category: 'case-study',
       year: '2022',
       name: 'Gemini Partner Portal',
       imageWebp: '/images/project-gemini-partner-portal.webp',
       image: '/images/project-gemini-partner-portal.png',
-      text: 'Designing a customer portal with realtime information from internal systems.',
+      text: 'A customer portal for a manufacturing client where we provided realtime order data to customers for the first time.',
     },
     {
       slug: 'news-on-spotify',
@@ -64,7 +74,7 @@ const App = () => {
       name: 'News On Spotify',
       imageWebp: '/images/project-news-on-spotify.webp',
       image: '/images/project-news-on-spotify.png',
-      text: 'User research, prototyping and usability testing a new feature for Spotify.',
+      text: 'A class project where I designed and tested a news feature for Spotify.',
     },
     {
       slug: 'gemini-memorial-designer',
@@ -73,7 +83,7 @@ const App = () => {
       name: 'Gemini Memorial Designer',
       imageWebp: '/images/project-gemini-memorial-designer.webp',
       image: '/images/project-gemini-memorial-designer.webp',
-      text: 'Researching and designing a bronze memorial plaque web app.',
+      text: 'A design tool for a manufacturing client for their customers to design and order bronze memorial plaques on their own.',
     }
   ];
 
@@ -108,6 +118,11 @@ const App = () => {
             exact
             path='/work/news-on-spotify'
             component={(component) => (<NewsOnSpotify settings={settings} component={component} />)}
+          />
+          <Route
+            exact
+            path='/work/hike-n-seek'
+            component={(component) => (<HikeNSeek settings={settings} component={component} />)}
           />
 {/*          <Route
             exact

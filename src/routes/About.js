@@ -37,7 +37,7 @@ class About extends React.Component {
 									<h1>About</h1>
 									<div className="title">Steven Wett</div>
 									<p>I'm a UX/UI designer and full-stack web developer based in Atlanta. I've been creating experiences on the web for about {yearsSinceStarted} years.</p>
-									<p><a href="mailto:stevenwett@gmail.com">Send me an email</a> if you want to get in touch.</p>
+									<p>Send me an email if you want to get in touch:<br /><a href="mailto:stevenwett@gmail.com">stevenwett@gmail.com</a></p>
 								</div>
 							</Col>
 						</Row>
@@ -61,6 +61,7 @@ class About extends React.Component {
 												<div className="date">2023</div>
 												<div className="position">
 													<div className="position-title">UX/UI Architect</div>
+													<p>Adding design methods to a development team to build software that makes our teams more productive.</p>
 												</div>
 											</div>
 										</section>
@@ -75,12 +76,12 @@ class About extends React.Component {
 												<div className="position">
 													<div className="date">2017</div>
 													<div className="position-title">Senior Web Developer & UX Designer</div>
-													<p>Lead the design and development of custom websites and web apps for clients.</p>
+													<p>Lead the planning, design and development of custom websites and web apps for clients. </p>
 												</div>
 												<div className="position">
 													<div className="date">2015</div>
 													<div className="position-title">Web Specialist</div>
-													<p>Developed custom websites for clients.</p>
+													<p>Developed custom WordPress, Craft, and Episerver websites for clients.</p>
 												</div>
 											</div>
 										</section>
