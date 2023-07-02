@@ -254,7 +254,7 @@ class NewsOnSpotify extends React.Component {
 										<source srcSet="/images/hike-n-seek-before-after-1.webp" type="image/webp" />
 										<img src="/images/hike-n-seek-before-after-1.png" alt="Before and after" />
 									</picture>
-									<figcaption>Based on the our usability tests, we made adjustments to the prototypes</figcaption>
+									<figcaption>Based on our usability test findings, we made adjustments to the prototypes</figcaption>
 								</figure>
 								<h3>Scenario 3 - Planning a hike</h3>
 								<ul>
@@ -274,7 +274,7 @@ class NewsOnSpotify extends React.Component {
 										<source srcSet="/images/hike-n-seek-before-after-2.webp" type="image/webp" />
 										<img src="/images/hike-n-seek-before-after-2.png" alt="Before and after" />
 									</picture>
-									<figcaption>Based on the our usability tests, we made adjustments to the prototypes</figcaption>
+									<figcaption>Based on our usability test findings, we made adjustments to the prototypes</figcaption>
 								</figure>
 								<h2>Impact</h2>
 								<p>Overall, the layout and design is well received. Users like the clean interface and darker background, and are able to easily navigate throughout the app. By taking the feedback from our first round of usability testing, we made updates to the user flow of creating a group hike, and the identification feature. We then conducted a second usability test to determine if the updates were beneficial to the user. The impact of our updates were:</p>

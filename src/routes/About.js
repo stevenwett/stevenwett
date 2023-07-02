@@ -49,6 +49,39 @@ class About extends React.Component {
 							<Col xs={12} md={10} lg={8}>
 								<div className="content">
 									<article>
+										<h2>Education</h2>
+										<section>
+											<div className="icon-wrapper">
+												<div className="icon dark">
+													<img src="/images/mica-logo.jpg" alt="Maryland Institute College of Art" />
+												</div>
+											</div>
+											<div>
+												<h3><a href="https://www.linkedin.com/school/maryland-institute-college-of-art/">Maryland Institute College of Art</a></h3>
+												<div className="position">
+													<div className="date">Currently Enrolled</div>
+													<div className="position-title">Master's Degree (MPS)</div>
+													<p>UX Design</p>
+												</div>
+											</div>
+										</section>
+										<section>
+											<div className="icon-wrapper">
+												<div className="icon dark">
+													<img src="/images/st-olaf-logo.jpg" alt="St. Olaf College" />
+												</div>
+											</div>
+											<div>
+												<h3><a href="https://www.linkedin.com/school/stolaf/">St. Olaf College</a></h3>
+												<div className="position">
+													<div className="date">Graduated 2015</div>
+													<div className="position-title">Bachelor's degree (BA)</div>
+													<p>Chemistry major</p>
+												</div>
+											</div>
+										</section>
+									</article>
+									<article>
 										<h2>Experience</h2>
 										<section>
 											<div className="icon-wrapper">
@@ -82,35 +115,6 @@ class About extends React.Component {
 													<div className="date">2015</div>
 													<div className="position-title">Web Specialist</div>
 													<p>Developed custom WordPress, Craft, and Episerver websites for clients.</p>
-												</div>
-											</div>
-										</section>
-									</article>
-									<article>
-										<h2>Education</h2>
-										<section>
-											<div className="icon-wrapper">
-												<div className="icon dark">
-													<img src="/images/mica-logo.jpg" alt="Maryland Institute College of Art" />
-												</div>
-											</div>
-											<div>
-												<h3><a href="https://www.linkedin.com/school/maryland-institute-college-of-art/">Maryland Institute College of Art</a></h3>
-												<div className="position">
-													<div className="date">Currently Enrolled&nbsp;&nbsp;&middot;&nbsp;&nbsp;UX Design (MPS)</div>
-												</div>
-											</div>
-										</section>
-										<section>
-											<div className="icon-wrapper">
-												<div className="icon dark">
-													<img src="/images/st-olaf-logo.jpg" alt="St. Olaf College" />
-												</div>
-											</div>
-											<div>
-												<h3><a href="https://www.linkedin.com/school/stolaf/">St. Olaf College</a></h3>
-												<div className="position">
-													<div className="date">Graduated 2015&nbsp;&nbsp;&middot;&nbsp;&nbsp;Chemistry, Neuroscience (BA)</div>
 												</div>
 											</div>
 										</section>
