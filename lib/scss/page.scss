@@ -146,7 +146,7 @@
 		iframe {
 			background-color: $darker;
 			width: 100%;
-			border-radius: $border-radius;
+			border-radius: $border-radius-lg;
 			overflow: hidden;
 		}
 
@@ -869,7 +869,7 @@
 // Work single.
 .page-work-single {
 	.single-feature {
-		border-radius: $border-radius;
+		border-radius: $border-radius-lg;
 		margin-bottom: 2rem;
 		overflow: hidden;
 		background-color: $gray-800;
@@ -879,7 +879,7 @@
 		}
 
 		& > * {
-			border-radius: $border-radius;
+			border-radius: $border-radius-lg;
 			overflow: hidden;
 			border: 0;
 			border: 1px solid $gray-700;

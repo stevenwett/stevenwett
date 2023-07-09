@@ -6082,7 +6082,7 @@ a.btn.btn-outline-primary:hover {
 .panel .image-full img {
   background-color: #0c0c0c;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden
 }
 @media (max-width:767.98px) {
@@ -6668,7 +6668,7 @@ a.btn.btn-outline-primary:hover {
   padding-bottom: 2.25rem
 }
 .page-work-single .single-feature {
-  border-radius: 8px;
+  border-radius: 16px;
   margin-bottom: 2rem;
   overflow: hidden;
   background-color: #343a40
@@ -6677,7 +6677,7 @@ a.btn.btn-outline-primary:hover {
   max-width: 100%
 }
 .page-work-single .single-feature > * {
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
   border: 0;
   border: 1px solid #495057

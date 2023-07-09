@@ -1,3 +1,5 @@
+import { HelmetProvider } from 'react-helmet-async';
+
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import moment from 'moment';
 
@@ -88,84 +90,75 @@ const App = () => {
   ];
 
   return (
-    <div className="app">
-      <picture>
-        <img alt="" aria-hidden="true" className="background-stars" src="/images/background-stars.webp" width="1000" />
-      </picture>
-      <BrowserRouter>
-        <Switch>
-          <Route
-            exact
-            path='/'
-            component={(component) => ( <Redirect to="/work" /> )}
-          />
-          <Route
-            exact
-            path='/work'
-            component={(component) => (<Work projects={projects} settings={settings} component={component} />)}
-          />
-          <Route
-            exact
-            path='/work/gemini-memorial-designer'
-            component={(component) => (<GeminiMemorialDesigner projects={projects} settings={settings} component={component} />)}
-          />
-          <Route
-            exact
-            path='/work/gemini-partner-portal'
-            component={(component) => (<GeminiPartnerPortal projects={projects} settings={settings} component={component} />)}
-          />
-          <Route
-            exact
-            path='/work/news-on-spotify'
-            component={(component) => (<NewsOnSpotify settings={settings} component={component} />)}
-          />
-          <Route
-            exact
-            path='/work/hike-n-seek'
-            component={(component) => (<HikeNSeek settings={settings} component={component} />)}
-          />
-{/*          <Route
-            exact
-            path='/work/riggscat'
-            component={(component) => (<RiggsCat projects={projects} settings={settings} component={component} />)}
-          />
-          <Route
-            exact
-            path='/work/geminimade'
-            component={(component) => (<GeminiMade projects={projects} settings={settings} component={component} />)}
-          />*/}
-          <Route
-            exact
-            path='/about'
-            component={(component) => (<About settings={settings} component={component} />)}
-          />
-          <Route
-            exact
-            path='/blog'
-            component={(component) => (<Blog settings={settings} component={component} />)}
-          />
-          <Route
-            exact
-            path='/blog/human-factors-mobile-banking'
-            component={(component) => (<HumanFactorsMobileBanking settings={settings} component={component} />)}
-          />
-          <Route
-            from="*"
-            component={NoMatch}
-          />
-        </Switch>
-      </BrowserRouter>
-      {/*<SolarSystem />*/}
-      <footer className="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <p>&copy; {year} Steven Wett</p>
+    <HelmetProvider>
+      <div className="app">
+        <picture>
+          <img alt="" aria-hidden="true" className="background-stars" src="/images/background-stars.webp" width="1000" />
+        </picture>
+        <BrowserRouter>
+          <Switch>
+            <Route
+              exact
+              path='/'
+              component={(component) => ( <Redirect to="/work" /> )}
+            />
+            <Route
+              exact
+              path='/work'
+              component={(component) => (<Work projects={projects} settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/work/gemini-memorial-designer'
+              component={(component) => (<GeminiMemorialDesigner projects={projects} settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/work/gemini-partner-portal'
+              component={(component) => (<GeminiPartnerPortal projects={projects} settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/work/news-on-spotify'
+              component={(component) => (<NewsOnSpotify settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/work/hike-n-seek'
+              component={(component) => (<HikeNSeek settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/about'
+              component={(component) => (<About settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/blog'
+              component={(component) => (<Blog settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/blog/human-factors-mobile-banking'
+              component={(component) => (<HumanFactorsMobileBanking settings={settings} component={component} />)}
+            />
+            <Route
+              from="*"
+              component={NoMatch}
+            />
+          </Switch>
+        </BrowserRouter>
+        <footer className="footer">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <p>&copy; {year} Steven Wett</p>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </HelmetProvider>
   );
 }
 
