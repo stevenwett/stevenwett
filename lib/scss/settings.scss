@@ -8,12 +8,13 @@ $font-family-headings: $expressway;
 $sans-serif:           $font-family-base;
 $serif:                $font-family-base;
 
-$font-weight-lighter: 100;
-$font-weight-light:   200;
-$font-weight-normal:  400;
-$font-weight-bold:    700;
-$font-weight-bolder:  900;
-$font-weight-base:    $font-weight-light;
+$font-weight-lighter:  100;
+$font-weight-light:    200;
+$font-weight-normal:   400;
+$font-weight-semibold: 500;
+$font-weight-bold:     700;
+$font-weight-bolder:   900;
+$font-weight-base:     $font-weight-light;
 
 $blue: #007bfe;
 $light-blue: #5badee;

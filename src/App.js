@@ -8,6 +8,7 @@ import GeminiMemorialDesigner from './routes/projects/GeminiMemorialDesigner';
 import GeminiPartnerPortal from './routes/projects/GeminiPartnerPortal';
 import NewsOnSpotify from './routes/projects/NewsOnSpotify';
 import HikeNSeek from './routes/projects/HikeNSeek';
+import SupperMealPlanning from './routes/projects/SupperMealPlanning';
 // import RiggsCat from './routes/projects/RiggsCat';
 // import GeminiMade from './routes/projects/GeminiMade';
 
@@ -27,7 +28,7 @@ import NoMatch from './routes/NoMatch';
 const App = () => {
   const year = moment().year();
   const settings = {
-    debug: false,
+    debug: true,
     slideshow: {
       arrows: true,
       dots: false,
@@ -51,6 +52,15 @@ const App = () => {
   }
 
   const projects = [
+    {
+      slug: 'supper-meal-planning',
+      category: 'case-study',
+      year: '2023',
+      name: 'Meal Planning App',
+      imageWebp: '/images/project-supper-meal-planning.webp',
+      image: '/images/project-supper-meal-planning.png',
+      text: 'A class project where I completed discovery and design, investigating how people meal plan and proposing a solution.',
+    },
     {
       slug: 'hike-n-seek',
       category: 'case-study',
@@ -126,6 +136,11 @@ const App = () => {
               exact
               path='/work/hike-n-seek'
               component={(component) => (<HikeNSeek settings={settings} component={component} />)}
+            />
+            <Route
+              exact
+              path='/work/supper-meal-planning'
+              component={(component) => (<SupperMealPlanning settings={settings} component={component} />)}
             />
             <Route
               exact

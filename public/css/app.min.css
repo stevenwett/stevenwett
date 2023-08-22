@@ -5771,7 +5771,7 @@ p {
 }
 li strong,
 p strong {
-  font-weight: 700
+  font-weight: 500
 }
 ul {
   margin-bottom: 1.5rem
@@ -5998,7 +5998,12 @@ a.btn.btn-outline-primary:hover {
   margin-right: 1.5rem
 }
 .panel p + ul {
-  margin-top: -.25rem
+  margin-top: -.5rem
+}
+.panel ol + h4,
+.panel p + h4,
+.panel ul + h4 {
+  margin-top: 1.5rem
 }
 .panel blockquote {
   padding: .75rem 1.5rem;
@@ -6040,11 +6045,13 @@ a.btn.btn-outline-primary:hover {
   margin-top: 1rem
 }
 .panel h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 2rem;
-  margin-bottom: .25rem;
+  padding-bottom: .5rem;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #495057;
   letter-spacing: .1px;
   line-height: 1.4
 }
@@ -6054,7 +6061,7 @@ a.btn.btn-outline-primary:hover {
   }
 }
 .panel h3 + h4 {
-  margin-top: 1rem
+  margin-top: 1.25rem
 }
 .panel h3 + .image-full {
   margin-top: 1rem
@@ -6063,7 +6070,7 @@ a.btn.btn-outline-primary:hover {
   font-size: 1.125rem;
   font-weight: 700;
   margin-top: 2rem;
-  margin-bottom: .75rem;
+  margin-bottom: .25rem;
   letter-spacing: .1px
 }
 .panel .image-full {
@@ -6123,7 +6130,9 @@ a.btn.btn-outline-primary:hover {
 }
 .panel article.callout h3 {
   font-size: 1.125rem;
-  font-weight: 400
+  font-weight: 400;
+  padding-bottom: 0;
+  border: 0
 }
 .panel article.callout p:last-child {
   margin-bottom: 0
@@ -6556,6 +6565,9 @@ a.btn.btn-outline-primary:hover {
   margin-bottom: .4rem;
   text-transform: none
 }
+.panel.contact .position-title span {
+  font-weight: 200
+}
 .panel.contact .position {
   margin-bottom: 2rem
 }
@@ -6708,6 +6720,60 @@ a.btn.btn-outline-primary:hover {
 .page-work-single .detail p {
   font-weight: 700;
   line-height: 1.4
+}
+.page-work-single .accordion .accordion-item {
+  border-bottom: 1px solid #495057
+}
+.page-work-single .accordion .accordion-item:last-child {
+  border-bottom: 0
+}
+.page-work-single .accordion .accordion-item header button {
+  display: block;
+  padding: 1rem 0;
+  padding-left: 1.5rem;
+  background: 0 0;
+  border: 0;
+  width: 100%;
+  text-align: unset;
+  position: relative
+}
+.page-work-single .accordion .accordion-item header button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  height: 0;
+  width: 0;
+  border: .45rem solid transparent;
+  border-left: .8rem solid rgba(221,173,2,.5);
+  transition: all .2s ease-in-out
+}
+.page-work-single .accordion .accordion-item header button:focus::after,
+.page-work-single .accordion .accordion-item header button:hover::after {
+  border-left: .8rem solid #ddad02
+}
+.page-work-single .accordion .accordion-item header h4 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0
+}
+.page-work-single .accordion .accordion-item .accordion-content-wrapper {
+  overflow: hidden;
+  height: 0;
+  transition: height .3s ease-in-out
+}
+.page-work-single .accordion .accordion-item .accordion-content {
+  padding-bottom: 1rem
+}
+.page-work-single .accordion .accordion-item.active header button::after {
+  top: 23px;
+  left: -3px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg)
+}
+.page-work-single .accordion .accordion-item.active .accordion-content-wrapper {
+  height: auto
 }
 .page-about .title-wrapper {
   display: flex;

@@ -53,7 +53,13 @@
 	}
 
 	p + ul {
-		margin-top: -0.25rem;
+		margin-top: -0.5rem;
+	}
+
+	p + h4,
+	ul + h4,
+	ol + h4 {
+		margin-top: 1.5rem;
 	}
 
 	blockquote {
@@ -100,11 +106,13 @@
 	}
 
 	h3 {
-		font-size: 1.125rem;
+		font-size: 1.25rem;
 		font-weight: $font-weight-normal;
 		text-transform: uppercase;
 		margin-top: 2rem;
-		margin-bottom: 0.25rem;
+		padding-bottom: 0.5rem;
+		margin-bottom: 0.5rem;
+		border-bottom: 1px solid $gray-700;
 		letter-spacing: 0.1px;
 		line-height: 1.4;
 
@@ -113,7 +121,7 @@
 		}
 
 		+ h4 {
-			margin-top: 1rem;
+			margin-top: 1.25rem;
 		}
 
 		+ .image-full {
@@ -125,7 +133,7 @@
 		font-size: 1.125rem;
 		font-weight: $font-weight-bold;
 		margin-top: 2rem;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.25rem;
 		letter-spacing: 0.1px;
 	}
 
@@ -191,6 +199,8 @@
 		h3 {
 			font-size: 1.125rem;
 			font-weight: $font-weight-normal;
+			padding-bottom: 0;
+			border: 0;
 		}
 
 		p:last-child {
@@ -716,6 +726,10 @@
 			font-weight: $font-weight-bold;
 			margin-bottom: 0.4rem;
 			text-transform: none;
+
+			span {
+				font-weight: $font-weight-light;
+			}
 		}
 
 		.position {
@@ -916,6 +930,82 @@
 		p {
 			font-weight: $font-weight-bold;
 			line-height: 1.4;
+		}
+	}
+
+	.accordion {
+		// border: 1px solid $gray-700;
+		// border-radius: $border-radius;
+
+		.accordion-item {
+			border-bottom: 1px solid $gray-700;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			header {
+				button {
+					display: block;
+					padding: 1rem 0;
+					padding-left: 1.5rem;
+					background: none;
+					border: 0;
+					width: 100%;
+					text-align: unset;
+					position: relative;
+
+					&::after {
+						content: "";
+						position: absolute;
+						left: 0;
+						top: 18px;
+						height: 0;
+						width: 0;
+						border: 0.45rem solid transparent;
+						border-left: 0.8rem solid $transparent-yellow;
+						transition: $transition-base;
+					}
+
+					&:hover,
+					&:focus {
+						&::after {
+							border-left: 0.8rem solid $yellow;
+						}
+					}
+				}
+
+				h4 {
+					color: $white;
+					margin: 0;
+					padding: 0;
+					border: 0;
+				}
+			}
+
+			.accordion-content-wrapper {
+				overflow: hidden;
+				height: 0;
+				transition: height 0.3s ease-in-out;
+			}
+
+			.accordion-content {
+				padding-bottom: 1rem;
+			}
+
+			&.active {
+				header button {
+					&::after {
+						top: 23px;
+						left: -3px;
+						transform: rotate(90deg);
+					}
+				}
+
+				.accordion-content-wrapper {
+					height: auto;
+				}
+			}
 		}
 	}
 }

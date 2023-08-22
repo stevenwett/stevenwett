@@ -309,7 +309,6 @@ class GeminiPartnerPortal extends React.Component {
 										<li>Improve how customers can reach out to support</li>
 										<li>Enhance the self-serve quoting tool</li>
 									</ul>
-									<p><strong>My team and I continue to work with Gemini on ongoing improvements.</strong></p>
 								</Col>
 							</Row>
 						</Container>

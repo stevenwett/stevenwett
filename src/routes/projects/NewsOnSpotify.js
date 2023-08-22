@@ -319,7 +319,7 @@ class NewsOnSpotify extends React.Component {
 						<Container>
 							<Row>
 								<Col xs={12} lg={12} xl={10}>
-									<hr />
+									{/*<hr />*/}
 									<h3>Slide Deck</h3>
 									<figure className="image-full">
 										<div className="ratio ratio-4x3">
