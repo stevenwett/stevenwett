@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import { Helmet } from 'react-helmet';
 
-// import Slider from "react-slick";
+import Slider from "react-slick";
 
 class SupperMealPlanning extends React.Component {
 	constructor(props) {
@@ -18,6 +18,26 @@ class SupperMealPlanning extends React.Component {
 				userStories: {
 					activeIndex: 0,
 				}
+			},
+			personasSlideshow: {
+				arrows: true,
+				dots: false,
+				infinite: false,
+				speed: 500,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				focusOnSelect: true,
+				rows: 1,
+				swipeToSlide: true,
+				responsive: [
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						}
+					}
+				]
 			}
 		};
 	}
@@ -136,14 +156,15 @@ class SupperMealPlanning extends React.Component {
 										<h3>Problem statement</h3>
 										<p>Time-constrained home cooks find it difficult to plan meals ahead of time and share responsibilities with others in their household. They want to cook at home, but without a plan they don’t have the ingredients on-hand and don’t want to run to the store at the last minute. <strong>Even when they try to plan their meals, they can’t decide what to make and find it difficult to collaborate with their household to execute the plan.</strong></p>
 									</article>
-									<p><strong>Home cooks are my target audience</strong> for this investigation.</p>
+									<h3>Target audience</h3>
+									<p><strong>Home cooks are my target audience</strong> for this investigation. I chose this audience after identifying that I wanted to investigate people who cook at home and plan at least one meal in advance a week.</p>
 									<h3>Strategy</h3>
-									<p>I created a project plan<sup className="inline-refs"><a href="#ref1">[1]</a></sup> as a strategy for how to investigate the problem further and come up with a solution. In just 8 weeks, I planned to interview users, analyze the results and create workable prototypes. To stay on track, I started the project by developing a project plan and oragnized tasks with deadlines in Notion.</p>
+									<p>I created a project plan<sup className="inline-refs"><a href="#ref1">[1]</a></sup> as a strategy for how to investigate the problem further and come up with a solution. In just 8 weeks, I planned to interview users, analyze the results and create a workable prototypes of a mobile app. To stay on track, I started the project by developing a project plan and oragnized tasks with deadlines in Notion.</p>
 									<p>I followed the following project strategy:</p>
 									<ol>
 										<li><strong>Competitive analysis</strong> – Complete a competitive analysis matrix to understand the competitive landscape</li>
 										<li><strong>User interviews</strong> – Create a screener and interview guide and recruite users. Conduct user interviews</li>
-										<li><strong>Personas and journey maps</strong> – Analyz user interviews and organize the findings into user personas and journey maps</li>
+										<li><strong>Personas and journey maps</strong> – Analyze user interviews and organize the findings into user personas and journey maps</li>
 										<li><strong>Prototypes and iterative improvements</strong> – This step would be iterative. Start with low-fidelity prototypes, conduct usability tests and make adjustments. Upgraded the prototypes to high-fidelity and conduct another round of usability tests and make further adjustments</li>
 									</ol>
 									<h3>Competition</h3>
@@ -151,9 +172,10 @@ class SupperMealPlanning extends React.Component {
 									<div className="image-list">
 										<article>
 											<div className="content">
-												<div>
+												<div className="image-col">
+													<img src="/images/meal-planning-competition-whisk.png" alt="Whisk" />
 												</div>
-												<div className="text">
+												<div className="text-col">
 													<h4>Whisk</h4>
 													<p>A popular recipe app where recipes are easy to find and share, however it is riddled with ads and isn’t specifically for meal planning</p>
 												</div>
@@ -161,19 +183,21 @@ class SupperMealPlanning extends React.Component {
 										</article>
 										<article>
 											<div className="content">
-												<div>
+												<div className="image-col">
+													<img src="/images/meal-planning-competition-bigoven.png" alt="BigOven" />
 												</div>
-												<div className="text">
+												<div className="text-col">
 													<h4>BigOven</h4>
-													<p>An app that has been around for a while is known to be good for using leftovers, but the mobile app lacks basic features</p>
+													<p>An app that has been around for a while and is known to be good for using leftovers, but the mobile app lacks basic features</p>
 												</div>
 											</div>
 										</article>
 										<article>
 											<div className="content">
-												<div>
+												<div className="image-col">
+													<img src="/images/meal-planning-competition-paprika.png" alt="Paprika" />
 												</div>
-												<div className="text">
+												<div className="text-col">
 													<h4>Paprika</h4>
 													<p>Popular with meal planners and has many good features, but has separate apps for each platform that require syncing and doesn't have collaboration features</p>
 												</div>
@@ -190,7 +214,7 @@ class SupperMealPlanning extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={7}>
 									<h2>User research</h2>
-									<p>The primary research methodology for this project was to conduct user inteviews and analyze their responses. I organized the responses in a Notion database and analyzed by affinity mapping using FigJam.</p>
+									<p>I conducted user inteviews and analyze their responses in order to have a solid foundation of knowledge. I organized the responses in a Notion database and analyzed by affinity mapping using FigJam.</p>
 									<h3>User interviews</h3>
 									<h4>Screener criteria</h4>
 									<p>I found participants who fit my target audience, selecting users who:</p>
@@ -209,16 +233,13 @@ class SupperMealPlanning extends React.Component {
 									</ul>
 									<figure className="image-full">
 										<picture>
-											{/*<source srcSet="/images/" type="image/webp" />*/}
-											<img src="/images/meal-planning-user-interview-screenshot.png" alt="" />
+											<source srcSet="/images/meal-planning-user-interview-screenshot.webp" type="image/webp" />
+											<img src="/images/meal-planning-user-interview-screenshot.png" alt="Me conducting a user interview via Zoom" />
 										</picture>
 										{/*<figcaption></figcaption>*/}
 									</figure>
-									<picture>
-										{/*<source srcSet="/images/" type="image/webp" />*/}
-									</picture>
 									<h3>Interview analysis</h3>
-									<p>I asked each participant the same questions and affinity mapped the responses in order to draw conclusions and identify high-level findings.</p>
+									<p>I asked each participant the same questions and affinity mapped<sup className="inline-refs"><a href="#ref3">[3]</a></sup> the responses in order to draw conclusions and identify high-level findings.</p>
 									<h4>High-level findings</h4>
 									<p>I found that most users:</p>
 									<ul>
@@ -229,40 +250,65 @@ class SupperMealPlanning extends React.Component {
 										<li><strong>Usually plan on the weekend</strong> – Most people plan on the weekends and plan at least 3-4 meals for the week</li>
 										<li><strong>Don’t want planning to add extra work</strong> – They don’t want the plan to add extra work as they’re not interested in something that adds more work to their lives</li>
 									</ul>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-					<div className="panel">
-						<Container>
-							<Row>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h2>Personas</h2>
-									<h3>Meal planner</h3>
-								</Col>
-								<Col xs={12} md={12} lg={10}>
-									<article className="persona">
-										<h4>Kelly – Proactive Meal Prepper</h4>
-									</article>
-									<article className="persona">
-										<h4>Anna – Spontaneous Home Cook</h4>
-									</article>
-									<h4>Meal planner journey</h4>
-									{/*<picture>
-										<source srcSet="/images/" type="image/webp" />
-										<img src="/images/" alt="" />
-									</picture>*/}
-								</Col>
-								<Col xs={12} md={12} lg={10}>
+									<figure className="image-full">
+										<picture>
+											{/*<source srcSet="/images/meal-planning-user-interview-screenshot.webp" type="image/webp" />*/}
+											<img src="/images/meal-planning-figjam-screenshot.png" alt="Sticky notes in FigJam" />
+										</picture>
+										<figcaption>A screenshot of an affinity map that helped me identify personas</figcaption>
+									</figure>
+									<h2>Ideation</h2>
+									<p>I sketched on a tablet and used FigJam while ideating for this project. I created sticky notes to conduct my user interview analysis, made rough drafts of user stories and journey maps, and planned my information architecture all using FigJam.</p>
+									<figure className="image-full">
+										<picture>
+											{/*<source srcSet="/images/meal-planning-user-interview-screenshot.webp" type="image/webp" />*/}
+											<img src="/images/meal-planning-sketches.png" alt="User story sketches" />
+										</picture>
+										{/*<figcaption></figcaption>*/}
+									</figure>
+									<h2>Concept evolution</h2>
+									<p>At the beginning of this project, I had considered making this app focus on fresh produce and connecting local farmers to users. As I started to plan, I realized that I should focus my energy on a single idea and narrowed my scope to only meal planning.</p>
+									<p>I had also considered making a brainstorming feature using a large language model (LLM) so that users could chat over meal ideas. While I still think this concept could be good for the user. I decided that building a prototype of this feature might be inadequate and creating prototypes for this experience may not actually give me quality data, since I got user feedback that it would be difficult for them to know whether it would be useful without using it and it was of scope to actually teach a prediction model for this project.</p>
+									<h2>Personas and journeys</h2>
+									<p>From the user interview analysis that I did, I determined two user types: meal planners and planning assistants. I created two personas for the meal planner user type and one assistant and created a customer journey map for each user type.</p>
+									<h3>Meal Planner</h3>
+									<p>The primary planner for the household, who plans and cooks at least one meal a week.</p>
+									<Slider {...this.state.personasSlideshow}>
+										<div>
+											<picture>
+												{/*<source srcSet="/images/partner-portal-wireframe-1.webp" type="image/webp" />*/}
+												<img src="/images/meal-planning-persona-kelly.png" alt="" />
+											</picture>
+										</div>
+										<div>
+											<picture>
+												{/*<source srcSet="/images/partner-portal-wireframe-1.webp" type="image/webp" />*/}
+												<img src="/images/meal-planning-persona-anna.png" alt="" />
+											</picture>
+										</div>
+										<div>
+											<picture>
+												{/*<source srcSet="/images/partner-portal-wireframe-1.webp" type="image/webp" />*/}
+												<img src="/images/meal-planning-journey-planner.png" alt="" />
+											</picture>
+										</div>
+									</Slider>
 									<h3>Planning assistant</h3>
-									<article className="persona">
-										<h4>Dave – Meal Planning Assistant</h4>
-									</article>
-									<h4>Planning assistant journey</h4>
-									{/*<picture>
-										<source srcSet="/images/" type="image/webp" />
-										<img src="/images/" alt="" />
-									</picture>*/}
+									<p>These users don't often cook, but they enjoy helping to plan and shop for the groceries.</p>
+									<Slider {...this.state.personasSlideshow}>
+										<div>
+											<picture>
+												{/*<source srcSet="/images/partner-portal-wireframe-1.webp" type="image/webp" />*/}
+												<img src="/images/meal-planning-persona-dave.png" alt="" />
+											</picture>
+										</div>
+										<div>
+											<picture>
+												{/*<source srcSet="/images/partner-portal-wireframe-1.webp" type="image/webp" />*/}
+												<img src="/images/meal-planning-journey-assistant.png" alt="" />
+											</picture>
+										</div>
+									</Slider>
 								</Col>
 							</Row>
 						</Container>
@@ -271,280 +317,10 @@ class SupperMealPlanning extends React.Component {
 						<Container>
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={7}>
-									<h2>Low-fidelity prototypes</h2>
-									<p>I created simple prototypes that would let me perform usability tests with my screened applicants so that I can learn and adapt. I chose to start with low-fidelity, meaning the prototypes lacked color and most text, and focused on whether the user could understand basic components and flows.</p>
-									<h3>Information architecture</h3>
-									<ul>
-										<li>Sitemap diagram</li>
-										<li>Object-oriented planning: recipe, meal, list item</li>
-									</ul>
-								</Col>
-								<Col xs={12} md={12} lg={10}>
-									<figure className="image-full">
-										{/*<picture>
-											<source srcSet="/images/" type="image/webp" />
-											<img src="/images/" alt="" />
-										</picture>*/}
-									</figure>
-								</Col>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h3>Usability testing</h3>
-									<h4>Screener criteria</h4>
-									<p>Plan at least 1 meals a week in advance</p>
-									<h4>Methodology</h4>
-									<ul>
-										<li>13 unmoderated usability tests using Maze</li>
-										<li>2 moderated usability tests using Zoom</li>
-									</ul>
-									<h4>Objectives</h4>
-									<ul>
-										<li>Determine if users were successfully able to navigate the different functionalities within the app</li>
-										<li>Better understand where users get confused or stuck</li>
-										<li>Identify where I can improve the overall usability to make the app more clear and action-oriented</li>
-									</ul>
 								</Col>
 							</Row>
 						</Container>
 					</div>
-					<div className="panel">
-						<Container>
-							<Row>
-								<Col xs={12} md={10}>
-									<h3>User stories</h3>
-									<div className="accordion">
-										<section className={`accordion-item${this.state.accordions.userStories.activeIndex === 0 ? ' active' : ''}`} id="userStories-0">
-											<header>
-												<button onClick={() => this.onAccordionClick('userStories', 0)}>
-													<h4>Plan a meal</h4>
-												</button>
-											</header>
-											<div className="accordion-content-wrapper">
-												<div className="accordion-content">
-													<p>content</p>
-												</div>
-											</div>
-										</section>
-										<section className={`accordion-item${this.state.accordions.userStories.activeIndex === 1 ? ' active' : ''}`} id="userStories-1">
-											<header>
-												<button onClick={() => this.onAccordionClick('userStories', 1)}>
-													<h4>Vote on a meal</h4>
-												</button>
-											</header>
-											<div className="accordion-content-wrapper">
-												<div className="accordion-content">
-													<p>content</p>
-												</div>
-											</div>
-										</section>
-										<section className={`accordion-item${this.state.accordions.userStories.activeIndex === 2 ? ' active' : ''}`} id="userStories-2">
-											<header>
-												<button onClick={() => this.onAccordionClick('userStories', 2)}>
-													<h4>Don’t forget items</h4>
-												</button>
-											</header>
-											<div className="accordion-content-wrapper">
-												<div className="accordion-content">
-													<p>content</p>
-												</div>
-											</div>
-										</section>
-										<section className={`accordion-item${this.state.accordions.userStories.activeIndex === 3 ? ' active' : ''}`} id="userStories-3">
-											<header>
-												<button onClick={() => this.onAccordionClick('userStories', 3)}>
-													<h4>Decide while shopping</h4>
-												</button>
-											</header>
-											<div className="accordion-content-wrapper">
-												<div className="accordion-content">
-													<p>content</p>
-												</div>
-											</div>
-										</section>
-									</div>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-					{/*<div className="panel">
-						<Container>
-							<Row>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h2>User stories</h2>
-									<h3>Plan a Meal</h3>
-									<ul>
-										<li><strong>User type</strong>: Meal planner</li>
-										<li><strong>Situation</strong>: Create a meal schedule for the week to reduce stress later in the week</li>
-										<li><strong>User needs</strong>: See what meals they ate last week, see a schedule of meals for the week ahead, to quickly and easily assign meals to a specific date</li>
-										<li><strong>User goal</strong>: Avoid unplanned meals by making a schedule</li>
-									</ul>
-								</Col>
-								<Col xs={12} md={12} lg={10}>
-									<figure className="image-full">
-									</figure>
-								</Col>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<div className="user-statements">
-										<blockquote>
-											<p>“I think I was confused on which day was tomorrow based on the app's perspective. Perhaps I was assuming today would be at the top and future dates would be below today.”</p>
-										</blockquote>
-									</div>
-									<h4>Findings</h4>
-									<ul>
-										<li>Users didn’t understand the current day, making it difficult to have a reference point</li>
-										<li>It wasn’t intuitive that the screen was scrollable</li>
-										<li>The order of the calendar wasn’t clear and many users assumed down was for the future</li>
-										<li>The popup and day selector were easily understood</li>
-									</ul>
-									<h4>Insights</h4>
-									<ul>
-										<li>Reverse the order of the days to be more intuitive</li>
-										<li>Show part of a past meal so they know that the screen is scrollable to see past recipes</li>
-									</ul>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-					<div className="panel">
-						<Container>
-							<Row>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h3>Vote on a meal</h3>
-									<ul>
-										<li><strong>User type</strong>: Meal planner</li>
-										<li><strong>Situation</strong>: You are creating a meal plan for the week ahead. Others in the household want to be part of the plan to decide which meals they will make</li>
-										<li><strong>User needs</strong>: To share ideas with others in the household, to get input from others, to be able to search and brainstorm ideas</li>
-										<li><strong>User goal</strong>: Decide what meals to make in collaboration with others in the household</li>
-									</ul>
-								</Col>
-								<Col xs={12} md={12} lg={10}>
-									<figure className="image-full">
-									</figure>
-								</Col>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<div className="user-statements">
-										<blockquote>
-											<p>“I wasn't sure where to find my boards. I thought it would have been under Lists, but I went through pinning a recipe to view it again.”</p>
-										</blockquote>
-									</div>
-									<h4>Findings</h4>
-									<ul>
-										<li>Most users intuitively knew how to save the meal</li>
-										<li>Voting on meals was less understood</li>
-										<li>Some users thought arrows were for sorting</li>
-										<li>Inconsistent wording (pinned, favorite, saved, inspiration) was confusing for users</li>
-									</ul>
-									<h4>Insights</h4>
-									<ul>
-										<li>Simplify the language around saving recipes</li>
-										<li>Make voting actions more clear</li>
-									</ul>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-					<div className="panel">
-						<Container>
-							<Row>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h3>Don’t forget items</h3>
-									<ul>
-										<li><strong>User type</strong>: Planning assistant</li>
-										<li><strong>Situation</strong>: They’ve already determined meals for the week ahead. They get to the store and want to easily find everything and not forget anything</li>
-										<li><strong>User needs</strong>: To filter list by grocery store, to sort list by type or meal, to clearly know what’s left on the list</li>
-										<li><strong>User goal</strong>: Don't forget ingredients while shopping</li>
-									</ul>
-								</Col>
-								<Col xs={12} md={12} lg={10}>
-									<figure className="image-full">
-									</figure>
-								</Col>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<div className="user-statements">
-										<blockquote>
-											<p>“”</p>
-										</blockquote>
-									</div>
-									<h4>Findings</h4>
-									<ul>
-										<li>Users easily understood the filters</li>
-										<li>Users easily understood how to check off items</li>
-									</ul>
-									<h4>Insights</h4>
-									<ul>
-										<li>Even with very little detail, users understood this task and very little needs to change</li>
-									</ul>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-					<div className="panel">
-						<Container>
-							<Row>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h3>Decide while shopping</h3>
-									<ul>
-										<li><strong>User type</strong>: Planning assistant</li>
-										<li><strong>Situation</strong>: They’re in the store shopping for ingredients and making buying decisions</li>
-										<li><strong>User needs</strong>: To know what the item looks like, to have a high-level summary of what the item is and what it’s used for, to know whether the deal in the store is a good deal</li>
-										<li><strong>User goal</strong>: Learn about products in the store to confidently make buying decisions</li>
-									</ul>
-								</Col>
-								<Col xs={12} md={12} lg={10}>
-									<figure className="image-full">
-									</figure>
-								</Col>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<div className="user-statements">
-										<blockquote>
-											<p>“”</p>
-										</blockquote>
-									</div>
-									<h4>Findings</h4>
-									<ul>
-										<li>Some users had a difficult time knowing how to see item details</li>
-										<li>2/3 of users said that they didn’t expect to see more details about each list item</li>
-										<li>Once users knew that items had more details, they intuitively found where to find the connected meal</li>
-									</ul>
-									<h4>Insights</h4>
-									<ul>
-										<li>Make it more clear that items have more details</li>
-									</ul>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-					<div className="panel">
-						<Container>
-							<Row>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h2>High-fidelity prototypes</h2>
-									<h3>Design system</h3>
-									<ul>
-										<li>iOS 16 UI kit</li>
-										<li>Components and icons</li>
-										<li>Benefits of using an existing design system</li>
-									</ul>
-								</Col>
-								<Col xs={12} md={12} lg={10}>
-									<figure className="image-full">
-									</figure>
-								</Col>
-								<Col xs={12} md={10} lg={8} xl={7}>
-									<h3>Usability Testing</h3>
-									<ul>
-										<li><strong>Screener</strong> – Plan at least 1 meals a week in advance</li>
-										<li><strong>Methodology</strong> – 8 unmoderated tests</li>
-									</ul>
-									<h4>Objectives</h4>
-									<ul>
-										<li>Determine if users were successfully able to navigate the different functionalities within the app</li>
-										<li>Better understand where users get confused or stuck</li>
-										<li>Identify where I can improve the overall usability to make the app more clear and action-oriented</li>
-									</ul>
-								</Col>
-							</Row>
-						</Container>
-					</div>*/}
 					<div className="panel">
 						<Container>
 							<Row>
@@ -554,6 +330,7 @@ class SupperMealPlanning extends React.Component {
 										<ol>
 											<li id="ref1"><a href="">Project Plan</a></li>
 											<li id="ref2"><a href="">Competitive Analysis Matrix</a></li>
+											<li id="ref3"><a href="https://www.figma.com/file/a0sOcGNjX6K1OBwynpWyfb/User-Interview-Analysis?type=whiteboard&node-id=0%3A1&t=tDA4F7MXjKvuL269-1">User Interview Affinity Map</a></li>
 										</ol>
 									</article>
 								</Col>

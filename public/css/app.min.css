@@ -6369,6 +6369,26 @@ a.btn.btn-outline-primary:hover {
   color: #495057;
   font-weight: 400
 }
+.panel .image-list article {
+  margin-bottom: 1rem
+}
+.panel .image-list article .content {
+  display: flex;
+  gap: 1rem;
+  align-items: center
+}
+.panel .image-list article .image-col img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 8px
+}
+.panel .image-list article h4 {
+  margin-top: 0
+}
+.panel .image-list article p {
+  margin-bottom: 0
+}
 .panel.intro {
   padding-top: 6rem;
   margin-bottom: 3rem
