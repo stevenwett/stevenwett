@@ -138,7 +138,7 @@ class SupperMealPlanning extends React.Component {
 									</article>
 									<p><strong>Home cooks are my target audience</strong> for this investigation.</p>
 									<h3>Strategy</h3>
-									<p>I created a project plan as a strategy for how to investigate the problem further and come up with a solution. In just 8 weeks, I planned to interview users, analyze the results and create workable prototypes. To stay on track, I started the project by developing a project plan and oragnized tasks with deadlines in Notion.</p>
+									<p>I created a project plan<sup className="inline-refs"><a href="#ref1">[1]</a></sup> as a strategy for how to investigate the problem further and come up with a solution. In just 8 weeks, I planned to interview users, analyze the results and create workable prototypes. To stay on track, I started the project by developing a project plan and oragnized tasks with deadlines in Notion.</p>
 									<p>I followed the following project strategy:</p>
 									<ol>
 										<li><strong>Competitive analysis</strong> – Complete a competitive analysis matrix to understand the competitive landscape</li>
@@ -147,6 +147,39 @@ class SupperMealPlanning extends React.Component {
 										<li><strong>Prototypes and iterative improvements</strong> – This step would be iterative. Start with low-fidelity prototypes, conduct usability tests and make adjustments. Upgraded the prototypes to high-fidelity and conduct another round of usability tests and make further adjustments</li>
 									</ol>
 									<h3>Competition</h3>
+									<p>When I performed a Competitive Analysis Matrix<sup className="inline-refs"><a href="#ref2">[2]</a></sup> I found that competitors focused more on the recipes than the plan and didn't have good collaboration features. Below are three major competitors:</p>
+									<div className="image-list">
+										<article>
+											<div className="content">
+												<div>
+												</div>
+												<div className="text">
+													<h4>Whisk</h4>
+													<p>A popular recipe app where recipes are easy to find and share, however it is riddled with ads and isn’t specifically for meal planning</p>
+												</div>
+											</div>
+										</article>
+										<article>
+											<div className="content">
+												<div>
+												</div>
+												<div className="text">
+													<h4>BigOven</h4>
+													<p>An app that has been around for a while is known to be good for using leftovers, but the mobile app lacks basic features</p>
+												</div>
+											</div>
+										</article>
+										<article>
+											<div className="content">
+												<div>
+												</div>
+												<div className="text">
+													<h4>Paprika</h4>
+													<p>Popular with meal planners and has many good features, but has separate apps for each platform that require syncing and doesn't have collaboration features</p>
+												</div>
+											</div>
+										</article>
+									</div>
 									<p></p>
 								</Col>
 							</Row>
@@ -157,27 +190,37 @@ class SupperMealPlanning extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={7}>
 									<h2>User research</h2>
-									<p>My primary methodology for user research for this project was to conduct user inteviews and analyze their responses. I organized the responses in a Notion database and analyzed by affinity mapping using FigJam.</p>
+									<p>The primary research methodology for this project was to conduct user inteviews and analyze their responses. I organized the responses in a Notion database and analyzed by affinity mapping using FigJam.</p>
 									<h3>User interviews</h3>
 									<h4>Screener criteria</h4>
-									<p>Find participants who fit my target audience with the selection criteria of users who:</p>
+									<p>I found participants who fit my target audience, selecting users who:</p>
 									<ul>
 										<li>Cook at home</li>
 										<li>In charge of planning meals</li>
 										<li>Plan out multiple meals at a time</li>
 									</ul>
 									<h4>User interviews</h4>
-									<p>I created an interview guide with uniform questions for each participant and conducted 12, 40-minute moderated user interviews via Zoom. This is an overview of my participants:</p>
+									<p>I created an interview guide with uniform questions for each participant and conducted 12, 40-minute moderated user interviews via Zoom. An overview of my participants:</p>
 									<ul>
 										<li><strong>Diverse age range</strong> – Spanning from 21 to 71 years</li>
 										<li><strong>Gender diversity</strong> – 5 male and 7 female</li>
 										<li><strong>Varied household sizes</strong> – Smallest household size was 1 and largest was 5</li>
 										<li><strong>Geographic representation</strong> – Located throughout midwest and eastern United States</li>
 									</ul>
+									<figure className="image-full">
+										<picture>
+											{/*<source srcSet="/images/" type="image/webp" />*/}
+											<img src="/images/meal-planning-user-interview-screenshot.png" alt="" />
+										</picture>
+										{/*<figcaption></figcaption>*/}
+									</figure>
+									<picture>
+										{/*<source srcSet="/images/" type="image/webp" />*/}
+									</picture>
 									<h3>Interview analysis</h3>
-									<p>I asked each participant the same set of questions and affinity mapped the responses in order to draw conclusions and identify high-level findings.</p>
+									<p>I asked each participant the same questions and affinity mapped the responses in order to draw conclusions and identify high-level findings.</p>
 									<h4>High-level findings</h4>
-									<p>I found that for most users, they:</p>
+									<p>I found that most users:</p>
 									<ul>
 										<li><strong>Want a plan, but planning takes mental effort</strong> – They want to plan ahead, but find it to be a high-energy task</li>
 										<li><strong>Are looking for meal inspiration</strong> – They’re looking to find new meals so that they’re not eating the same thing every week</li>
@@ -502,6 +545,22 @@ class SupperMealPlanning extends React.Component {
 							</Row>
 						</Container>
 					</div>*/}
+					<div className="panel">
+						<Container>
+							<Row>
+								<Col xs={12} md={10} lg={8} xl={7}>
+									<article className="references">
+										<h2>Appendix</h2>
+										<ol>
+											<li id="ref1"><a href="">Project Plan</a></li>
+											<li id="ref2"><a href="">Competitive Analysis Matrix</a></li>
+										</ol>
+									</article>
+								</Col>
+							</Row>
+						</Container>
+					</div>
+
 					<div className="panel">
 						<Container>
 							<Row>

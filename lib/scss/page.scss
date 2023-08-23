@@ -485,6 +485,16 @@
 		}
 	}
 
+	.image-list {
+		article {
+			~ div {
+				width: 100px;
+				height: 100px;
+				background-color: $white;
+			}
+		}
+	}
+
 	&.intro {
 		padding-top: $grid-gutter-width * 4;
 		margin-bottom: $grid-gutter-width * 2;
