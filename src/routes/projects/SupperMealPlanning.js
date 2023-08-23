@@ -88,7 +88,7 @@ class SupperMealPlanning extends React.Component {
 											<div className="ratio ratio-16x9">
 												<picture>
 													<source srcSet="" type="image/webp" />
-													<img src="" alt="Phones showing the Supper app" />
+													<img src="/images/project-supper-meal-planning.png" alt="Phones showing the Supper app" />
 												</picture>
 											</div>
 										</div>
@@ -120,15 +120,15 @@ class SupperMealPlanning extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={7}>
 									<h2>Overview</h2>
-									<p>This case study is for my capstone project for the <Link to="/about/">UX Design Master's program</Link> with Maryland Institute College of Art (MICA) that I completed in August, 2023.</p>
+									<p>This case study is an overview of my capstone project for the <Link to="/about/">UX Design Master's program</Link> that I completed in August, 2023.</p>
 									<h2>Background</h2>
-									<p>I'm a home cook and enjoying cooking meal for me and my partner throughout the week. However, I'm sure she would be the first to tell you that I'm terrible at planning meals. At times, she and I do meal plan and when we do we find that:</p>
+									<p>I'm a home cook and enjoying cooking meals for me and my partner throughout the week. However, I'm sure she would be the first to tell you that I'm terrible at planning meals. At times, she and I do meal plan and when we do we find that:</p>
 									<ul>
 										<li>We have an improved mood, relationshop, and healthier eating habits</li>
 										<li>It is difficult to keep up with</li>
 										<li>It takes time, mental and physical effort</li>
 									</ul>
-									<p>In order to explore the problem further, I conducted 2 preliminary discovery interviews to help me identify the problem.</p>
+									<p>In order to explore the problem further, I conducted 2 preliminary discovery interviews with friends who meal prep to help me identify the problem.</p>
 									<article className="callout hmw">
 										<svg viewBox="0 0 14 23" height="14" width="23" xmlns="http://www.w3.org/2000/svg">
 											<path d="M13.0387 6.55506C13.0884 8.00255 12.6684 9.42666 11.8424 10.6163C11.0165 11.807 9.82775 12.6976 8.45435 13.157C8.45435 13.157 8.25747 13.2264 8.25747 13.3417V14.9139C8.25747 16.0032 7.37434 16.8864 6.28496 16.8864C5.19558 16.8864 4.31245 16.0032 4.31245 14.9139V13.3417C4.32182 12.4689 4.60496 11.6214 5.12151 10.9172C5.63806 10.2141 6.36183 9.69 7.19245 9.42C8.36526 9.02532 9.14058 7.90687 9.09745 6.66936C9.01307 5.15904 7.77464 3.97128 6.26161 3.95064C5.18722 3.95533 4.21222 4.57502 3.75097 5.54438C3.27752 6.52594 2.09816 6.93751 1.11649 6.465C0.134936 5.99155 -0.27664 4.81219 0.195872 3.83052C0.740552 2.68865 1.59555 1.72303 2.66331 1.04532C3.73206 0.367512 4.96957 0.00564 6.23427 0H6.28021C8.03427 0.0121877 9.71605 0.70032 10.9751 1.92094C12.2342 3.14249 12.9729 4.8019 13.0385 6.5551L13.0387 6.55506ZM8.26772 20.7986C8.26772 19.997 7.78491 19.2751 7.04521 18.9676C6.30459 18.6611 5.4524 18.8289 4.88521 19.3951C4.31802 19.9614 4.14647 20.8136 4.45208 21.5542C4.7577 22.2948 5.47863 22.7795 6.28021 22.7814C6.80615 22.7814 7.31147 22.5733 7.68459 22.2011C8.05679 21.8298 8.26679 21.3255 8.26772 20.7986V20.7986Z" fill="#fff"/>
@@ -136,16 +136,16 @@ class SupperMealPlanning extends React.Component {
 										<h3>Problem statement</h3>
 										<p>Time-constrained home cooks find it difficult to plan meals ahead of time and share responsibilities with others in their household. They want to cook at home, but without a plan they don’t have the ingredients on-hand and don’t want to run to the store at the last minute. <strong>Even when they try to plan their meals, they can’t decide what to make and find it difficult to collaborate with their household to execute the plan.</strong></p>
 									</article>
+									<p><strong>Home cooks are my target audience</strong> for this investigation.</p>
 									<h3>Strategy</h3>
-									<p>For this project I was constrained to a timeline of 8 weeks, so right away I developed a project plan and organized tasks with deadlines in Notion. I devised the following high-level strategy to answer my problem:</p>
+									<p>I created a project plan as a strategy for how to investigate the problem further and come up with a solution. In just 8 weeks, I planned to interview users, analyze the results and create workable prototypes. To stay on track, I started the project by developing a project plan and oragnized tasks with deadlines in Notion.</p>
+									<p>I followed the following project strategy:</p>
 									<ol>
 										<li><strong>Competitive analysis</strong> – Complete a competitive analysis matrix to understand the competitive landscape</li>
-										<li><strong>User interviews</strong> – Create a screener and interview guide and recruit users. Then, interview each participant independently in a structured manner</li>
-										<li><strong>Personas and journey maps</strong> – Analyze user interviews and organize the findings into user personas and journey maps</li>
-										<li><strong>Prototypes and iterative improvements</strong> – This step is iterative. Start with low-fidelity prototypes, conduct usability tests and make adjustments. Upgrade the prototypes to high-fidelity and conduct another round of usability tests and make adjustments</li>
+										<li><strong>User interviews</strong> – Create a screener and interview guide and recruite users. Conduct user interviews</li>
+										<li><strong>Personas and journey maps</strong> – Analyz user interviews and organize the findings into user personas and journey maps</li>
+										<li><strong>Prototypes and iterative improvements</strong> – This step would be iterative. Start with low-fidelity prototypes, conduct usability tests and make adjustments. Upgraded the prototypes to high-fidelity and conduct another round of usability tests and make further adjustments</li>
 									</ol>
-									<h3>Timeline</h3>
-									<p></p>
 									<h3>Competition</h3>
 									<p></p>
 								</Col>
@@ -157,7 +157,7 @@ class SupperMealPlanning extends React.Component {
 							<Row>
 								<Col xs={12} md={10} lg={8} xl={7}>
 									<h2>User research</h2>
-									<p>My primary methodology for user research for this project is to conduct user inteviews and analyze their responses. I organized the responses in a Notion database and analyzed by affinity mapping using FigJam.</p>
+									<p>My primary methodology for user research for this project was to conduct user inteviews and analyze their responses. I organized the responses in a Notion database and analyzed by affinity mapping using FigJam.</p>
 									<h3>User interviews</h3>
 									<h4>Screener criteria</h4>
 									<p>Find participants who fit my target audience with the selection criteria of users who:</p>

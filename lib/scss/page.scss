@@ -231,6 +231,10 @@
 				background-color: $dark;
 			}
 		}
+
+		+ p {
+			margin-top: 1rem;
+		}
 	}
 
 	.inline-refs {

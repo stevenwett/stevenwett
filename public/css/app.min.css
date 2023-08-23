@@ -6158,6 +6158,9 @@ a.btn.btn-outline-primary:hover {
   top: -8px;
   background-color: #131313
 }
+.panel article.callout + p {
+  margin-top: 1rem
+}
 .panel .inline-refs a {
   border: 0
 }
