@@ -6744,6 +6744,154 @@ a.btn.btn-outline-primary:hover {
   font-weight: 700;
   line-height: 1.4
 }
+.page-work-single .media-accordion {
+  background-color: #000;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 16px;
+  overflow: hidden
+}
+.page-work-single .media-accordion .media {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%
+}
+.page-work-single .media-accordion .media .media-toggle {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  padding: 0;
+  border: 1px solid rgba(221,173,2,.5);
+  background: 0 0;
+  border-radius: 100%
+}
+@media (max-width:767.98px) {
+  .page-work-single .media-accordion .media .media-toggle {
+    right: 1.5rem
+  }
+}
+.page-work-single .media-accordion .media .media-toggle svg {
+  height: 60px;
+  width: 60px
+}
+.page-work-single .media-accordion .media-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  width: 100%
+}
+.page-work-single .media-accordion .media-item video {
+  max-width: 100%;
+  max-height: 500px
+}
+.page-work-single .media-accordion .accordions {
+  overflow: hidden;
+  padding: 3rem 2rem 3rem 0
+}
+@media (max-width:767.98px) {
+  .page-work-single .media-accordion .accordions {
+    padding: 0 1.5rem 2rem
+  }
+}
+.page-work-single .media-accordion .accordion-item {
+  margin-bottom: 4px;
+  transition: all .2s ease-in-out;
+  background-color: #212529
+}
+.page-work-single .media-accordion .accordion-item:first-child {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px
+}
+.page-work-single .media-accordion .accordion-item:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px
+}
+.page-work-single .media-accordion .accordion-item header {
+  position: relative
+}
+.page-work-single .media-accordion .accordion-item header::before {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #000;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 0;
+  border-radius: 100%;
+  transition: all .2s ease-in-out
+}
+.page-work-single .media-accordion .accordion-item header::after {
+  content: "";
+  position: absolute;
+  right: 22px;
+  top: 26px;
+  height: 0;
+  width: 0;
+  border: .4rem solid transparent;
+  border-top-color: rgba(221,173,2,.5);
+  transition: all .2s ease-in-out
+}
+.page-work-single .media-accordion .accordion-item button {
+  display: block;
+  padding: 1rem;
+  background: 0 0;
+  border: 0;
+  width: 100%;
+  text-align: unset;
+  position: relative;
+  z-index: 2
+}
+.page-work-single .media-accordion .accordion-item h1 {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  border: 0
+}
+.page-work-single .media-accordion .accordion-item h2 {
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: .5rem 0 .25rem
+}
+.page-work-single .media-accordion .accordion-item p {
+  font-size: .9rem;
+  margin: .25rem 0 1rem
+}
+.page-work-single .media-accordion .accordion-item .content {
+  padding: 0;
+  height: 0;
+  overflow: hidden
+}
+.page-work-single .media-accordion .accordion-item p:last-child,
+.page-work-single .media-accordion .accordion-item ul:last-child {
+  margin-bottom: 0
+}
+.page-work-single .media-accordion .accordion-item.active .content {
+  padding: 1rem;
+  padding-top: 0;
+  height: unset
+}
+.page-work-single .media-accordion .accordion-item.active header::before {
+  background-color: #212529
+}
+.page-work-single .media-accordion .accordion-item.active header::after {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  border-color: #212529;
+  right: 18px;
+  top: 22px
+}
+.page-work-single .media-accordion .accordion-item.active button {
+  cursor: unset;
+  padding-bottom: 0
+}
+.page-work-single .media-accordion .accordion-item.active h1 {
+  font-size: 2rem
+}
 .page-work-single .accordion .accordion-item {
   border-bottom: 1px solid #495057
 }
