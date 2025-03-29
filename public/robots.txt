@@ -1,3 +1,12 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Main pages
+Allow: /work/
+Allow: /blog/
+Allow: /about
+
+# Sitemap
+Sitemap: https://stevenwett.com/sitemap.xml
+
+# Last updated: 2025-03-28
