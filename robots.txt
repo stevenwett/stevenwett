@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Main pages
+Allow: /work/
+Allow: /blog/
+Allow: /about
+
+# Sitemap
+Sitemap: https://stevenwett.com/sitemap.xml
+
+# Last updated: 2023-09-23
